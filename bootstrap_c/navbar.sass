@@ -1,0 +1,33 @@
+@import "common/colors"
+
+.container
+	max-width: 992px;
+	margin: 0 auto;
+header
+	padding: 20px;
+	background: none;
+	position: relative;
+.logo
+	float: left;
+.nav 
+	float: right;
+	
+.nav li
+	float: left;
+.nav li a, #touch-menu
+	font-family: 'Montserrat', sans-serif;
+	display: block;
+	padding: 10px 15px;
+	font-weight: normal;
+	font-size: rem(14) ;
+	color: white;
+	text-decoration: none;
+	transition: 0.15s
+.nav li a:hover
+    border-bottom: rem(3) solid $section-1-bgc;
+    color: $section-1-bgc
+    padding: 10px 15px
+    transition: 0.15s
+  	
+#touch-menu
+	display: none;
