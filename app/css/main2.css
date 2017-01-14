@@ -3053,8 +3053,8 @@ input[type="button"].btn-block {
 header {
   padding: 1.25rem;
   position: relative;
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(-0.2, rgba(232, 132, 130, 0.9)), color-stop(1, rgba(239, 215, 137, 0.9)));
-    background-background: -moz-linear-gradient(left top, rgba(232, 132, 130, 0.9) 0.2%, rgba(239, 215, 137, 0.9) 100%); }
+  background: -webkit-repeating-linear-gradient(#fce38a 0.2%, #f38181 100%);
+  background: repeating-linear-gradient(#fce38a 0.2%, #f38181 100%); }
 
 .logo {
   float: left; }
@@ -3068,7 +3068,7 @@ header {
 .nav li a, #touch-menu {
   font-family: 'Montserrat', sans-serif;
   display: block;
-  padding: 10px 15px;
+  padding: 0.625rem 0.9375rem;
   font-weight: normal;
   font-size: 0.875rem;
   color: white;
@@ -3077,9 +3077,9 @@ header {
   transition: all 0.15s ease; }
 
 .nav li a:hover {
-  border-bottom: 0.1875rem solid #fce38a;
+  border-bottom: 3px solid #fce38a;
   color: #fce38a;
-  padding: 10px 15px;
+  padding: 0.625rem 0.9375rem;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease; }
 
@@ -3797,10 +3797,9 @@ base::-moz-progress-bar,
     top: 0;
     left: 0;
     right: 0;
-    height: 50px;
-    background: #e88382; }
+    height: 3.125rem; }
   .logo {
-    margin-top: -20px; }
+    margin-top: -1.25rem; }
   .logo a {
     font-size: 1.25rem; }
   .nav {
@@ -3815,7 +3814,8 @@ base::-moz-progress-bar,
     color: #fff;
     border-top: 1px solid #eee;
     border-left: 3px solid transparent;
-    background: #e78483;
+    background: -webkit-repeating-radial-gradient(#fce38a 1%, #f38181 100%);
+    background: repeating-radial-gradient(#fce38a 1%, #f38181 100%);
     text-align: center; }
   .nav li:first-child a {
     border-top: none; }
@@ -3826,8 +3826,8 @@ base::-moz-progress-bar,
   #touch-menu {
     display: block;
     float: right;
-    height: 50px;
-    margin: -15px 0; } }
+    height: 3.125rem;
+    margin: -0.9375rem 0; } }
 
 @media only screen and (max-width: 768px) {
   .Welcome-to-MoGo-h1 {
@@ -4535,7 +4535,7 @@ button.close {
   transition-property: opacity;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 808px; }
+  height: 50.5rem; }
   .carousel-fade .carousel-inner .carousel-item:after {
     content: " ";
     position: absolute;
@@ -4560,14 +4560,14 @@ button.close {
 .left-control, .right-control {
   position: absolute;
   top: 39.5%;
-  height: 50px;
-  width: 50px;
-  line-height: 48px;
+  height: 3.125rem;
+  width: 3.125rem;
+  line-height: 3rem;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   border: 1px solid #fff;
   z-index: 20;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #fff;
   text-align: center;
   -webkit-transition: all 0.5s ease;
@@ -4577,19 +4577,19 @@ button.close {
   color: #fff; }
 
 .left-control {
-  left: -50px; }
+  left: -3.125rem; }
 
 .right-control {
-  right: -50px; }
+  right: -3.125rem; }
 
 .left-control:hover, .right-control:hover {
   color: #fff; }
 
 #home-slider:hover .left-control {
-  left: 50px; }
+  left: 3.125rem; }
 
 #home-slider:hover .right-control {
-  right: 50px; }
+  right: 3.125rem; }
 
 /** Bootstrap **/
 .bg-inverse {
@@ -5091,11 +5091,11 @@ a.text-danger:focus, a.text-danger:hover {
 .logo {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.875rem;
-  font-weight: 700; }
+  font-weight: bold; }
 
 .Creative-Template-h1 {
   font-family: 'Kaushan Script', cursive;
-  font-weight: 400;
+  font-weight: normal;
   color: #fff;
   text-align: center;
   font-size: 3.75rem; }
@@ -5103,7 +5103,7 @@ a.text-danger:focus, a.text-danger:hover {
 .Welcome-to-MoGo-h1 {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 8.125rem;
   text-align: center; }
 

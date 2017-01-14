@@ -17,7 +17,7 @@
       transition-property: opacity
       background-repeat: no-repeat
       background-size: cover
-      height: 808px
+      height: rem(808)
       &:after
         content: " "
         position: absolute
@@ -38,28 +38,28 @@
 .left-control, .right-control
     position: absolute
     top: 39.5%
-    height: 50px
-    width: 50px
-    line-height: 48px
+    height: rem(50) 
+    width: rem(50) 
+    line-height: rem(48) 
     border-radius: 50%
     border: 1px solid $color-standart-section1
     z-index: 20
-    font-size: 24px
+    font-size: rem(24) 
     color: $color-standart-section1
     text-align: center
     transition: all 0.5s ease
 .left-control:focus, .right-control:focus
     color: $color-standart-section1
 .left-control
-    left: -50px
+    left: rem(-50) 
 .right-control
-    right: -50px
+    right: rem(-50) 
 .left-control:hover, .right-control:hover
   color: $color-standart-section1
 #home-slider
   &:hover
     .left-control
-      left: 50px
+      left: rem(50) 
     .right-control
-      right: 50px
+      right: rem(50) 
 
