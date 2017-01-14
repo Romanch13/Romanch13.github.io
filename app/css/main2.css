@@ -4547,7 +4547,7 @@ button.close {
 
 .left-control, .right-control {
   position: absolute;
-  top: 45%;
+  top: 39.5%;
   height: 50px;
   width: 50px;
   line-height: 48px;
@@ -4574,10 +4574,10 @@ button.close {
   color: #fff; }
 
 #home-slider:hover .left-control {
-  left: 30px; }
+  left: 50px; }
 
 #home-slider:hover .right-control {
-  right: 30px; }
+  right: 50px; }
 
 /** Bootstrap **/
 .bg-inverse {
@@ -5083,7 +5083,14 @@ a.text-danger:focus, a.text-danger:hover {
 
 .logo a {
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.logo a:hover {
+  color: #fce38a;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .Creative-Template-h1 {
   font-family: 'Kaushan Script', cursive;
