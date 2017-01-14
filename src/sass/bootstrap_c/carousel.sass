@@ -7,16 +7,34 @@
 .carousel-item
     background-position: center center
 
-#slider-welcome-mogo
+#home-slider
   overflow: hidden
   position: relative
 .carousel-fade
   .carousel-inner
-    .carousel-item 
-      content: " "
+    .carousel-item
+      opacity: 0.2
+      transition-property: opacity
       background-repeat: no-repeat
       background-size: cover
-      height: 600px
+      height: 808px
+      &:after
+        content: " "
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+    .active
+      opacity: 1
+      &.left, &.right
+        left: 0
+        opacity: 0
+        z-index: 1
+    .next.left, .prev.right
+      opacity: 1
+  .carousel-control
+    z-index: 2
 .left-control, .right-control
     position: absolute
     top: 45%
@@ -38,10 +56,9 @@
     right: -50px
 .left-control:hover, .right-control:hover
   color: $color-standart-section1
-#slider-welcome-mogo
+#home-slider
   &:hover
     .left-control
       left: 30px
     .right-control
       right: 30px
-.carousel-indicators

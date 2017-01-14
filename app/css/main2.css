@@ -3037,7 +3037,6 @@ input[type="button"].btn-block {
     display: block !important; } }
 
 .container {
-  max-width: 992px;
   margin: 0 auto; }
 
 header {
@@ -4514,15 +4513,37 @@ button.close {
 .carousel-item {
   background-position: center center; }
 
-#slider-welcome-mogo {
+#home-slider {
   overflow: hidden;
   position: relative; }
 
 .carousel-fade .carousel-inner .carousel-item {
-  content: " ";
+  opacity: 0.2;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px; }
+  height: 808px; }
+  .carousel-fade .carousel-inner .carousel-item:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1; }
+  .carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1; }
+
+.carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
+  opacity: 1; }
+
+.carousel-fade .carousel-control {
+  z-index: 2; }
 
 .left-control, .right-control {
   position: absolute;
@@ -4552,10 +4573,10 @@ button.close {
 .left-control:hover, .right-control:hover {
   color: #fff; }
 
-#slider-welcome-mogo:hover .left-control {
+#home-slider:hover .left-control {
   left: 30px; }
 
-#slider-welcome-mogo:hover .right-control {
+#home-slider:hover .right-control {
   right: 30px; }
 
 /** Bootstrap **/
