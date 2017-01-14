@@ -568,6 +568,17 @@ dl.row > dd + dt {
   font-size: 90%;
   color: #818a91; }
 
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.logo a:hover {
+  color: #fce38a;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
 code,
 kbd,
 pre,
@@ -3040,9 +3051,10 @@ input[type="button"].btn-block {
   margin: 0 auto; }
 
 header {
-  padding: 20px;
-  background: none;
-  position: relative; }
+  padding: 1.25rem;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(-0.2, rgba(232, 132, 130, 0.9)), color-stop(1, rgba(239, 215, 137, 0.9)));
+    background-background: -moz-linear-gradient(left top, rgba(232, 132, 130, 0.9) 0.2%, rgba(239, 215, 137, 0.9) 100%); }
 
 .logo {
   float: left; }
@@ -5080,17 +5092,6 @@ a.text-danger:focus, a.text-danger:hover {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.875rem;
   font-weight: 700; }
-
-.logo a {
-  color: #fff;
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-
-.logo a:hover {
-  color: #fce38a;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
 
 .Creative-Template-h1 {
   font-family: 'Kaushan Script', cursive;

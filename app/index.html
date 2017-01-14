@@ -17,8 +17,6 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
- 	<link rel="stylesheet" href="libs/owl/dist/assets/owl.carousel.min.css">
- 	<link rel="stylesheet" href="libs/owl/dist/assets/owl.theme.default.min.css">
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
@@ -36,7 +34,7 @@
 </head>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
 
-<script type="text/javascript">
+<script >
 		$(document).ready(function(){
 			var touch = $('#touch-menu');
 		    var menu = $('.nav');
@@ -56,43 +54,40 @@
  <script>
         new WOW().init();
     </script>
-   <script type="text/javascript">
-   $(window).scroll(function(){
-    var ratio = $(document).scrollTop()/(($(document).height() - $(window).height()) / 100);
-    $("#progress").width(ratio+"%");
-});
-   </script>
+
 <body >
 	<section class="section-1">
-			<header class="container clearfix navbar-fixed-top">
-				<div class="logo">
-					<a href="#">MoGo</a>
-				</div>
-				<a href="#" id="touch-menu" class="navbar-to " role="button">&#9776;</a>
-				<nav > 
-					<ul class="nav clearfix text-uppercase " >
-						<li>
-							<a href="#home">Home</a>
-							</li>
-						<li>
-							<a href="#about-us">About</a>
-							</li>
-						<li>
-							<a href="#what-we-do">Service</a></li>
-							</li>
-						<li>
-							<a href="#our-team">Team</a>
-						</li>
-						<li>
-							<a href="#works">Portfolio</a>
-						</li>
-						<li>
-						 	<a href="#footer">Contact</a>
-						 	</li>
-					</ul>
-				</nav>
-			</header>
-</section>
+		<header class="clearfix navbar-fixed-top">
+		<div class="container">		
+			<div class="logo">
+				<a href="#">MoGo</a>
+			</div>
+			<a href="#" id="touch-menu" class="navbar-to " role="button">&#9776;</a>
+			<nav>
+				<ul class="nav clearfix text-uppercase" role="navigation">
+					<li>
+						<a href="#home">Home</a>
+					</li>
+					<li>
+						<a href="#about-us">About</a>
+					</li>
+					<li>
+						<a href="#what-we-do">Service</a>
+					</li>
+					<li>
+						<a href="#our-team">Team</a>
+					</li>
+					<li>
+						<a href="#works">Portfolio</a>
+					</li>
+					<li>
+						<a href="#footer">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			</div>
+		</header>
+	</section>
 <section id="home">
 			<div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
 				<div class="carousel-inner" >
@@ -148,9 +143,10 @@
 		<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 		<script src="libs/respond/respond.min.js"></script>
 		<script src="libs/waypoints/waypoints.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
 		<script src="js/wow.min.js"></script>
+		<script src="js/parallax.min.js"></script>
+
 	<!--[if lIE 9]t >
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
