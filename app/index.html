@@ -16,9 +16,9 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-	<link rel="stylesheet" href="owl-carousel/owl.theme.css">
-
+	<link rel="stylesheet" href="css/animate.css">
+ 	<link rel="stylesheet" href="libs/owl/dist/assets/owl.carousel.min.css">
+ 	<link rel="stylesheet" href="libs/owl/dist/assets/owl.theme.default.min.css">
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
@@ -53,81 +53,109 @@
 		    });
 		});
 	</script>
-<body>
-	<section class="section-1" id="section-img">
-		<header class="container clearfix">
-			<div class="logo">
-				<a href="#">MoGo</a>
-			</div>
-			<a href="#" id="touch-menu" class="navbar-to">&#9776;</a>
-			<nav>
-				<ul class="nav clearfix text-uppercase">
-					<li>
-						<a href="#">About</a>
-					</li>
-					<li>
-						<a href="#">Service</a>
-					</li>
-					<li>
-						<a href="#">Work</a>
-					</li>
-					<li>
-						<a href="#">Blog</a>
-					</li>
-					<li>
-						<a href="#">Contact</a>
-					</li>
-					<li>
-						<a href="#"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#"> <i class="fa fa-search" aria-hidden="true"></i>
-						</a>
-					</li>
-				</ul>
-			</nav>
+ <script>
+        new WOW().init();
+    </script>
+   <script type="text/javascript">
+   $(window).scroll(function(){
+    var ratio = $(document).scrollTop()/(($(document).height() - $(window).height()) / 100);
+    $("#progress").width(ratio+"%");
+});
+   </script>
+<body >
+	<section class="section-1">
+			<header class="container clearfix navbar-fixed-top">
+				<div class="logo">
+					<a href="#">MoGo</a>
+				</div>
+				<a href="#" id="touch-menu" class="navbar-to " role="button">&#9776;</a>
+				<nav > 
+					<ul class="nav clearfix text-uppercase " >
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li>
+							<a href="#">Service</a>
+						</li>
+						<li>
+							<a href="#">Work</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fa fa-search" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+				</nav>
 			</header>
-			<br>
-		<div class="container">
-			<div class="row">
-				<div class="block ">
-					<br>		
-					<br>		
-					<h1 class="Creative-Template-h1">Creative Template</h1>
-					<h1 class="Welcome-to-MoGo-h1 text-uppercase">
+</section>
+<section id="slider">
+			<div id="slider-welcome-mogo" class="carousel slide carousel-fade " data-ride="carousel">
+				<div class="carousel-inner" >
+					<div class="carousel-item active" style="background-image: url(img/slider/slider3.jpg)">
+					    <div class="slider-overlay "></div>
+					    <div class="caption animated lightSpeedIn">
+						<h1 class="Creative-Template-h1 animated fadeInLeftBig">Creative Template</h1>
+						<h1 class="Welcome-to-MoGo-h1 text-uppercase animated fadeInRightBig">
 						Welcome
 						<br>to MoGo</h1>
-					<br>		
-					<hr class="hr-1">		
-					<br>		
-					<p class="button-section1">
-						<button type="button" class="btn btn-section1 text-uppercase">Learn more</button>
-					</p>
+					<br>
+					<hr class="hr-1 animated fadeInDownBig">
+					<br>
+					<a data-scroll class="btn btn-section1 text-uppercase animated fadeInUpBig" href="#services">Learn more</a>
+					    </div>
+					</div>
+					
+					<div class="carousel-item " style="background-image: url(img/slider/slider1.jpg)">
+					    <div class="slider-overlay "></div>
+							<div class="caption animated lightSpeedIn ">
+							<h1 class="Creative-Template-h1 animated fadeInRightBig">Creative Template</h1>
+					<h1 class="Welcome-to-MoGo-h1 text-uppercase animated fadeInLeftBig">
+						Welcome
+						<br>to MoGo</h1>
+					<br>
+					<hr class="hr-1 animated fadeInDownBig">
+					<br>
+					<a data-scroll class="btn btn-section1 text-uppercase animated fadeInUpBig" href="#services">Learn more</a>
+						</div >
+					</div>
+					
+					<div class="carousel-item " style="background-image:url(img/slider/slider2.jpg)">
+						<div class="slider-overlay "></div>
+						<div class="caption animated lightSpeedIn">
+							<h1 class="Creative-Template-h1 animated fadeInDownBig">Creative Template</h1>
+					<h1 class="Welcome-to-MoGo-h1 text-uppercase animated fadeInUp">
+						Welcome
+						<br>to MoGo</h1>
+					<br>
+					<hr class="hr-1 animated fadeInDownBig">
+					<br>
+					<a data-scroll class="btn btn-section1 text-uppercase animated fadeInUpBig" href="#services">Learn more</a>
+						</div>
+					</div>
 				</div>
-			</div>
+				<a class="left-control " href="#slider-welcome-mogo " data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+				<a class="right-control" href="#slider-welcome-mogo" data-slide="next"><i class="fa fa-chevron-right"></i></a>
 		</div>
-		<div class="container">
-			<div class="row">
-				<div class="owl-carousel owl-theme">
-    	<!--<div class="item"><h4><img src="img/bgc-img-pr.jpg"></h4></div>
-    	//<div class="item"><h4><img src="img/bgc-img-pr.jpg"></h4></div>
-    	//<div class="item"><h4><img src="img/bgc-img-pr.jpg"></h4></div>
-    <div class="item"><h4><img src="img/bgc-img-pr.jpg"></h4></div>---->
+    </section>	
 
-</div>
-			</div>
-		</div>
-	</section>
-
-		
-		
-	<!-- Здесь пишем код -->
-   
-
-
-    
-
+ <!-- JavaScript-->
+		<script src="libs/modernizr/modernizr.js"</script>
+		<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+		<script src="libs/respond/respond.min.js"></script>
+		<script src="libs/waypoints/waypoints.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+		<script src="js/wow.min.js"></script>
 	<!--[if lIE 9]t >
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -138,7 +166,8 @@
 	<!-- Load Scripts Start -->
 	<script>var scr = {"scripts":[
 		{"src" : "js/libs.min.js", "async" : false},
-		{"src" : "js/common.js", "async" : false}
+		{"src" : "js/common.js", "async" : false},
+		{"src" : "js/owl.carousel.min.js", "async" : false}
 		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 	</script>
 	<!-- Load Scripts End -->
