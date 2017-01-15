@@ -3797,11 +3797,11 @@ base::-moz-progress-bar,
     top: 0;
     left: 0;
     right: 0;
-    height: 3.125rem; }
+    height: 50px; }
   .logo {
-    margin-top: -1.25rem; }
+    margin-top: -1.125rem; }
   .logo a {
-    font-size: 1.25rem; }
+    font-size: 1.5625rem; }
   .nav {
     position: absolute;
     top: 100%;
@@ -3826,12 +3826,12 @@ base::-moz-progress-bar,
   #touch-menu {
     display: block;
     float: right;
-    height: 3.125rem;
-    margin: -0.9375rem 0; } }
+    margin: -1.375rem 0;
+    font-size: 1.5625rem; } }
 
 @media only screen and (max-width: 768px) {
   .Welcome-to-MoGo-h1 {
-    font-size: 3.75rem !important; }
+    font-size: 3.125rem !important; }
   .Creative-Template-h1 {
     font-size: 1.75rem !important; } }
 
@@ -4559,7 +4559,7 @@ button.close {
 
 .left-control, .right-control {
   position: absolute;
-  top: 39.5%;
+  top: 37%;
   height: 3.125rem;
   width: 3.125rem;
   line-height: 3rem;
@@ -5080,14 +5080,6 @@ a.text-danger:focus, a.text-danger:hover {
   .hidden-print {
     display: none !important; } }
 
-.caption {
-  position: absolute;
-  top: 15%;
-  left: 0;
-  right: 0;
-  z-index: 15;
-  text-align: center; }
-
 .logo {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.875rem;
@@ -5097,14 +5089,20 @@ a.text-danger:focus, a.text-danger:hover {
   font-family: 'Kaushan Script', cursive;
   font-weight: normal;
   color: #fff;
-  text-align: center;
   font-size: 3.75rem; }
 
 .Welcome-to-MoGo-h1 {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   font-weight: bold;
-  font-size: 8.125rem;
+  font-size: 8.125rem; }
+
+.caption {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  z-index: 15;
   text-align: center; }
 
 .hr-1 {
