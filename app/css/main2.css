@@ -3814,8 +3814,8 @@ base::-moz-progress-bar,
     color: #fff;
     border-top: 1px solid #eee;
     border-left: 3px solid transparent;
-    background: -webkit-repeating-radial-gradient(#fce38a -90%, #f38181 100%);
-    background: repeating-radial-gradient(#fce38a -90%, #f38181 100%);
+    background: -webkit-repeating-radial-gradient(#fce38a 0.2%, #f38181 100%);
+    background: repeating-radial-gradient(#fce38a 0.2%, #f38181 100%);
     text-align: center; }
   .nav li:first-child a {
     border-top: none; }
@@ -4523,7 +4523,7 @@ button.close {
   background: -moz-linear-gradient(left top, rgba(232, 132, 130, 0.9) 0.2%, rgba(239, 215, 137, 0.9) 100%); }
 
 .carousel-item {
-  background-position: center  center; }
+  background-position: center; }
 
 #home-slider {
   overflow: hidden;
@@ -5107,7 +5107,7 @@ a.text-danger:focus, a.text-danger:hover {
 
 .hr-1 {
   border: 2px solid #fff;
-  width: 80px; }
+  width: 5rem; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

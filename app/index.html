@@ -53,9 +53,22 @@
 		    });
 		});
 	</script>
+<!--<script type="text/javascript">
+	$(window).on('scroll', function () {
+    if ($(this).scrollTop() > 30) {
+        if (!$('.navbar-fixed-top').hasClass('expand')) {
+            $('.navbar-fixed-top').addClass('expand');
+        }
+    } else {
+        if ($('.navbar-fixed-top').hasClass('expand')) {
+            $('.navbar-fixed-top').removeClass('expand');
+        }
+    }
+});
+</script>-->
 <body>
 	<section class="section-1">
-		<header class="clearfix navbar-fixed-top">
+		<header class="clearfix navbar-fixed-top animated-nav">
 		<div class="container">		
 			<div class="logo">
 				<a href="#">MoGo</a>
