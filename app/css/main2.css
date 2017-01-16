@@ -4523,7 +4523,7 @@ button.close {
   background: -moz-linear-gradient(left top, rgba(232, 132, 130, 0.9) 0.2%, rgba(239, 215, 137, 0.9) 100%); }
 
 .carousel-item {
-  background-position: center center; }
+  background-position: center  center; }
 
 #home-slider {
   overflow: hidden;
@@ -4535,7 +4535,7 @@ button.close {
   transition-property: opacity;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50.5rem; }
+  height: 55.625rem; }
   .carousel-fade .carousel-inner .carousel-item:after {
     content: " ";
     position: absolute;
@@ -4559,7 +4559,7 @@ button.close {
 
 .left-control, .right-control {
   position: absolute;
-  top: 37%;
+  top: 39.5%;
   height: 3.125rem;
   width: 3.125rem;
   line-height: 3rem;
@@ -5099,7 +5099,7 @@ a.text-danger:focus, a.text-danger:hover {
 
 .caption {
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 0;
   right: 0;
   z-index: 15;
