@@ -3831,9 +3831,9 @@ base::-moz-progress-bar,
 
 @media only screen and (max-width: 768px) {
   .Welcome-to-MoGo-h1 {
-    font-size: 3.125rem !important; }
+    font-size: 2.5rem; }
   .Creative-Template-h1 {
-    font-size: 1.75rem !important; } }
+    font-size: 1.75rem; } }
 
 .list-group {
   padding-left: 0;
@@ -5088,14 +5088,12 @@ a.text-danger:focus, a.text-danger:hover {
 .Creative-Template-h1 {
   font-family: 'Kaushan Script', cursive;
   font-weight: normal;
-  color: #fff;
-  font-size: 3.75rem; }
+  color: #fff; }
 
 .Welcome-to-MoGo-h1 {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
-  font-weight: bold;
-  font-size: 8.125rem; }
+  font-weight: bold; }
 
 .caption {
   position: absolute;
