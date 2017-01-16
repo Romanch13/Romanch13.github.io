@@ -3814,8 +3814,8 @@ base::-moz-progress-bar,
     color: #fff;
     border-top: 1px solid #eee;
     border-left: 3px solid transparent;
-    background: -webkit-repeating-radial-gradient(#fce38a 0.2%, #f38181 100%);
-    background: repeating-radial-gradient(#fce38a 0.2%, #f38181 100%);
+    background: -webkit-repeating-radial-gradient(#fce38a 0.2%, #f38181 0%);
+    background: repeating-radial-gradient(#fce38a 0.2%, #f38181 0%);
     text-align: center; }
   .nav li:first-child a {
     border-top: none; }
@@ -5099,7 +5099,7 @@ a.text-danger:focus, a.text-danger:hover {
 
 .caption {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 0;
   right: 0;
   z-index: 15;
