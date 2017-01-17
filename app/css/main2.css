@@ -579,8 +579,46 @@ dl.row > dd + dt {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
-img {
-  max-width: 100%; }
+.all_overlay {
+  background: rgba(219, 116, 117, 0.75);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(219, 116, 117, 0.6)), color-stop(24%, rgba(220, 132, 118, 0.75)), color-stop(42%, rgba(224, 150, 121, 0.75)), color-stop(42%, rgba(222, 151, 119, 0.75)), color-stop(45%, rgba(221, 155, 120, 0.75)), color-stop(55%, rgba(225, 167, 121, 0.75)), color-stop(57%, rgba(222, 168, 121, 0.75)), color-stop(61%, rgba(225, 171, 124, 0.75)), color-stop(62%, rgba(224, 173, 120, 0.75)), color-stop(68%, rgba(225, 180, 125, 0.75)), color-stop(70%, rgba(226, 181, 122, 0.75)), color-stop(77%, rgba(224, 189, 125, 0.75)), color-stop(79%, rgba(227, 189, 124, 0.75)), color-stop(84%, rgba(225, 195, 123, 0.75)), to(rgba(228, 205, 125, 0.75)));
+  background: -webkit-linear-gradient(top, rgba(219, 116, 117, 0.6) 0%, rgba(220, 132, 118, 0.75) 24%, rgba(224, 150, 121, 0.75) 42%, rgba(222, 151, 119, 0.75) 42%, rgba(221, 155, 120, 0.75) 45%, rgba(225, 167, 121, 0.75) 55%, rgba(222, 168, 121, 0.75) 57%, rgba(225, 171, 124, 0.75) 61%, rgba(224, 173, 120, 0.75) 62%, rgba(225, 180, 125, 0.75) 68%, rgba(226, 181, 122, 0.75) 70%, rgba(224, 189, 125, 0.75) 77%, rgba(227, 189, 124, 0.75) 79%, rgba(225, 195, 123, 0.75) 84%, rgba(228, 205, 125, 0.75) 100%);
+  background: linear-gradient(to bottom, rgba(219, 116, 117, 0.6) 0%, rgba(220, 132, 118, 0.75) 24%, rgba(224, 150, 121, 0.75) 42%, rgba(222, 151, 119, 0.75) 42%, rgba(221, 155, 120, 0.75) 45%, rgba(225, 167, 121, 0.75) 55%, rgba(222, 168, 121, 0.75) 57%, rgba(225, 171, 124, 0.75) 61%, rgba(224, 173, 120, 0.75) 62%, rgba(225, 180, 125, 0.75) 68%, rgba(226, 181, 122, 0.75) 70%, rgba(224, 189, 125, 0.75) 77%, rgba(227, 189, 124, 0.75) 79%, rgba(225, 195, 123, 0.75) 84%, rgba(228, 205, 125, 0.75) 100%); }
+
+.about-us-content {
+  width: 80%; }
+  .about-us-content .about-us-single {
+    position: relative;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    margin-bottom: 20px; }
+    .about-us-content .about-us-single:hover {
+      -webkit-box-shadow: 6px 6px 9px 1px #95e1d3;
+      box-shadow: 6px 6px 9px 1px #95e1d3; }
+    .about-us-content .about-us-single .about-us-single-img img {
+      width: 100%;
+      height: 100%; }
+    .about-us-content .about-us-single .about-us-single-img-overlay {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      padding-top: 25%;
+      opacity: 0;
+      -webkit-transition: all 0.6s;
+      transition: all 0.6s; }
+    .about-us-content .about-us-single:hover .about-us-single-img-overlay {
+      opacity: 1; }
+    .about-us-content .about-us-single .about-us-single-img-overlay a {
+      color: #fff;
+      text-decoration: none; }
+      .about-us-content .about-us-single .about-us-single-img-overlay a:hover {
+        color: #fce38a; }
+      .about-us-content .about-us-single .about-us-single-img-overlay a i {
+        font-size: 1.5625rem; }
 
 code,
 kbd,
@@ -3842,7 +3880,9 @@ base::-moz-progress-bar,
   .what-we-do {
     font-size: 1.75rem; }
   .story-about-us {
-    font-size: 2.25rem !important; } }
+    font-size: 2.25rem !important; }
+  .about-us-content {
+    width: 100%; } }
 
 .list-group {
   padding-left: 0;
@@ -4525,7 +4565,7 @@ button.close {
   .carousel-indicators {
     bottom: 20px; } }
 
-.slider-overlay {
+.slider-gradient {
   width: 100%;
   height: 100%;
   background: -webkit-gradient(linear, left top, right bottom, color-stop(-0.2, rgba(232, 132, 130, 0.9)), color-stop(1, rgba(239, 215, 137, 0.9)));
@@ -5114,16 +5154,6 @@ a.text-danger:focus, a.text-danger:hover {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold; }
 
-#about-us {
-  padding: 50px 0px; }
-
-.about-header p {
-  max-width: 100%; }
-
-.all_overlay:hover {
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(-0.2, rgba(232, 132, 130, 0.9)), color-stop(1, rgba(239, 215, 137, 0.9)));
-  background: -moz-linear-gradient(left top, rgba(232, 132, 130, 0.9) 0.2%, rgba(239, 215, 137, 0.9) 100%); }
-
 .caption {
   position: absolute;
   top: 15%;
@@ -5132,12 +5162,24 @@ a.text-danger:focus, a.text-danger:hover {
   z-index: 15;
   text-align: center; }
 
+#about-us {
+  padding: 50px 0px; }
+
+.about-header p {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px 0px 20px 0px; }
+
+.block-center {
+  text-align: center; }
+
 .hr-1 {
   border: 2px solid #fff;
   width: 5rem; }
 
-.block-center {
-  text-align: center; }
+.hr-standart {
+  border: 2px solid #f38181;
+  width: 5rem; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
