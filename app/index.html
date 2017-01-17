@@ -16,9 +16,12 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/prettyPhoto.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
-
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/wow.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
@@ -36,7 +39,7 @@
 </head>
 
 
-<script type="text/javascript" >
+<script type="text/javascript">
 		$(document).ready(function(){
 			var touch = $('#touch-menu');
 		    var menu = $('.nav');
@@ -52,20 +55,11 @@
 		        }
 		    });
 		});
-	</script>
-<!--<script type="text/javascript">
-	$(window).on('scroll', function () {
-    if ($(this).scrollTop() > 30) {
-        if (!$('.navbar-fixed-top').hasClass('expand')) {
-            $('.navbar-fixed-top').addClass('expand');
-        }
-    } else {
-        if ($('.navbar-fixed-top').hasClass('expand')) {
-            $('.navbar-fixed-top').removeClass('expand');
-        }
-    }
-});
-</script>-->
+</script>
+<script>
+	 new WOW().init();
+</script>
+
 <body>
 	<section class="section-1">
 		<header class="clearfix navbar-fixed-top animated-nav">
@@ -105,10 +99,10 @@
 		<div class="carousel-item active" style="background-image: url(img/slider/slider3.jpg)">
 			<div class="slider-overlay"></div>
 				<div class="caption animated lightSpeedIn">
-					<h1 class="display-3 Creative-Template-h1 animated fadeInLeftBig">Creative Template</h1>
-					<h1 class="display-1 Welcome-to-MoGo-h1 text-uppercase animated fadeInRightBig">
+					<p class="display-3 Creative-Template-p animated fadeInLeftBig">Creative Template</p>
+					<p class="display-1 Welcome-to-MoGo-p text-uppercase animated fadeInRightBig">
 						Welcome to
-						<br>the world of <br> design</h1>
+						<br>the world of <br> design</p>
 					<br>
 					<hr class="hr-1 animated fadeInDownBig">
 					<br>
@@ -119,10 +113,10 @@
 			<div class="carousel-item " style="background-image: url(img/slider/slider1.jpg)">
 				<div class="slider-overlay "></div>
 				<div class="caption animated lightSpeedIn ">
-				<h1 class="display-3 Creative-Template-h1 animated fadeInDownBig">Creative Template</h1>
-					<h1 class="display-1 Welcome-to-MoGo-h1 text-uppercase animated fadeInUpBig">
+				<p class="display-3 Creative-Template-p animated fadeInLeftBig">Creative Template</p>
+					<p class="display-1 Welcome-to-MoGo-p text-uppercase animated fadeInRightBig">
 						Welcome to
-						<br>the world of <br> design</h1>
+						<br>the world of <br> design</p>
 					<br>
 					<hr class="hr-1 animated fadeInDownBig">
 					<br>
@@ -132,10 +126,10 @@
 			<div class="carousel-item" style="background-image:url(img/slider/slider2.jpg)">
 				<div class="slider-overlay "></div>
 				<div class="caption animated lightSpeedIn">
-					<h1 class="display-3 Creative-Template-h1 animated fadeInDownBig">Creative Template</h1>
-					<h1 class="display-1 Welcome-to-MoGo-h1 text-uppercase animated fadeInRightBig">
+					<p class="display-3 Creative-Template-p animated fadeInLeftBig">Creative Template</p>
+					<p class="display-1 Welcome-to-MoGo-p text-uppercase animated fadeInRightBig">
 						Welcome to
-						<br>the world of <br> design</h1>
+						<br>the world of <br> design</p>
 					<br>
 					<hr class="hr-1 animated fadeInDownBig">
 					<br>
@@ -149,7 +143,66 @@
 		</a>
 	</div>
 </section>
-	
+<section id="about-us" class="about text-md-center" >
+	<div class="container">
+	 <div class="row">
+		<div class="block-center">
+			<div class="about-header animated zoomIn">
+				<h2  class="what-we-do">What we do</h2>
+				<h1 class="story-about-us text-uppercase">Story about us</h1>
+				<p class="about-story-p">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+ <div class="main_about_content">
+ 	<div class="col-sm-4 col-xs-12">
+ 		<div class="single_about">
+ 			<div class="single_about_img">
+ 				<img src="img/about/about1.jpg" alt="" /> 
+ 			</div>
+ 			<div class="single_about_img_overlay all_overlay">
+ 				<a href=""> <i class="fa fa-users"></i>
+ 					<p>super team</p>
+ 				</a>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<div class="col-sm-4 col-xs-12">
+ 		<div class="single_about">
+ 			<div class="single_about_img">
+ 				<img src="img/about/about2.jpg" alt="" /> 
+ 			</div>
+ 			<div class="single_about_img_overlay all_overlay">
+ 				<a href=""> <i class="fa fa-users"></i>
+ 					<p>super team</p>
+ 				</a>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<div class="col-sm-4 col-xs-12">
+ 		<div class="single_about">
+ 			<div class="single_about_img">
+ 				<img src="img/about/about3.jpg" alt="" /> 
+ 			</div>
+ 			<div class="single_about_img_overlay all_overlay">
+ 				<a href="">
+ 					<i class="fa fa-users"></i>
+ 					<p>super team</p>
+ 				</a>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+ </div>
+
+ </div>
+ </div>
+ </div>
+ </section>
+		
 	<!--[if lIE 9]t >
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
