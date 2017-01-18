@@ -3913,8 +3913,6 @@ base::-moz-progress-bar,
   .Creative-Template-p {
     font-size: 1.75rem;
     line-height: 0.625rem !important; }
-  .what-we-do {
-    font-size: 1.75rem; }
   .story-about-us {
     font-size: 2.25rem !important; } }
 
@@ -3931,6 +3929,10 @@ base::-moz-progress-bar,
     border-bottom: 0.0625rem solid #fff; }
     .counter-item p {
       font-size: 0.875rem; } }
+
+@media only screen and (max-width: 768px) {
+  .Amazing {
+    font-size: 2.0625rem !important; } }
 
 .list-group {
   padding-left: 0;
@@ -5206,6 +5208,28 @@ a.text-danger:focus, a.text-danger:hover {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal; }
 
+.we-work-with {
+  font-family: 'Kaushan Script', cursive;
+  font-weight: normal;
+  color: #333333; }
+
+.Amazing {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold; }
+
+.media-body h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+.media-1 {
+  color: #95e1d3;
+  font-size: 2.5rem;
+  margin-right: 0.625rem;
+  margin-left: -1.25rem;
+  float: left;
+  margin-top: -0.625rem; }
+
 .caption {
   position: absolute;
   top: 15%;
@@ -5217,10 +5241,17 @@ a.text-danger:focus, a.text-danger:hover {
 #about-us {
   padding: 3.125rem 0rem; }
 
+#services {
+  padding: 3.125rem 0rem; }
+
 .about-header p {
   max-width: 100%;
   margin: 0 auto;
   padding: 0.625rem 0rem 1.25rem 0rem; }
+
+.services-header {
+  padding-bottom: 2.5rem;
+  text-align: center; }
 
 .block-center {
   text-align: center; }
