@@ -4,7 +4,7 @@ $(window).scroll(function(){
     var 
     cPos = $(this).offset().top,
     topWindow = $(window).scrollTop();
-    if (cPos < topWindow + 300){
+    if (cPos < topWindow + 652){
       if (cc < 2){
         $('.number').addClass('viz')
         $('div').each(function(){

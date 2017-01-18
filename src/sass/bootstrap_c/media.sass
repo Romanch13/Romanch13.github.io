@@ -4,7 +4,7 @@
 		top: 0
 		left: 0
 		right: 0
-		height: 50px
+		height: rem(50)
 	.logo
 		margin: rem(-20) rem(-24)
 
@@ -21,15 +21,15 @@
 		float: none
 	.nav li a 
 		color: $color-standart-section1
-		border-top: 1px solid $color-border-top-media
-		border-left: 3px solid transparent
+		border-top: rem(1) solid $color-border-top-media
+		border-left: rem(3) solid transparent
 		background: repeating-radial-gradient(rgba(252,227,138,1)0.2%, rgba(243,129,129,1) 0%)
 		text-align: center
 	.nav li:first-child a 
 		border-top: none
 	.nav li a:hover 
 		color: $section-1-bgc
-		border-left: 3px solid $section-1-bgc
+		border-left: rem(3) solid $section-1-bgc
 		border-bottom: none
 	#touch-menu 
 		display: block
@@ -48,15 +48,18 @@
 	.story-about-us
 		font-size: rem(36)!important	
 @media only screen and(max-width: 768px) 
+	#counter
+		padding: rem(10) rem(0) rem(10) rem(0)
 	.counter-item
   		width: 100%
   		float: left
-  		padding: rem(20) rem(0)
-  		border: none
-  		&:first-child
-    	 border-left: rem(0) solid $color-standart-section1
+  		padding: rem(10) rem(0) 
+  		border-top: rem(1) solid $color-standart-section1
+  		border-right: rem(1) solid $color-standart-section1
+  		border-left: rem(1) solid $color-standart-section1
+  		border-bottom: rem(1) solid $color-standart-section1
   		p
-    	font-size: rem(18)
+    	font-size: rem(14)
  
  		
 
