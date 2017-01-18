@@ -14,6 +14,7 @@
       opacity: 0.2
       transition-property: opacity
       background-repeat: no-repeat
+      -webkit-background-size: cover
       background-size: cover
       height: rem(890)
       &:after
@@ -54,8 +55,7 @@
     right: rem(-50) 
 .left-control:hover, .right-control:hover
   color: $color-standart-section1
-#home-slider
-  &:hover
+#home-slider:hover
     .left-control
       left: rem(50) 
     .right-control
