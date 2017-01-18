@@ -5264,6 +5264,9 @@ a.text-danger:focus, a.text-danger:hover {
   border: 0.125rem solid #f38181;
   width: 5rem; }
 
+.hr-section {
+  border: 0.0625rem solid #dddddd; }
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
