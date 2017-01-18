@@ -3912,9 +3912,7 @@ base::-moz-progress-bar,
     line-height: 3.125rem !important; }
   .Creative-Template-p {
     font-size: 1.75rem;
-    line-height: 0.625rem !important; }
-  .story-about-us {
-    font-size: 2.25rem !important; } }
+    line-height: 0.625rem !important; } }
 
 @media only screen and (max-width: 768px) {
   #counter {
@@ -3922,17 +3920,23 @@ base::-moz-progress-bar,
   .counter-item {
     width: 100%;
     float: left;
-    padding: 0.625rem 0rem;
+    padding: 0.625rem 0;
     border-top: 0.0625rem solid #fff;
     border-right: 0.0625rem solid #fff;
     border-left: 0.0625rem solid #fff;
     border-bottom: 0.0625rem solid #fff; }
     .counter-item p {
-      font-size: 0.875rem; } }
+      font-size: 0.9375rem; } }
 
 @media only screen and (max-width: 768px) {
-  .Amazing {
-    font-size: 2.0625rem !important; } }
+  .media-body h4 {
+    text-align: center; }
+  .media-1 {
+    text-align: center;
+    margin-left: 0rem !important;
+    margin-bottom: 0rem !important; }
+  .media-body p {
+    text-align: justify; } }
 
 .list-group {
   padding-left: 0;
@@ -5225,10 +5229,8 @@ a.text-danger:focus, a.text-danger:hover {
 .media-1 {
   color: #95e1d3;
   font-size: 2.5rem;
-  margin-right: 0.625rem;
-  margin-left: -1.25rem;
-  float: left;
-  margin-top: -0.625rem; }
+  margin-left: -3.125rem;
+  margin-bottom: -3rem; }
 
 .caption {
   position: absolute;
