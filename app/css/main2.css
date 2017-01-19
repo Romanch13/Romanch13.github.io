@@ -579,11 +579,26 @@ dl.row > dd + dt {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
+.devices {
+  position: relative;
+  text-align: center; }
+  .devices .tablet {
+    width: 23.75rem; }
+  .devices .mobile {
+    position: absolute;
+    bottom: -3.75rem;
+    left: 50%;
+    margin-left: 6.875rem;
+    width: 10.625rem; }
+
 .about-us-single-img img {
   padding: 0.625rem;
   border: 0.0625rem solid #dddddd;
   -webkit-border-radius: 0.125rem;
   border-radius: 0.125rem; }
+
+.block-center {
+  text-align: center; }
 
 .all_overlay {
   background: rgba(219, 116, 117, 0.75);
@@ -596,12 +611,12 @@ dl.row > dd + dt {
   width: 100%; }
   .about-us-content .about-us-single {
     position: relative;
-    -webkit-transition: all 0.6s ease;
-    transition: all 0.6s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     margin: 0.9375rem; }
     .about-us-content .about-us-single:hover {
-      -webkit-box-shadow: 0.375rem 0.375rem 0.5625rem 0.125rem #95e1d3;
-      box-shadow: 0.375rem 0.375rem 0.5625rem 0.125rem #95e1d3; }
+      -webkit-box-shadow: 0.625rem 0.625rem 0rem 0rem #95e1d3;
+      box-shadow: 0.625rem 0.625rem 0rem 0rem #95e1d3; }
     .about-us-content .about-us-single .about-us-single-img img {
       width: 100%;
       height: 100%; }
@@ -3929,8 +3944,8 @@ base::-moz-progress-bar,
       font-size: 0.9375rem; } }
 
 @media only screen and (max-width: 768px) {
-  .name-section-style-p {
-    text-align: justify; } }
+  .about-header p {
+    font-size: 1.0625rem; } }
 
 @media only screen and (max-width: 768px) {
   .media-body h4 {
@@ -3944,9 +3959,12 @@ base::-moz-progress-bar,
     font-size: 1.0625rem; } }
 
 @media only screen and (max-width: 768px) {
-  .unique-item {
-    position: relative;
-    top: 33px !important; } }
+  .devices .tablet {
+    width: 12.5rem; }
+  .devices .mobile {
+    bottom: -2.375rem;
+    margin-left: 3.4375rem;
+    width: 6.875rem; } }
 
 .list-group {
   padding-left: 0;
@@ -5217,28 +5235,26 @@ a.text-danger:focus, a.text-danger:hover {
   z-index: 15;
   text-align: center; }
 
-#about-us {
-  padding: 3.125rem 0rem; }
-
-#services {
-  padding: 3.125rem 0rem; }
-
-#what-we-do {
-  padding: 4.375rem 0rem;
-  text-align: center; }
+.about-p-name {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase; }
 
 .about-header p {
-  max-width: 100%;
+  max-width: 90%;
   margin: 0 auto;
   padding: 0.625rem; }
 
-.services-header, .about-header {
+#about-us, #services, #what-we-do, .unique-header {
+  padding: 3.125rem 0rem; }
+
+.services-header, .about-header, .what-do-header, .unique-header {
   text-align: center; }
 
 .name-section-style-h2 {
   font-family: 'Kaushan Script', cursive;
   font-weight: normal;
-  color: #333333; }
+  color: #333333;
+  text-align: center; }
 
 .name-section-style-h1 {
   font-family: 'Montserrat', sans-serif;
@@ -5259,22 +5275,21 @@ a.text-danger:focus, a.text-danger:hover {
   margin-left: -3.125rem;
   margin-bottom: -3rem; }
 
-.unique-header {
-  padding: 3.125rem 0rem;
-  text-align: center; }
-
 #unique-design {
   background: url(../img/bg2.jpg) no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  margin-bottom: 1.875rem; }
 
 .bg2-overlay {
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.8); }
 
-.unique-item {
-  position: relative;
-  top: 60px; }
+.what-do-header p {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0.625rem 0.625rem 3.125rem 0.625rem;
+  line-height: 150%; }
 
 .hr-1 {
   border: 0.125rem solid #fff;

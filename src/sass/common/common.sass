@@ -1,5 +1,5 @@
 @import "common/colors"
-//header + section1
+//welcome
 .logo
 	font-family: 'Montserrat', sans-serif
 	font-size: rem(30)
@@ -20,33 +20,34 @@
     right: 0
     z-index: 15
     text-align: center 
-#about-us
-    padding: rem(50) rem(0)
-#services
-    padding: rem(50) rem(0)
-#what-we-do
- 	padding: rem(70) rem(0)
- 	text-align: center
+//about
+.about-p-name 
+	font-family: 'Montserrat', sans-serif
+	text-transform: uppercase
 .about-header p
-    max-width: 100%
-    margin: 0 auto
-    padding: rem(10)
-
-.services-header, .about-header
+  max-width: 90%
+  margin: 0 auto
+  padding: rem(10)
+//padding 
+#about-us, #services, #what-we-do, .unique-header
+    padding: rem(50) rem(0)
+//text-align: center
+.services-header, .about-header, .what-do-header, .unique-header
     text-align: center
-
-//section2
+//name-standart
 .name-section-style-h2
 	font-family: 'Kaushan Script', cursive
 	font-weight: normal
 	color: $color-standart-section2
+	text-align: center
 .name-section-style-h1
 	font-family: 'Montserrat', sans-serif
 	font-weight: bold
+//counter
 .counter-item
 	font-family: 'Montserrat', sans-serif
 	font-weight: normal
-//section3
+//Amazing service
 .media-body h4
 	font-family: 'Montserrat', sans-serif
 	font-weight: normal
@@ -57,22 +58,19 @@
 	margin-left: rem(-50)
 	margin-bottom: rem(-48)
 
-//section4
-.unique-header
- 	padding: rem(50) rem(0)
- 	text-align: center
+//unique
 #unique-design
   	background: url(../img/bg2.jpg) no-repeat
   	background-position: center center
+  	margin-bottom: rem(30)
 .bg2-overlay
   	width: 100%
   	height: 100%
   	background: rgba(255, 255, 255, 0.8)	
 
-.unique-item 
- 	position: relative
- 	top: 60px
-
-	
-
-
+//what-we-do
+.what-do-header p
+ 	max-width: 90%
+ 	margin: 0 auto
+ 	padding: rem(10) rem(10) rem(50) rem(10)
+ 	line-height: 150%
