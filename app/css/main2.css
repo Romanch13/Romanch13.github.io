@@ -2273,6 +2273,25 @@ input[type="button"].btn-block {
   -webkit-transition: 0.5s;
   transition: 0.5s; }
 
+#scrollToTop {
+  width: 3.125rem;
+  height: 3.125rem;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  position: fixed;
+  bottom: 0.625rem;
+  right: 0.625rem;
+  text-indent: -624.9375rem;
+  display: block;
+  cursor: pointer;
+  z-index: 2;
+  background: #E74C3C url(../img/go-to-top.png) center center no-repeat; }
+
+#scrollToTop:hover {
+  text-decoration: none;
+  background-color: #F75C4C; }
+
 /** Bootstrap **/
 .fade {
   opacity: 0;

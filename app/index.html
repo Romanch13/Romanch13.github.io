@@ -331,6 +331,9 @@
 				<div class="unique-header wow zoomIn" data-wow-delay="0.3s">
 					<h2 class="name-section-style-h2">For all devices</h2>
 					<h1 class="name-section-style-h1">Unique design</h1>
+					<br>	
+						<hr class="hr-standart story">	
+					<br>
 				</div>
 				<div class="devices">
 					<img class="tablet wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.5s" src="img/feature11.png" alt="">	
@@ -343,7 +346,7 @@
 	<div class="container">
 		<div class="what-do-header text-md-center wow zoomIn" data-wow-delay="0.4s">
 			<h2 class="name-section-style-h2">Service</h2>
-			<h1 class="name-section-style-h1 text-uppercase m-x-auto">what we do</h1>
+			<h1 class="name-section-style-h1 text-uppercase">what we do</h1>
 			<br>
 			<hr class="hr-standart">
 			<br>
@@ -351,10 +354,9 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			</p>
 		</div>
-
-	</div>
-
+		</div>
 </section>
+<a href="#" id="scrollToTop">Go to Top</a>
 	<!--[if lIE 9]t>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -380,6 +382,21 @@
         live:         true        // default
     })
     wow.init();
+</script>
+<script >
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 200) {
+			$('#scrollToTop').fadeIn();
+		} else {
+			$('#scrollToTop').fadeOut();
+		}
+	});
+	/* Click event to scroll to top */
+	$('#scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+});
 </script>
 <script src="js/numcount.js"></script>
 </body>
