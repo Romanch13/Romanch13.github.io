@@ -582,14 +582,22 @@ dl.row > dd + dt {
 .devices {
   position: relative;
   text-align: center; }
-  .devices .tablet {
-    width: 23.75rem; }
-  .devices .mobile {
-    position: absolute;
-    bottom: -3.75rem;
-    left: 50%;
-    margin-left: 6.875rem;
-    width: 10.625rem; }
+
+.tablet {
+  width: 23.75rem; }
+
+.mobile {
+  position: absolute;
+  bottom: -3.75rem;
+  left: 50%;
+  margin-left: 6.875rem;
+  width: 10.625rem; }
+
+.media-1 {
+  color: #95e1d3;
+  font-size: 1.875rem;
+  margin-left: -1.25rem;
+  margin-bottom: -2.3125rem; }
 
 .about-us-single-img img {
   padding: 0.625rem;
@@ -3941,30 +3949,28 @@ base::-moz-progress-bar,
     font-size: 1.5625rem; } }
 
 @media only screen and (max-width: 768px) {
-  .Welcome-to-MoGo-p {
-    font-size: 2.5rem;
+  .Welcome-to-MoGo {
+    font-size: 2.5rem !important;
     line-height: 3.125rem !important; }
-  .Creative-Template-p {
-    font-size: 1.75rem;
-    line-height: 0.625rem !important; } }
+  .Creative-Template {
+    font-size: 1.75rem !important;
+    line-height: 0.625rem !important; }
+  .carousel-inner {
+    height: 400px; }
+  .caption {
+    top: 15% !important; }
+  .left-control, .right-control {
+    top: 70% !important; } }
 
-@media only screen and (max-width: 768px) {
-  #counter {
-    padding: 0.625rem 0rem 0.625rem 0rem; }
-  .counter-item {
-    width: 100%;
-    float: left;
-    padding: 0.625rem 0;
-    border-top: 0.0625rem solid #fff;
-    border-right: 0.0625rem solid #fff;
-    border-left: 0.0625rem solid #fff;
-    border-bottom: 0.0625rem solid #fff; }
-    .counter-item p {
-      font-size: 0.9375rem; } }
+#home-slider:hover .left-control {
+  left: 1.25rem !important; }
+
+#home-slider:hover .right-control {
+  right: 1.25rem !important; }
 
 @media only screen and (max-width: 768px) {
   .about-header p {
-    font-size: 1.0625rem; } }
+    text-align: justify; } }
 
 @media only screen and (max-width: 768px) {
   .media-body h4 {
@@ -3972,18 +3978,25 @@ base::-moz-progress-bar,
   .media-1 {
     text-align: center;
     margin-left: 0rem !important;
-    margin-bottom: 0rem !important; }
-  .media-body p {
-    text-align: justify;
-    font-size: 1.0625rem; } }
+    margin-bottom: 0rem !important; } }
 
 @media only screen and (max-width: 768px) {
   .devices .tablet {
     width: 12.5rem; }
   .devices .mobile {
-    bottom: -2.375rem;
+    bottom: -2.5rem;
     margin-left: 3.4375rem;
     width: 6.875rem; } }
+
+@media only screen and (max-width: 768px) {
+  .counter-item {
+    border: 0; }
+    .counter-item .number {
+      font-size: 25px; }
+    .counter-item .text {
+      font-size: 10px; }
+    .counter-item:first-child {
+      border: 0; } }
 
 .list-group {
   padding-left: 0;
@@ -4685,7 +4698,7 @@ button.close {
   transition-property: opacity;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50.625rem; }
+  height: 37.5rem; }
   .carousel-fade .carousel-inner .carousel-item:after {
     content: " ";
     position: absolute;
@@ -4709,7 +4722,7 @@ button.close {
 
 .left-control, .right-control {
   position: absolute;
-  top: 40.5%;
+  top: 52.2%;
   height: 3.125rem;
   width: 3.125rem;
   line-height: 3rem;
@@ -5235,20 +5248,22 @@ a.text-danger:focus, a.text-danger:hover {
   font-size: 1.875rem;
   font-weight: bold; }
 
-.Creative-Template-p {
+.Creative-Template {
   font-family: 'Kaushan Script', cursive;
   font-weight: normal;
-  color: #fff; }
+  color: #fff;
+  font-size: 3.125rem; }
 
-.Welcome-to-MoGo-p {
+.Welcome-to-MoGo {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   font-weight: bold;
-  line-height: 1em; }
+  line-height: 1em;
+  font-size: 5.3125rem; }
 
 .caption {
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 0;
   right: 0;
   z-index: 15;
@@ -5259,14 +5274,13 @@ a.text-danger:focus, a.text-danger:hover {
   text-transform: uppercase; }
 
 .about-header p {
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 0.625rem; }
+  font-size: 0.875rem;
+  margin: 1.5625rem 3.125rem; }
 
 #about-us, #services, #what-we-do, .unique-header {
   padding: 3.125rem 0rem; }
 
-.services-header, .about-header, .what-do-header, .unique-header {
+.services-header, .what-do-header, .unique-header {
   text-align: center; }
 
 .name-section-style-h2 {
@@ -5277,7 +5291,8 @@ a.text-danger:focus, a.text-danger:hover {
 
 .name-section-style-h1 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
 
 .counter-item {
   font-family: 'Montserrat', sans-serif;
@@ -5286,13 +5301,13 @@ a.text-danger:focus, a.text-danger:hover {
 .media-body h4 {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 0rem 1.5625rem; }
 
-.media-1 {
-  color: #95e1d3;
-  font-size: 2.5rem;
-  margin-left: -3.125rem;
-  margin-bottom: -3rem; }
+.media-body p {
+  font-size: 0.875rem;
+  margin: 1.5625rem 1.5625rem;
+  text-align: justify; }
 
 #unique-design {
   background: url(../img/bg2.jpg) no-repeat;
@@ -5305,7 +5320,8 @@ a.text-danger:focus, a.text-danger:hover {
   background: rgba(255, 255, 255, 0.8); }
 
 .what-do-header p {
-  max-width: 90%;
+  font-size: 0.9375rem;
+  max-width: 80%;
   margin: 0 auto;
   padding: 0.625rem 0.625rem 3.125rem 0.625rem;
   line-height: 150%; }

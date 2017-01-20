@@ -36,30 +36,29 @@
 		float: right
 		margin: rem(-25) rem(-35) 
 		font-size: rem(25)
+
 @media only screen and(max-width: 768px)
-	.Welcome-to-MoGo-p	
-		font-size: rem(40)
+	.Welcome-to-MoGo	
+		font-size: rem(40)!important
 		line-height: rem(50)!important
-	.Creative-Template-p
-		font-size: rem(28)
+	.Creative-Template
+		font-size: rem(28)!important
 		line-height: rem(10)!important
-   
-@media only screen and(max-width: 768px) 
-	#counter
-		padding: rem(10) rem(0) rem(10) rem(0)
-	.counter-item
-  		width: 100%
-  		float: left
-  		padding: rem(10) 0
-  		border-top: rem(1) solid $color-standart-section1
-  		border-right: rem(1) solid $color-standart-section1
-  		border-left: rem(1) solid $color-standart-section1
-  		border-bottom: rem(1) solid $color-standart-section1
-  		p
-    		font-size: rem(15)
+	.carousel-inner 
+		height: 400px
+	.caption
+		top: 15%!important
+	.left-control, .right-control
+    	top: 70%!important
+#home-slider:hover
+    .left-control
+      left: rem(20) !important
+    .right-control
+      right: rem(20) !important
 @media only screen and(max-width: 768px) 
     .about-header p
-        font-size: rem(17)
+        text-align: justify
+
 @media only screen and(max-width: 768px) 
 	.media-body h4
 		text-align: center
@@ -67,18 +66,25 @@
 		text-align: center
 		margin-left: rem(0)!important
 		margin-bottom: rem(0)!important
-	.media-body p
-		text-align: justify
-		font-size: rem(17)
+		
 @media only screen and(max-width: 768px) 
 	.devices
     .tablet
       width: rem(200)
     .mobile
-      bottom: rem(-38)
+      bottom: rem(-40)
       margin-left: rem(55)
       width: rem(110)
 
-	
-
-  		
+@media only screen and(max-width: 768px)
+  	.counter-item	
+  	 border: 0
+    .number
+      font-size: 25px
+    .text
+     font-size: 10px
+   	.counter-item
+   	&:first-child
+   	 border: 0
+  
+ 
