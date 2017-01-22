@@ -16,7 +16,7 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
+	<script type="text/javascript" src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
 	<script src="js/wow.min.js"></script>
 
@@ -48,9 +48,7 @@
 		});
 	});
 </script>
-</head>
-
-	<script type="text/javascript">
+<script type="text/javascript">
 		$(document).ready(function(){
 			var touch = $('#touch-menu');
 		    var menu = $('.nav');
@@ -65,8 +63,19 @@
 		            menu.removeAttr('style');
 		        }
 		    });
+			$('a[href^="#"]').click(function () { 
+ 				elementClick = $(this).attr("href");
+				destination = $(elementClick).offset().top;
+				{
+				$('html,body').animate( { scrollTop: destination }, 1500);
+				} 
+				return false;
+		   });
 		});
 </script>
+</head>
+	
+
 <body>
 	<section class="section-1">
 		<header class="clearfix navbar-fixed-top ">
@@ -101,7 +110,7 @@
 			</div>
 		</header>
 	</section>
-	<section id="home">
+	<section id="home" name="home">
 		<div id="home-slider" class="carousel clearfix  slide carousel-fade" data-ride="carousel">
 			<div class="carousel-inner"  role="listbox" >
 				<div class="carousel-item active" style="background-image: url(img/slider/slider3.jpg)">
@@ -159,24 +168,21 @@
 
 		</div>
 	</section>
-	<section id="about-us" class="text-md-center">
+	<section id="about-us" name="about-us" class="text-md-center">
 		<div class="container clearfix">
 			<div class="row">
 				<div class="about-header wow zoomIn">
 					<h3 class="name-section-style-h2">What we do</h3>
 					<h2 class="name-section-style-h1 text-uppercase">Story about us</h2>
-					<br>
 					<hr class="hr-standart story">
-					<br>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 					</p>
 				</div>
-				<div class="block-center">
-					<div class="about-us-content m-x-auto">
-						<div class="col-md-4 col-sm-6">
+					<div class="about-us-content ">
+						<div class="col-md-4 col-sm-6 ">
 							<div class="about-us-single wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
-								<div class="about-us-single-img">
+								<div class="about-us-single-img ">
 									<img src="img/about/about3.jpg" alt="about3"/>
 								</div>
 								<div class="about-us-single-img-overlay all_overlay">
@@ -218,11 +224,10 @@
 						</div>
 						<div class="col-sm-6 "></div>
 					</div>
-				</div>
 			</div>
 		</div>
 	</section>
-	<section id="counter" class="text-md-center text-uppercase wow fadeIn" data-wow-duration="2s" 
+	<section id="counter" name="counter" class="text-md-center text-uppercase wow fadeIn" data-wow-duration="2s" 
  data-wow-delay="0.2s">
 		<div class="container clearfix">
 			<div class="counter-item ">
@@ -247,15 +252,13 @@
 			</div>
 	</div>
 </section>
-
-	<section id="services">
+	<section id="services" name="service">
 		<div class="container">
 			<div class="services-header text-md-center wow zoomIn" data-wow-delay="0.4s">
 				<h3 class="name-section-style-h2">We work with</h3>
-				<h2 class="name-section-style-h1 text-uppercase">Amazing Services</h2>
-				<br>
+				<h3 class="name-section-style-h1 text-uppercase">Amazing Services</h3>
 				<hr class="hr-standart">
-				<br></div>
+				</div>
 			<div class="col-md-4 col-sm-6">
 				<div class="service-item wow fadeInLeft" data-wow-delay="0.3s">
 					<ul class="media-list">
@@ -351,34 +354,32 @@
 			</div>
 		</div>
 	</section>
-	<section id="unique-design" class="text-md-center">
+	<section id="unique-design" name="unique-design" class="text-md-center">
 		<div class="bg2-overlay">
 			<div class="container">
 				<div class="unique-header wow zoomIn" data-wow-duration="s" data-wow-delay="0.3s">
 					<h3 class="name-section-style-h2">For all devices</h3>
 					<h2 class="name-section-style-h1">Unique design</h2>
-					<br>
 					<hr class="hr-standart story"></div>
-				<div class="devices">
-					<img class="tablet wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.5s" src="img/feature11.png" alt="">
-					<img class="mobile wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s" src="img/feature2.png" alt=""></div>
+				<div class="devices wow flipInY" data-wow-duration="2s" data-wow-delay="0.5s">
+					<img class="tablet" src="img/feature11.png" alt="">
+					<img class="mobile" src="img/feature2.png" alt=""></div>
 			</div>
 		</div>
 	</section>
-	<section id="what-we-do">
+	<section id="what-we-do" name="what-we-do">
 		<div class="container">
 			<div class="what-do-header text-md-center wow zoomIn" data-wow-delay="0.4s">
 				<h3 class="name-section-style-h2">Service</h3>
 				<h2 class="name-section-style-h1 text-uppercase">what we do</h2>
-				<br>
 				<hr class="hr-standart">
-				<br>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				</p>
 			</div>
 		</div>
 	</section>
+
 	<!--[if lIE 9]t>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -405,8 +406,22 @@
     })
     wow.init();
 </script>
-
+<script type="text/javascript">
+		$(document).ready(function(){
+   			$('a[href*=#]').bind("click", function(e){
+			    elementClick = $(this).attr("href");
+				destination = $(elementClick).offset().top;
+				if($.browser.safari){
+				$('body').animate( { scrollTop: destination }, 1000);
+				} else {
+			    	$('html').animate( { scrollTop: destination }, 1000);
+				}
+				return false;
+		   });
+		});
+	</script>
 	<script src="js/numcount.js"></script>
-<div id = "toTop"> <i class="fa fa-arrow-up m-x-auto" aria-hidden="true"></i>  </div>
+	<script type="text/javascript" src="libs/jquery/jquery-1.11.2.min.js"></script>	
+<div id = "toTop"> <i class="fa fa-arrow-up m-x-auto" aria-hidden="true"></i></div>
 </body>
 </html>

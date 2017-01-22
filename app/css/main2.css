@@ -607,9 +607,6 @@ dl.row > dd + dt {
   -webkit-border-radius: 0.125rem;
   border-radius: 0.125rem; }
 
-.block-center {
-  text-align: center; }
-
 .all_overlay {
   background: rgba(219, 116, 117, 0.75);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(219, 116, 117, 0.6)), color-stop(24%, rgba(220, 132, 118, 0.75)), color-stop(42%, rgba(224, 150, 121, 0.75)), color-stop(42%, rgba(222, 151, 119, 0.75)), color-stop(45%, rgba(221, 155, 120, 0.75)), color-stop(55%, rgba(225, 167, 121, 0.75)), color-stop(57%, rgba(222, 168, 121, 0.75)), color-stop(61%, rgba(225, 171, 124, 0.75)), color-stop(62%, rgba(224, 173, 120, 0.75)), color-stop(68%, rgba(225, 180, 125, 0.75)), color-stop(70%, rgba(226, 181, 122, 0.75)), color-stop(77%, rgba(224, 189, 125, 0.75)), color-stop(79%, rgba(227, 189, 124, 0.75)), color-stop(84%, rgba(225, 195, 123, 0.75)), to(rgba(228, 205, 125, 0.75)));
@@ -641,7 +638,8 @@ dl.row > dd + dt {
       padding-top: 25%;
       opacity: 0;
       -webkit-transition: all 0.6s;
-      transition: all 0.6s; }
+      transition: all 0.6s;
+      text-align: center; }
     .about-us-content .about-us-single:hover .about-us-single-img-overlay {
       opacity: 1; }
     .about-us-content .about-us-single .about-us-single-img-overlay a {
@@ -4020,6 +4018,10 @@ base::-moz-progress-bar,
       top: -1px;
       right: 7px; } }
 
+@media only screen and (max-width: 768px) {
+  #about-us, #services, #what-we-do, .unique-header {
+    padding: 70px 0 0 0 !important; } }
+
 .list-group {
   padding-left: 0;
   margin-bottom: 0; }
@@ -5296,11 +5298,10 @@ a.text-danger:focus, a.text-danger:hover {
   text-transform: uppercase; }
 
 .about-header p {
-  font-size: 0.875rem;
   margin: 1.5625rem 3.125rem; }
 
 #about-us, #services, #what-we-do, .unique-header {
-  padding: 3.125rem 0rem; }
+  padding: 100px 0 50px 0; }
 
 .services-header, .what-do-header, .unique-header {
   text-align: center; }
@@ -5327,7 +5328,6 @@ a.text-danger:focus, a.text-danger:hover {
   margin: 0rem 1.5625rem; }
 
 .media-body p {
-  font-size: 0.875rem;
   margin: 1.5625rem 1.5625rem;
   text-align: justify; }
 
@@ -5342,14 +5342,14 @@ a.text-danger:focus, a.text-danger:hover {
   background: rgba(255, 255, 255, 0.8); }
 
 .what-do-header p {
-  font-size: 0.875rem;
   max-width: 80%;
   margin: 0 auto;
   padding: 0.625rem 0.625rem 3.125rem 0.625rem;
   line-height: 150%; }
 
 p {
-  color: #999999; }
+  color: #999999;
+  font-size: 0.875rem; }
 
 .hr-1 {
   border: 0.125rem solid #fff;
@@ -5357,7 +5357,9 @@ p {
 
 .hr-standart {
   border: 0.125rem solid #f38181;
-  width: 5rem; }
+  width: 5rem;
+  margin-bottom: 2.1875rem;
+  margin-top: 2.1875rem; }
 
 .hr-section {
   border: 0.0625rem solid #dddddd; }
