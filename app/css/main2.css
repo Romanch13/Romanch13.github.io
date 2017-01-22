@@ -4018,10 +4018,6 @@ base::-moz-progress-bar,
       top: -1px;
       right: 7px; } }
 
-@media only screen and (max-width: 768px) {
-  #about-us, #services, #what-we-do, .unique-header {
-    padding: 70px 0 0 0 !important; } }
-
 .list-group {
   padding-left: 0;
   margin-bottom: 0; }
@@ -5301,7 +5297,7 @@ a.text-danger:focus, a.text-danger:hover {
   margin: 1.5625rem 3.125rem; }
 
 #about-us, #services, #what-we-do, .unique-header {
-  padding: 100px 0 50px 0; }
+  padding: 3.125rem 0rem; }
 
 .services-header, .what-do-header, .unique-header {
   text-align: center; }
