@@ -3,16 +3,16 @@
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold
 	background-color: transparent
-	border: 3px solid 
-	border-radius: 0px
-	padding: 5px 25px
+	border: rem(3) solid 
+	border-radius: rem(0)
+	padding: rem(5) rem(25)
 	font-size: rem(14)
 	line-height: 1.5
 	color: $color-standart-section1
 	transition: 0.5s
 .btn:focus, .btn.focus, .btn:active:focus, .btn.active:focus
     outline: none
-    outline-offset: -2px
+    outline-offset: rem(-2)
 .btn-section1:hover
 	color: $section-1-bgc
 	transition: 0.5s
@@ -36,12 +36,14 @@
    height: rem(35)
    color: black
    text-align: center
+   transition: all 0.7s ease
 #toTop
  &:hover
-  background-color: $scroll-bg-hover
+  background: $scroll-bg-hover
   transition: all 0.7s ease
   -moz-opacity: 1
   opacity: 1
-  i 
+  i
    color: white 
    transition: all 0.7s ease
+  

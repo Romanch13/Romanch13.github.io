@@ -2264,10 +2264,10 @@ input[type="button"].btn-block {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   background-color: transparent;
-  border: 3px solid;
-  -webkit-border-radius: 0px;
-  border-radius: 0px;
-  padding: 5px 25px;
+  border: 0.1875rem solid;
+  -webkit-border-radius: 0rem;
+  border-radius: 0rem;
+  padding: 0.3125rem 1.5625rem;
   font-size: 0.875rem;
   line-height: 1.5;
   color: #fff;
@@ -2276,7 +2276,7 @@ input[type="button"].btn-block {
 
 .btn:focus, .btn.focus, .btn:active:focus, .btn.active:focus {
   outline: none;
-  outline-offset: -2px; }
+  outline-offset: -0.125rem; }
 
 .btn-section1:hover {
   color: #fce38a;
@@ -2303,10 +2303,12 @@ input[type="button"].btn-block {
     width: 2.1875rem;
     height: 2.1875rem;
     color: black;
-    text-align: center; }
+    text-align: center;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease; }
 
 #toTop:hover {
-  background-color: #f31d36;
+  background: #dc5757;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
   -moz-opacity: 1;
@@ -3965,18 +3967,18 @@ base::-moz-progress-bar,
     font-size: 1.5625rem; } }
 
 @media only screen and (max-width: 768px) {
-  .Welcome-to-MoGo {
-    font-size: 2.5rem !important;
-    line-height: 3.125rem !important; }
-  .Creative-Template {
-    font-size: 1.75rem !important;
-    line-height: 0.625rem !important; }
   .carousel-inner {
-    height: 400px; }
-  .caption {
-    top: 15% !important; }
-  .left-control, .right-control {
-    top: 70% !important; } }
+    height: 25rem; }
+    .carousel-inner .carousel-item .caption {
+      top: 15%; }
+      .carousel-inner .carousel-item .caption .Welcome-to-MoGo {
+        font-size: 2.5rem;
+        line-height: 2.5rem; }
+      .carousel-inner .carousel-item .caption .Creative-Template {
+        font-size: 1.75rem;
+        line-height: 1.875rem; }
+  .carousel-fade .left-control, .carousel-fade .right-control {
+    top: 70%; } }
 
 @media only screen and (max-width: 768px) {
   .about-header p {
@@ -3987,8 +3989,8 @@ base::-moz-progress-bar,
     text-align: center; }
   .media-1 {
     text-align: center;
-    margin-left: 0rem !important;
-    margin-bottom: 0rem !important; } }
+    margin-left: 0rem;
+    margin-bottom: 0rem; } }
 
 @media only screen and (max-width: 768px) {
   .devices .tablet {
@@ -4001,12 +4003,22 @@ base::-moz-progress-bar,
 @media only screen and (max-width: 768px) {
   .counter-item {
     border: 0; }
-    .counter-item .number {
-      font-size: 25px; }
-    .counter-item .text {
-      font-size: 9px; }
     .counter-item:first-child {
-      border: 0; } }
+      border-left: 0; }
+    .counter-item .number {
+      font-size: 1.5625rem; }
+    .counter-item .text {
+      font-size: 0.625rem; }
+  #toTop {
+    right: 0.4375rem;
+    width: 2.5rem;
+    height: 2.5rem; }
+    #toTop i {
+      font-size: 1.25rem;
+      line-height: 0rem;
+      position: relative;
+      top: -1px;
+      right: 7px; } }
 
 .list-group {
   padding-left: 0;
