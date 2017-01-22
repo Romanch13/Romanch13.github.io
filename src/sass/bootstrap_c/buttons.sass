@@ -16,19 +16,32 @@
 .btn-section1:hover
 	color: $section-1-bgc
 	transition: 0.5s
-#scrollToTop
-  	width: rem(50)
-  	height: rem(50)
-  	border-radius: 50%
-  	text-align: center
-  	position: fixed
-  	bottom: rem(10)
-  	right: rem(10)
-  	text-indent: rem(-9999)
-  	display: block
-  	cursor: pointer
-  	z-index: 2
-  	background: $scrollTop url(../img/go-to-top.png) center center no-repeat
-#scrollToTop:hover
-  	text-decoration: none
-  	background-color: $scrollTop-hover
+//scrollTop
+#toTop
+  border-radius: 50%
+  background: transparent
+  padding: rem(10)
+  position: fixed
+  bottom: rem(50)
+  right: rem(25)
+  cursor: pointer
+  display: none
+  transition: all 0.7s ease
+  opacity: 0.5
+  -moz-opacity: 0.5
+  i
+   line-height: rem(35)
+   font-size: rem(30)
+   width: rem(35)
+   height: rem(35)
+   color: black
+   text-align: center
+#toTop
+ &:hover
+  background-color: $scroll-bg-hover
+  transition: all 0.7s ease
+  -moz-opacity: 1
+  opacity: 1
+  i 
+   color: white 
+   transition: all 0.7s ease
