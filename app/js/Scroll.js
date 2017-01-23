@@ -40,12 +40,3 @@ $(document).ready(function(){
 		    });
 		
 		});
-//button carousel scroll
-	$(document).ready(function() {
-   
-    $('#about-us').click(function(){
-        $('html, body').animate({scrollTop:$(document).height(500)}, 'slow');
-        return false;
-    });
-
-});
