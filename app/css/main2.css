@@ -1829,10 +1829,11 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .wrapper p {
   border: 0.0625rem solid #dddddd;
   background: #FFFFF7;
-  padding: 5px;
+  padding: 0.625rem;
   margin: -1rem 0rem 0.625rem 0rem;
   cursor: default;
-  text-align: justify; }
+  text-align: justify;
+  font-style: italic; }
 
 .wrapper .stc {
   font-size: 2.5rem;
