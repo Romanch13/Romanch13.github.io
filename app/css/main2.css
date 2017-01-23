@@ -1828,7 +1828,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .wrapper p {
   border: 0.0625rem solid #dddddd;
-  background: #FFFFF7;
+  background-color: #fff;
   padding: 0.625rem;
   margin: -1rem 0rem 0.625rem 0rem;
   cursor: default;
