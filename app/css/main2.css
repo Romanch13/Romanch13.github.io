@@ -650,6 +650,11 @@ dl.row > dd + dt {
       .about-us-content .about-us-single .about-us-single-img-overlay a i {
         font-size: 1.5625rem; }
 
+.skill-img img {
+  max-width: 100%;
+  padding: 0.9375rem;
+  border: 0.0625rem solid #dddddd; }
+
 code,
 kbd,
 pre,
@@ -1807,6 +1812,39 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   font-size: 0.875rem;
   color: #fff;
   margin-top: 0.625rem; }
+
+.wrapper {
+  max-width: 100%; }
+
+.wrapper h1 {
+  background: white;
+  border: 0.0625rem solid #dddddd;
+  color: #333333;
+  font-size: 1.5rem;
+  padding: 1.25rem 0.625rem 1.25rem 0.625rem;
+  text-transform: uppercase;
+  margin-bottom: 0.9375rem;
+  cursor: default; }
+
+.wrapper p {
+  border: 0.0625rem solid #dddddd;
+  background: #FFFFF7;
+  padding: 5px;
+  margin: -1rem 0rem 0.625rem 0rem;
+  cursor: default;
+  text-align: justify; }
+
+.wrapper .stc {
+  font-size: 2.5rem;
+  color: #95e1d3;
+  margin-right: 0.9375rem;
+  margin-top: -0.625rem;
+  cursor: pointer; }
+
+.wrapper i {
+  font-size: 1.5rem;
+  color: #95e1d3;
+  margin-right: 0.9375rem; }
 
 .btn {
   display: inline-block;
