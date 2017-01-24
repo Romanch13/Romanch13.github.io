@@ -1815,7 +1815,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   margin-top: 0.625rem; }
 
 .wrapper {
-  max-width: 100%; }
+  max-width: 100%;
+  pointer-events: none; }
 
 .wrapper h1 {
   background: white;
@@ -1831,7 +1832,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   border: 0.0625rem solid #dddddd;
   background-color: #fff;
   padding: 0.625rem;
-  margin: -1rem 0rem 0.625rem 0rem;
+  margin: -1rem 0rem 1rem 0rem;
   cursor: default;
   text-align: justify;
   font-style: italic; }
@@ -1841,12 +1842,13 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   color: #95e1d3;
   margin-right: 0.9375rem;
   margin-top: -0.625rem;
-  cursor: pointer; }
+  cursor: pointer;
+  pointer-events: auto; }
 
 .wrapper i {
   font-size: 1.5rem;
   color: #95e1d3;
-  margin-right: 0.9375rem; }
+  margin-right: 1.125rem; }
 
 .btn {
   display: inline-block;
