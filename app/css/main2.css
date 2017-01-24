@@ -4021,8 +4021,10 @@ base::-moz-progress-bar,
     top: 70%; } }
 
 @media only screen and (max-width: 768px) {
-  .about-header p {
-    text-align: justify; } }
+  .about-header, .what-do-header p {
+    text-align: justify; }
+  .media-body p {
+    margin: 0.625rem auto !important; } }
 
 @media only screen and (max-width: 768px) {
   .media-body h4 {
@@ -4762,7 +4764,7 @@ button.close {
   transition-property: opacity;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 37.5rem; }
+  height: 39.375rem; }
   .carousel-fade .carousel-inner .carousel-item:after {
     content: " ";
     position: absolute;
@@ -5338,7 +5340,8 @@ a.text-danger:focus, a.text-danger:hover {
   text-transform: uppercase; }
 
 .about-header p {
-  margin: 1.5625rem 3.125rem; }
+  margin: 0.625rem auto;
+  max-width: 90%; }
 
 #about-us, #services, #what-we-do, .unique-header {
   padding: 3.125rem 0rem; }
@@ -5382,10 +5385,8 @@ a.text-danger:focus, a.text-danger:hover {
   background: rgba(255, 255, 255, 0.8); }
 
 .what-do-header p {
-  max-width: 80%;
-  margin: 0 auto;
-  padding: 0.625rem 0.625rem 3.125rem 0.625rem;
-  line-height: 150%; }
+  margin: 0.625rem auto;
+  max-width: 90%; }
 
 p {
   color: #999999;
@@ -5403,6 +5404,80 @@ p {
 
 .hr-section {
   border: 0.0625rem solid #dddddd; }
+
+#slider2 {
+  padding: 70px 0px;
+  background: #f8f8f8; }
+
+.single-testimonial h3 {
+  width: 100px;
+  font-family: Brush Script Std;
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 230px; }
+  .single-testimonial h3:before {
+    content: "";
+    background: #e88482;
+    width: 70px;
+    height: 3px;
+    margin-left: -80px;
+    margin-top: 40px;
+    position: absolute; }
+
+.single-team {
+  font-size: 15px; }
+
+.single-testimonial img {
+  max-width: 100px;
+  float: left;
+  margin-right: 50px;
+  border: 1px solid #95e1d3;
+  padding: 15px; }
+
+.single-testimonial p {
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: justify; }
+
+.single-team h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-top: 50px;
+  text-transform: uppercase; }
+
+.left i, .right i {
+  position: absolute;
+  top: 40px;
+  height: 3.125rem;
+  width: 3.125rem;
+  line-height: 2.8125rem;
+  font-size: 1.875rem;
+  color: black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.leftl:focus, .right:focus {
+  color: black; }
+
+.left i {
+  left: -15.625rem; }
+
+.right i {
+  right: -15.625rem; }
+
+.left:hover, .rightl:hover {
+  color: black; }
+
+#slider2:hover .left i {
+  left: -4.375rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#slider2:hover .right i {
+  right: -4.375rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

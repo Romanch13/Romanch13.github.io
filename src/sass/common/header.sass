@@ -11,3 +11,69 @@
 .hr-section
     border: rem(1) solid $border-img
 
+#slider2
+  padding: 70px 0px
+  background: #f8f8f8
+
+.single-testimonial h3
+  width: 100px
+  font-family: Brush Script Std
+  margin-top: 20px
+  text-align: left
+  margin-left: 230px
+  &:before
+    content: ""
+    background: #e88482
+    width: 70px
+    height: 3px
+    margin-left: -80px
+    margin-top: 40px
+    position: absolute
+
+.single-team
+  font-size: 15px
+
+.single-testimonial
+  img
+    max-width: 100px
+    float: left
+    margin-right: 50px
+    border: 1px solid #95e1d3
+    padding: 15px
+  p
+    max-width: 90%
+    margin: 0 auto
+    font-size: 18px
+    text-align: justify
+
+.single-team h2
+  font-size: 16px
+  margin-bottom: 5px
+  margin-top: 50px
+  text-transform: uppercase
+
+.left i, .right i
+  position: absolute
+  top: 40px
+  height: rem(50) 
+  width: rem(50) 
+  line-height: rem(45) 
+  font-size: rem(30) 
+  color: black
+  transition: all 0.3s ease 
+.leftl:focus, .right:focus
+    color: black
+.left i
+    left: rem(-250) 
+.right i
+    right: rem(-250) 
+.left:hover, .rightl:hover
+  color: black
+#slider2:hover
+    .left i
+      left: rem(-70) 
+      transition: all 0.3s ease
+    .right i
+      right: rem(-70)
+      transition: all 0.3s ease 
+      
