@@ -653,7 +653,8 @@ dl.row > dd + dt {
 .skill-img img {
   max-width: 100%;
   padding: 0.9375rem;
-  border: 0.0625rem solid #dddddd; }
+  border: 0.0625rem solid #dddddd;
+  margin: 0rem 0rem 1.25rem 0rem; }
 
 code,
 kbd,
