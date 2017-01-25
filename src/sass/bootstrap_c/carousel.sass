@@ -61,3 +61,53 @@
     .right-control
       right: rem(50) 
 
+#slider2
+  padding: rem(70) rem(0)  
+  background: #f8f8f8
+  text-align: center
+.single-slide h3
+  font-family: 'Kaushan Script', cursive
+  font-weight: normal
+  margin-top: rem(20)
+  text-align: left
+  margin-left: rem(230)
+  &:before
+    content: ""
+    background: $hr-color-standart
+    width: rem(70)
+    height: rem(3)
+    margin-left: rem(-80)
+    margin-top: rem(15)
+    position: absolute
+
+.single-slide p
+    max-width: 100%
+    margin: rem(0) rem(20) rem(0) rem(0)
+    font-size: rem(15)
+    text-align: justify
+    font-style: italic
+
+.single-slide-img
+    max-width: rem(120)
+    float: left
+    margin-right: rem(15)
+    border: rem(1) solid $box-shadow-img-section2
+    padding: rem(5) rem(5) 
+.carousel-indicators
+    top: rem(60)
+.carousel-indicators li
+  position: relative
+  top: rem(90)
+  display: inline-block
+  width: rem(50)
+  height: rem(0)
+  border: rem(2) solid black
+  opacity: 0.3
+  margin: 0
+.carousel-indicators .active
+  position: relative
+  width: rem(50)
+  height: rem(0)
+  border: rem(2) solid $hr-color-standart
+  opacity: 1
+  margin: 0
