@@ -17,7 +17,9 @@
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<script type="text/javascript" src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="js/menu-jquery.js"></script>
 	<script src="js/Scroll.js"></script>
+	<script src="js/accordeon.js"></script>
 	<script src="js/wow.min.js"></script>
 
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
@@ -33,29 +35,6 @@
 	<noscript>
 		<link rel="stylesheet" type="text/css" href="css/fonts.min.css">
 		<link rel="stylesheet" type="text/css" href="css/main2.css"></noscript>
-<script type="text/javascript">
-	$(document).ready(function() {
-  
- $('.wrapper>.prokrutka').not(':first-of-type').hide();
- 
-  
-  $('.wrapper>h1').click(function() {
-    
-    var findArticle = $(this).next();
-    var findWrapper = $(this).closest('.wrapper');
-    
-    if (findArticle.is(':visible')) {
-      findArticle.slideUp('fast');
-    }
-    else {
-      findWrapper.find('>.prokrutka').slideUp('fast');
-      findArticle.slideDown('fast');
-    }
-  });
-  
-});
-</script>
-
 </head>
 <body>
 	<section class="section-1">
