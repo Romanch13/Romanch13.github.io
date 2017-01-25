@@ -4074,7 +4074,11 @@ base::-moz-progress-bar,
 
 @media only screen and (max-width: 768px) {
   .single-slide h3 {
-    display: none; } }
+    display: none; }
+  .carousel-indicators {
+    top: 9.375rem; }
+  #slider2 {
+    height: 300px; } }
 
 .list-group {
   padding-left: 0;
@@ -4833,8 +4837,8 @@ button.close {
   right: 3.125rem; }
 
 #slider2 {
-  padding: 4.375rem 0rem;
-  background: #f8f8f8;
+  padding: 3.125rem 0rem;
+  background: #f9f9f9;
   text-align: center; }
 
 .single-slide h3 {
@@ -4866,26 +4870,25 @@ button.close {
   border: 0.0625rem solid #95e1d3;
   padding: 0.3125rem 0.3125rem; }
 
-.carousel-indicators {
-  top: 3.75rem; }
-
 .carousel-indicators li {
   position: relative;
-  top: 5.625rem;
+  top: 3.75rem;
   display: inline-block;
   width: 3.125rem;
-  height: 0rem;
+  height: 0.625rem;
   border: 0.125rem solid black;
+  background: black;
   opacity: 0.3;
   margin: 0; }
 
 .carousel-indicators .active {
   position: relative;
   width: 3.125rem;
-  height: 0rem;
+  height: 0.625rem;
   border: 0.125rem solid #f38181;
   opacity: 1;
-  margin: 0; }
+  margin: 0;
+  background: #f38181; }
 
 /** Bootstrap **/
 .bg-inverse {
