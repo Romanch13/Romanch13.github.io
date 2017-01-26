@@ -572,16 +572,19 @@ dl.row > dd + dt {
   color: #fff;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+    transition--webkit-transition: all 0.3s ease;
+    transition--o-transition: all 0.3s ease; }
 
 .logo a:hover {
   color: #fce38a;
   -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+    transition--webkit-transition: all 0.3s ease;
+    transition--o-transition: all 0.3s ease; }
 
 .devices {
-  position: relative;
-  text-align: center; }
+  position: relative; }
 
 .tablet {
   width: 23.75rem; }
@@ -618,12 +621,15 @@ dl.row > dd + dt {
   width: 100%; }
   .about-us-content .about-us-single {
     position: relative;
-    -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     margin: 0.9375rem; }
     .about-us-content .about-us-single:hover {
       -webkit-box-shadow: 0.625rem 0.625rem 0rem 0rem #95e1d3;
-      box-shadow: 0.625rem 0.625rem 0rem 0rem #95e1d3; }
+      box-shadow: 0.625rem 0.625rem 0rem 0rem #95e1d3;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
     .about-us-content .about-us-single .about-us-single-img img {
       width: 100%;
       height: 100%; }
@@ -637,9 +643,9 @@ dl.row > dd + dt {
       color: #fff;
       padding-top: 25%;
       opacity: 0;
-      -webkit-transition: all 0.6s;
-      transition: all 0.6s;
-      text-align: center; }
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s; }
     .about-us-content .about-us-single:hover .about-us-single-img-overlay {
       opacity: 1; }
     .about-us-content .about-us-single .about-us-single-img-overlay a {
@@ -655,6 +661,53 @@ dl.row > dd + dt {
   padding: 0.9375rem;
   border: 0.0625rem solid #dddddd;
   margin: 0rem 0rem 1.25rem 0rem; }
+
+.team-content .team {
+  margin-bottom: 1.875rem; }
+  .team-content .team .team-img {
+    position: relative;
+    margin: 0.625rem; }
+    .team-content .team .team-img img {
+      width: 100%;
+      height: 100%; }
+  .team-content .team .team-img:hover .team-overlay {
+    opacity: 1;
+    -webkit-box-shadow: 0.625rem 0.625rem 0rem 0rem #95e1d3;
+    box-shadow: 0.625rem 0.625rem 0rem 0rem #95e1d3;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s; }
+  .team-content .team .team-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 55%;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    opacity: 0; }
+    .team-content .team .team-overlay a i {
+      width: 3.125rem;
+      height: 3.125rem;
+      font-size: 1.875rem;
+      line-height: 3.125rem;
+      color: #f38181;
+      background: #fce38a;
+      -webkit-transition: 0.6s;
+      transition: 0.6s; }
+    .team-content .team .team-overlay a:hover i {
+      color: #fff;
+      background: #f38181; }
+
+.team-img img {
+  padding: 0.625rem;
+  border: 0.0625rem solid #dddddd;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-border-radius: 0.125rem;
+  border-radius: 0.125rem; }
 
 code,
 kbd,
@@ -4029,7 +4082,7 @@ base::-moz-progress-bar,
     top: 70%; } }
 
 @media only screen and (max-width: 768px) {
-  .about-header, .what-do-header p {
+  .about-header p, .what-do-header p, .head-title p {
     text-align: justify; }
   .media-body p {
     margin: 0.625rem auto !important; } }
@@ -4074,11 +4127,19 @@ base::-moz-progress-bar,
 
 @media only screen and (max-width: 768px) {
   .single-slide h3 {
-    display: none; }
+    font-size: 1.25rem; }
   .carousel-indicators {
     top: 9.375rem; }
   #slider2 {
-    height: 300px; } }
+    height: 18.75rem; } }
+
+@media only screen and (max-width: 768px) {
+  .item-img {
+    margin: 0px 129px 0px 129px !important; } }
+
+@media only screen and (max-width: 543px) {
+  .item-img {
+    margin: 0 !important; } }
 
 .list-group {
   padding-left: 0;
@@ -4815,8 +4876,9 @@ button.close {
   font-size: 1.5rem;
   color: #fff;
   text-align: center;
+  transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  -o-transition: all 0.5s ease; }
 
 .left-control:focus, .right-control:focus {
   color: #fff; }
@@ -4838,37 +4900,34 @@ button.close {
 
 #slider2 {
   padding: 3.125rem 0rem;
-  background: #f9f9f9;
-  text-align: center; }
+  background: #f9f9f9; }
 
 .single-slide h3 {
   font-family: 'Kaushan Script', cursive;
   font-weight: normal;
-  margin-top: 1.25rem;
+  margin-top: 0.9375rem;
   text-align: left;
-  margin-left: 14.375rem; }
+  margin-left: 11.875rem; }
   .single-slide h3:before {
     content: "";
     background: #f38181;
-    width: 4.375rem;
+    width: 3.125rem;
     height: 0.1875rem;
-    margin-left: -5rem;
-    margin-top: 0.9375rem;
-    position: absolute; }
+    position: absolute;
+    margin-top: 0.75rem;
+    margin-left: -3.4375rem; }
 
 .single-slide p {
   max-width: 100%;
   margin: 0rem 1.25rem 0rem 0rem;
   font-size: 0.9375rem;
-  text-align: justify;
   font-style: italic; }
 
 .single-slide-img {
   max-width: 7.5rem;
   float: left;
   margin-right: 0.9375rem;
-  border: 0.0625rem solid #95e1d3;
-  padding: 0.3125rem 0.3125rem; }
+  border: 0.125rem solid #95e1d3; }
 
 .carousel-indicators li {
   position: relative;
@@ -5413,7 +5472,7 @@ a.text-danger:focus, a.text-danger:hover {
   margin: 0.625rem auto;
   max-width: 90%; }
 
-#about-us, #services, #what-we-do, .unique-header {
+#about-us, #services, #what-we-do, .unique-header, .head-title {
   padding: 3.125rem 0rem; }
 
 .services-header, .what-do-header, .unique-header {
@@ -5461,6 +5520,17 @@ a.text-danger:focus, a.text-danger:hover {
 p {
   color: #999999;
   font-size: 0.875rem; }
+
+.single_team_content h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal; }
+
+.head-title p {
+  max-width: 90%;
+  margin: -0.625rem auto; }
+
+.team-content p {
+  font-style: italic; }
 
 .hr-1 {
   border: 0.125rem solid #fff;

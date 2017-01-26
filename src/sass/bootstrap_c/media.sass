@@ -53,7 +53,7 @@
 	 .left-control, .right-control
        top: 70%
 @media only screen and(max-width: 768px) 
-    .about-header, .what-do-header p
+    .about-header p, .what-do-header p, .head-title p
         text-align: justify
     .media-body p
        margin: rem(10) auto!important
@@ -97,9 +97,15 @@
   	 	float: right	
 @media only screen and(max-width: 768px)
 	.single-slide h3
-		 display: none
+		font-size: rem(20)
 	.carousel-indicators
 		top: rem(150)
 	#slider2
- 		height: 300px
+ 		height: rem(300)
 	
+@media only screen and (max-width: 768px)
+	.item-img
+   	  	margin: 0px 129px 0px 129px!important
+@media only screen and (max-width: 543px)
+	.item-img 
+		margin: 0!important
