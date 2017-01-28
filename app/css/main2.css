@@ -1867,6 +1867,20 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   color: #fff;
   margin-top: 0.625rem; }
 
+#our-partner {
+  background: #ececec; }
+  #our-partner a {
+    display: block;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    margin: 0.625rem; }
+    #our-partner a:hover {
+      -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1);
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
+
 .btn {
   display: inline-block;
   font-weight: normal;
@@ -5464,7 +5478,7 @@ a.text-danger:focus, a.text-danger:hover {
   margin: 0.625rem auto;
   max-width: 90%; }
 
-#about-us, #services, #what-we-do, #our-partner, .unique-header {
+#about-us, #services, #what-we-do, #our-partner, #works, .unique-header {
   padding: 3.125rem 0rem; }
 
 .services-header, .what-do-header, .unique-header {
@@ -5543,20 +5557,6 @@ p {
 .hr-section {
   border: 0.0625rem solid #dddddd;
   margin: 0rem 0rem 2.1875rem 0rem; }
-
-#our-partner {
-  background: #ececec; }
-  #our-partner a {
-    display: block;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    margin: 0.625rem; }
-    #our-partner a:hover {
-      -webkit-transform: scale(1.1, 1.1);
-      -ms-transform: scale(1.1, 1.1);
-      transform: scale(1.1, 1.1);
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
