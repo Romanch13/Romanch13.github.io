@@ -1867,50 +1867,6 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   color: #fff;
   margin-top: 0.625rem; }
 
-.wrapper {
-  max-width: 100%;
-  pointer-events: none; }
-
-.wrapper h1 {
-  background: white;
-  border: 0.0625rem solid #dddddd;
-  color: #333333;
-  font-size: 1.5rem;
-  padding: 1.25rem 0.625rem 1.25rem 0.625rem;
-  text-transform: uppercase;
-  margin-bottom: 0.9375rem;
-  cursor: default; }
-
-.wrapper p {
-  background-color: #fff;
-  margin: 0.625rem 0.625rem;
-  max-width: 94%;
-  cursor: default;
-  text-align: justify;
-  font-style: italic; }
-
-.wrapper .stc {
-  font-size: 2.5rem;
-  color: #95e1d3;
-  margin-right: 0.9375rem;
-  margin-top: -0.625rem;
-  cursor: pointer;
-  pointer-events: auto; }
-
-.wrapper i {
-  font-size: 1.5rem;
-  color: #95e1d3;
-  margin-right: 1.125rem; }
-
-.prokrutka {
-  height: 8.625rem;
-  width: 100%;
-  border: 0.0625rem solid #dddddd;
-  overflow-y: scroll;
-  pointer-events: auto;
-  margin: -1rem 0rem 1rem 0rem;
-  cursor: pointer; }
-
 .btn {
   display: inline-block;
   font-weight: normal;
@@ -2729,6 +2685,50 @@ input[type="button"].btn-block {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
+
+.wrapper {
+  max-width: 100%;
+  pointer-events: none; }
+
+.wrapper h1 {
+  background: white;
+  border: 0.0625rem solid #dddddd;
+  color: #333333;
+  font-size: 1.5rem;
+  padding: 1.25rem 0.625rem 1.25rem 0.625rem;
+  text-transform: uppercase;
+  margin-bottom: 0.9375rem;
+  cursor: default; }
+
+.wrapper p {
+  background-color: #fff;
+  margin: 0.625rem 0.625rem;
+  max-width: 94%;
+  cursor: default;
+  text-align: justify;
+  font-style: italic; }
+
+.wrapper .stc {
+  font-size: 2.5rem;
+  color: #95e1d3;
+  margin-right: 0.9375rem;
+  margin-top: -0.625rem;
+  cursor: pointer;
+  pointer-events: auto; }
+
+.wrapper i {
+  font-size: 1.5rem;
+  color: #95e1d3;
+  margin-right: 1.125rem; }
+
+.prokrutka {
+  height: 8.625rem;
+  width: 100%;
+  border: 0.0625rem solid #dddddd;
+  overflow-y: scroll;
+  pointer-events: auto;
+  margin: -1rem 0rem 1rem 0rem;
+  cursor: pointer; }
 
 .input-group {
   position: relative;
@@ -4133,14 +4133,6 @@ base::-moz-progress-bar,
   #slider2 {
     height: 18.75rem; } }
 
-@media only screen and (max-width: 768px) {
-  .item-img {
-    margin: 0px 129px 0px 129px !important; } }
-
-@media only screen and (max-width: 543px) {
-  .item-img {
-    margin: 0 !important; } }
-
 .list-group {
   padding-left: 0;
   margin-bottom: 0; }
@@ -4900,7 +4892,7 @@ button.close {
 
 #slider2 {
   padding: 3.125rem 0rem;
-  background: #f9f9f9; }
+  background: #ececec; }
 
 .single-slide h3 {
   font-family: 'Kaushan Script', cursive;
@@ -5472,7 +5464,7 @@ a.text-danger:focus, a.text-danger:hover {
   margin: 0.625rem auto;
   max-width: 90%; }
 
-#about-us, #services, #what-we-do, .unique-header {
+#about-us, #services, #what-we-do, #our-partner, .unique-header {
   padding: 3.125rem 0rem; }
 
 .services-header, .what-do-header, .unique-header {
@@ -5549,7 +5541,22 @@ p {
   margin-top: 2.1875rem; }
 
 .hr-section {
-  border: 0.0625rem solid #dddddd; }
+  border: 0.0625rem solid #dddddd;
+  margin: 0rem 0rem 2.1875rem 0rem; }
+
+#our-partner {
+  background: #ececec; }
+  #our-partner a {
+    display: block;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    margin: 0.625rem; }
+    #our-partner a:hover {
+      -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1);
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
