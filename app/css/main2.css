@@ -758,12 +758,6 @@ dl.row > dd + dt {
 .mfp-container button:focus {
   outline: none; }
 
-figure {
-  outline: none; }
-
-.clients a:focus {
-  outline: none; }
-
 code,
 kbd,
 pre,
@@ -5591,6 +5585,12 @@ p {
 
 .head-title {
   padding: 1.25rem 0rem; }
+
+a:focus {
+  outline: none;
+  outline-color: none;
+  outline-style: none;
+  outline-width: none; }
 
 .hr-1 {
   border: 0.125rem solid #fff;
