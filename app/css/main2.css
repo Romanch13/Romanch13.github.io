@@ -3,8 +3,11 @@
 /** Bootstrap **/
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin-ext");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -716,11 +719,17 @@ dl.row > dd + dt {
   outline: none; }
 
 .library a {
-  display: inline-block;
-  width: 180px; }
+  display: inline-block; }
 
 .library img {
-  max-width: 100%; }
+  max-width: 95%;
+  border: 0.0625rem solid #dddddd;
+  padding: 0.625rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-border-radius: 0.125rem;
+  border-radius: 0.125rem;
+  margin: 10px; }
 
 .mfp-fade.mfp-bg {
   opacity: 0;
@@ -4952,10 +4961,9 @@ button.close {
 
 .single-slide h3 {
   font-family: 'Kaushan Script', cursive;
-  font-weight: normal;
   margin-top: 0.9375rem;
   text-align: left;
-  margin-left: 11.875rem; }
+  margin-left: 12.5rem; }
   .single-slide h3:before {
     content: "";
     background: #f38181;
@@ -5537,6 +5545,9 @@ a.text-danger:focus, a.text-danger:hover {
   font-weight: bold;
   text-align: center; }
 
+.name-section-style-h3 {
+  font-family: 'Montserrat', sans-serif; }
+
 .counter-item {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal; }
@@ -5585,12 +5596,6 @@ p {
 
 .head-title {
   padding: 1.25rem 0rem; }
-
-a:focus {
-  outline: none;
-  outline-color: none;
-  outline-style: none;
-  outline-width: none; }
 
 .hr-1 {
   border: 0.125rem solid #fff;

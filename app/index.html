@@ -14,16 +14,13 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<script type="text/javascript" src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/menu-jquery.js"></script>
-	<script src="js/Scroll.js"></script>
-	<script src="js/accordeon.js"></script>
 	<script src="js/wow.min.js"></script>
-	<script src="js/magnific-popup.js"></script>
+	<script src="js/script.js"></script>
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
@@ -390,47 +387,46 @@
 					<div class="carousel-inner" role="listbox">
 						<div class="carousel-item active">
 							<div class="single-slide">
-								<div class="single-slide-img " >
+								<div class="single-slide-img">
 									<img src="img/people/people1.png" alt="" />
 								</div>
 								<p>
 									“Коли я кажу, що хочу сфотографувати когось, це означає, що я хочу дізнатися його.Усіх, кого я знаю, я фотографую... ”
 								</p>
-								
-								<h3>Энни Лейбовиц</h3>
+
+								<h3>Annie Leibovitz</h3>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<div class="single-slide" >
-								<div class="single-slide-img " >
-									<img src="img/people/people2.png" alt="" />
-								</div>
-								<p>
-									“… За допомогою фотографії можна зафіксувати нескінченність в одному моменті часу …”
-								</p>
+  							<div class="single-slide" >
+ 							<div class="single-slide-img">
+  									<img src="img/people/people2.png" alt="" />
+  								</div>
+  								<p>
+ 									“… За допомогою фотографії можна зафіксувати нескінченність в одному моменті часу …”
+ 								</p>
+ 
+ 								<h3>Anri Bresson</h3>
+ 							</div>
+ 						</div>
+				<div class="carousel-item">
+  							<div class="single-slide">
+ 								<div class="single-slide-img">
+  									<img src="img/people/people3.png" alt="" />
+  								</div>
+  								<p>
+ 									“Те, що фотограф здатний побачити, а про побачене – сказати, має незрівнянно більше значення, ніж якість технічного обладнання...”
+ 								</p>
+ 								<h3>Ansel Adams</h3>
+ 							</div>
+ 						</div>
+ 					</div>
 
-								<h3>Анри Брессон</h3>
-							</div>
-						</div>
-
-						<div class="carousel-item">
-							<div class="single-slide">
-								<div class="single-slide-img ">
-									<img src="img/people/people3.png" alt="" />
-								</div>
-								<p>
-									“Те, що фотограф здатний побачити, а про побачене – сказати, має незрівнянно більше значення, ніж якість технічного обладнання...”
-								</p>
-								<h3>Ансель Адамс</h3>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </section>
 <section id="our-team" class="team text-md-center">
 	<div class="container clearfix">
 		<div class="head-title wow zoomIn ">
@@ -463,7 +459,7 @@
 					</div>
 					<div class="team-content">
 						<h5>Метью Дікс</h5>
-						<p ">Графічний Дизайнер</p>
+						<p >Графічний Дизайнер</p>
 					</div>
 
 				</div>
@@ -547,9 +543,9 @@
 		</div>
 	</div>
 </section>
-<section id="works" class="team text-md-center">
+<section id="works" class="team text-md-center ">
 	<div class="container clearfix">
-		<div class="portfolio-header wow zoomIn ">
+			<div class="portfolio-header wow zoomIn ">
 			<h3 class="name-section-style-h2">Who we are</h3>
 			<h2 class="name-section-style-h1 text-uppercase">Meet our team</h2>
 			<hr class="hr-standart story">
@@ -557,25 +553,24 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			</p>
 		</div>
-			<div class="library">
-				<a href="img/portfolio1.jpg" class="item">
-					<img src="img/portfolio1.jpg" alt=""></a>
-				<a href="img/portfolio2.jpg" class="item">
-					<img src="img/portfolio2.jpg" alt=""></a>
-				<a href="img/portfolio3.jpg" class="item">
-					<img src="img/portfolio3.jpg" alt=""></a>
-				<a href="img/portfolio4.jpg" class="item">
-					<img src="img/portfolio4.jpg" alt=""></a>
-				<a href="img/portfolio5.jpg" class="item">
-					<img src="img/portfolio5.jpg" alt=""></a>
-				<a href="img/portfolio6.jpg" class="item">
-					<img src="img/portfolio6.jpg" alt=""></a>
+</div>
+
+			<div class="library text-xs-center">
+				<div class="col-md-4"><a href="img/portfolio1.jpg" class="item">
+					<img src="img/portfolio1.jpg" alt=""></a></div>
+				<div class="col-md-4"><a href="img/portfolio2.jpg" class="item">
+					<img src="img/portfolio2.jpg" alt=""></a></div>
+				<div class="col-md-4"><a href="img/portfolio3.jpg" class="item">
+					<img src="img/portfolio3.jpg" alt=""></a></div>
+				<div class="col-md-4"><a href="img/portfolio4.jpg" class="item">
+					<img src="img/portfolio4.jpg" alt=""></a></div>
+				<div class="col-md-4"><a href="img/portfolio5.jpg" class="item">
+					<img src="img/portfolio5.jpg" alt=""></a></div>
+				<div class="col-md-4"><a href="img/portfolio6.jpg" class="item">
+					<img src="img/portfolio6.jpg" alt=""></a></div>
 			</div>
-		</div>
+		
 </section>
-
-
-
 
 
 
@@ -612,7 +607,6 @@
 
 <div id = "toTop"> <i class="fa fa-arrow-up m-x-auto" aria-hidden="true"></i></div>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha256-AkXNkCuVl4vPqPnlkWUmRGA7fHZFhbqtLgdFlDmJgcw=" crossorigin="anonymous"></script>
 </body>
 </html>
