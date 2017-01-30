@@ -5554,6 +5554,10 @@ a.text-danger:focus, a.text-danger:hover {
 .library-p-name {
   font-family: 'Montserrat', sans-serif; }
 
+.portfolio-header p {
+  margin: 1.25rem auto;
+  max-width: 90%; }
+
 #about-us, #services, #what-we-do, #our-partner, #works, .unique-header {
   padding: 3.125rem 0rem; }
 
@@ -5570,9 +5574,6 @@ a.text-danger:focus, a.text-danger:hover {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-align: center; }
-
-.name-section-style-h3 {
-  font-family: 'Montserrat', sans-serif; }
 
 .counter-item {
   font-family: 'Montserrat', sans-serif;
@@ -5618,10 +5619,7 @@ p {
   font-style: italic; }
 
 #our-team {
-  padding: 3.75rem 0rem; }
-
-.head-title {
-  padding: 1.25rem 0rem; }
+  padding: 3.125rem 0rem; }
 
 .hr-1 {
   border: 0.125rem solid #fff;
