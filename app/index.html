@@ -16,12 +16,14 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 	<script type="text/javascript" src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/menu-jquery.js"></script>
 	<script src="js/Scroll.js"></script>
 	<script src="js/accordeon.js"></script>
 	<script src="js/wow.min.js"></script>
-
+	<script src="js/magnific-popup.js"></script>
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
@@ -139,14 +141,14 @@
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				</p>
 			</div>
-			<div class="about-us-content">
+			<div class="about-us-content ">
 				<div class="col-md-4 col-sm-6">
 					<div class="about-us-single wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
-						<div class="about-us-single-img">
-							<img src="img/about-us/super digital.jpg" alt="about3"/>	
+						<div class="about-us-single-img ">
+							<img src="img/about-us/super-digital.jpg" alt="about3"/>	
 						</div>
-						<div class="about-us-single-img-overlay all_overlay">
-							<a href="img/about-us/super digital.jpg"> <i class="fa fa-globe"></i>
+						<div class="about-us-single-img-overlay all_overlay ">
+							<a href="img/about-us/super-digital.jpg" class="item-about"> <i class="fa fa-globe"></i>
 								<br>	
 								<span class="about-p-name ">super digital</span>
 							</a>
@@ -155,11 +157,11 @@
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<div class="about-us-single wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
-						<div class="about-us-single-img">
+						<div class="about-us-single-img ">
 							<img src="img/about-us/Creative.jpg" alt="about2"/>	
 						</div>
-						<div class="about-us-single-img-overlay all_overlay">
-							<a href="img/about-us/Creative.jpg""> <i class="fa fa-creative-commons"></i>
+						<div class="about-us-single-img-overlay all_overlay ">
+							<a href="img/about-us/Creative.jpg" class="item-about"> <i class="fa fa-creative-commons"></i>
 								<br>	
 								<span class="about-p-name">creative</span>
 							</a>
@@ -168,11 +170,11 @@
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<div class="about-us-single wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">
-						<div class="about-us-single-img item-img">
-							<img src="img/about-us/super team.jpg" alt="about1"/>	
-						</div>
-						<div class="about-us-single-img-overlay all_overlay">
-							<a href="img/about-us/super team.jpg">
+						<div class="about-us-single-img ">
+							<img src="img/about-us/super-team.jpg" alt="about1"/>	
+						
+						<div class="about-us-single-img-overlay all_overlay ">
+							<a href="img/about-us/super-team.jpg" class="item-about">
 								<i class="fa fa-users"></i>
 								<br>	
 								<span class="about-p-name">super team</span>
@@ -343,7 +345,7 @@
 				<div class="col-md-6 col-sm-12 ">
 					<div class="wrapper wow zoomIn ">
 						<h1 > <i class="fa fa-picture-o"></i>
-							Фотограф <i class="pull-md-right fa fa-angle-down stc"></i>
+							Фотограф <a href="collapseOne" data-toggle="collapse" aria-expanded="true" data-parent="#accordion" aria-controls="collapseOne"></a><i class="pull-md-right fa fa-angle-down stc arrow" ></i>
 						</h1>
 						<div class="prokrutka">
 							<p>
@@ -353,7 +355,7 @@
 						<h1>
 							<i class="fa fa-sliders"></i>
 							Креатив
-							<i class="pull-md-right fa fa-angle-down stc"></i>
+							<i class="pull-md-right fa fa-angle-down stc arrow"></i>
 						</h1>
 						<div class="prokrutka">
 							<p>
@@ -363,7 +365,7 @@
 						<h1>
 							<i class="fa fa-bullseye"></i>
 							Веб-Дизайн
-							<i class="pull-md-right fa fa-angle-down stc"></i>
+							<i class="pull-md-right fa fa-angle-down stc arrow"></i>
 						</h1>
 						<div class="prokrutka">
 							<p>
@@ -523,23 +525,23 @@
 <section id="our-partner" class="text-md-center text-xs-center" >
 	<div class="container">
 		<div class="row">
-			<div class="clients wow rotateIn" data-wow-delay="0.5s">
-				<div class="col-md-2 col-sm-4 col-xs-6"><a href="img/logo/logo1.png">
+			<div class="clients wow rotateIn" data-wow-duration="2s" data-wow-delay="0.5s">
+				<div class="col-md-2 col-sm-4 col-xs-6"><a href="img/logo/logo1.png" class="item-brand">
 					<img src="img/logo/logo1.png"  alt="logo1"></a></div>
 
-				<div class="col-md-2 col-sm-4 col-xs-6"><a href="img/logo/logo2.png">
+				<div class="col-md-2 col-sm-4 col-xs-6"><a href="img/logo/logo2.png" class="item-brand">
 					<img src="img/logo/logo2.png"  alt="logo2"></a></div>
 
-				<div class="col-md-2 col-sm-4 col-xs-6"><a href="img/logo/logo3.png">
+				<div class="col-md-2 col-sm-4 col-xs-6"><a href="img/logo/logo3.png" class="item-brand">
 					<img src="img/logo/logo3.png"  alt="logo3"></a></div>
 
-				<div class="col-md-2 col-sm-4 col-xs-6"><a href="img/logo/logo4.png">
+				<div class="col-md-2 col-sm-4 col-xs-6"><a href="img/logo/logo4.png" class="item-brand">
 					<img src="img/logo/logo4.png"  alt="logo4"></a></div>
 
-				<div class="col-md-2 col-sm-4 col-xs-6"><a href="img/logo/logo5.png">
+				<div class="col-md-2 col-sm-4 col-xs-6"><a href="img/logo/logo5.png" class="item-brand">
 					<img src="img/logo/logo5.png"  alt="logo5"></a></div>
 
-				<div class="col-md-2 col-sm-4 col-xs-6"><a href="img/logo/logo6.png">
+				<div class="col-md-2 col-sm-4 col-xs-6"><a href="img/logo/logo6.png" class="item-brand">
 					<img src="img/logo/logo6.png"  alt="logo6"></a></div>
 			</div>
 		</div>
@@ -554,10 +556,23 @@
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			</p>
-		</div> 
-</div>
+		</div>
+			<div class="library">
+				<a href="img/portfolio1.jpg" class="item">
+					<img src="img/portfolio1.jpg" alt=""></a>
+				<a href="img/portfolio2.jpg" class="item">
+					<img src="img/portfolio2.jpg" alt=""></a>
+				<a href="img/portfolio3.jpg" class="item">
+					<img src="img/portfolio3.jpg" alt=""></a>
+				<a href="img/portfolio4.jpg" class="item">
+					<img src="img/portfolio4.jpg" alt=""></a>
+				<a href="img/portfolio5.jpg" class="item">
+					<img src="img/portfolio5.jpg" alt=""></a>
+				<a href="img/portfolio6.jpg" class="item">
+					<img src="img/portfolio6.jpg" alt=""></a>
+			</div>
+		</div>
 </section>
-
 
 
 
@@ -598,5 +613,6 @@
 <div id = "toTop"> <i class="fa fa-arrow-up m-x-auto" aria-hidden="true"></i></div>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+
 </body>
 </html>

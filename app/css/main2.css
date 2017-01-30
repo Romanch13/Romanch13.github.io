@@ -709,6 +709,61 @@ dl.row > dd + dt {
   -webkit-border-radius: 0.125rem;
   border-radius: 0.125rem; }
 
+.library .item {
+  display: inline-block; }
+
+.library a:focus {
+  outline: none; }
+
+.library a {
+  display: inline-block;
+  width: 180px; }
+
+.library img {
+  max-width: 100%; }
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+  .mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.8; }
+  .mfp-fade.mfp-bg.mfp-removing {
+    opacity: 0; }
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transform: scale(0) rotate(180deg);
+  -o-transform: scale(0) rotate(180deg);
+  -moz-trasform: scale(0) rotate(180deg);
+  -ms-transform: scale(0) rotate(180deg);
+  transform: scale(0) rotate(180deg);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+  -webkit-transform: scale(1) rotate(0deg);
+  -o-transform: scale(1) rotate(0deg);
+  -moz-trasform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg); }
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0; }
+
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  cursor: pointer; }
+
+.mfp-container button:focus {
+  outline: none; }
+
+figure {
+  outline: none; }
+
+.clients a:focus {
+  outline: none; }
+
 code,
 kbd,
 pre,
@@ -1846,11 +1901,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   width: 20%;
   float: left;
   padding: 1.375rem 0rem;
-  border-right: 0.0625rem solid #fff;
   text-align: center; }
-
-.counter-item:first-child {
-  border-left: 0.0625rem solid #fff; }
 
 .number {
   font-size: 3.125rem;
@@ -1868,16 +1919,13 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   margin-top: 0.625rem; }
 
 #our-partner {
-  background: #ececec; }
+  background: #f8f8f8; }
   #our-partner a {
     display: block;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     margin: 0.625rem; }
     #our-partner a:hover {
-      -webkit-transform: scale(1.1, 1.1);
-      -ms-transform: scale(1.1, 1.1);
-      transform: scale(1.1, 1.1);
       -webkit-transition: all 0.5s;
       transition: all 0.5s; }
 
@@ -4906,7 +4954,7 @@ button.close {
 
 #slider2 {
   padding: 3.125rem 0rem;
-  background: #ececec; }
+  background: #f8f8f8; }
 
 .single-slide h3 {
   font-family: 'Kaushan Script', cursive;
@@ -4925,14 +4973,14 @@ button.close {
 
 .single-slide p {
   max-width: 100%;
-  margin: 0rem 1.25rem 0rem 0rem;
+  margin: 0rem -3.125rem 0rem 0rem;
   font-size: 0.9375rem;
   font-style: italic; }
 
 .single-slide-img {
-  max-width: 7.5rem;
+  max-width: 100%;
   float: left;
-  margin-right: 0.9375rem;
+  margin: auto 0.9375rem;
   border: 0.125rem solid #95e1d3; }
 
 .carousel-indicators li {

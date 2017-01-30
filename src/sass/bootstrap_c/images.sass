@@ -126,3 +126,51 @@
     border: rem(1) solid $border-img
     transition: all 0.3s 
     border-radius: rem(2)
+
+//portfolio magnific-popup
+.library .item
+  display: inline-block
+.library a:focus 
+  outline: none 
+.library a
+  display: inline-block
+  width: 180px
+.library img
+  max-width: 100%
+.mfp-fade
+  &.mfp-bg
+    opacity: 0
+    -webkit-transition: all 0.15s ease-out
+    -moz-transition: all 0.15s ease-out
+    transition: all 0.15s ease-out
+    &.mfp-ready
+      opacity: 0.8
+    &.mfp-removing
+      opacity: 0
+  &.mfp-wrap
+    .mfp-content
+      opacity: 0
+      -webkit-transform: scale(0) rotate(180deg) 
+      -o-transform: scale(0) rotate(180deg) 
+      -moz-trasform: scale(0) rotate(180deg) 
+      transform: scale(0) rotate(180deg)  
+      -webkit-transition: all 0.5s ease-out
+      -moz-transition: all 0.5s ease-out
+      transition: all 0.5s ease-out
+    &.mfp-ready .mfp-content
+      opacity: 1
+      -webkit-transform: scale(1) rotate(0deg) 
+      -o-transform: scale(1) rotate(0deg) 
+      -moz-trasform: scale(1) rotate(0deg) 
+      transform: scale(1)  rotate(0deg) 
+    &.mfp-removing .mfp-content
+      opacity: 0
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close
+  cursor: pointer 
+
+.mfp-container button:focus
+  outline: none
+figure
+  outline: none
+.clients a:focus
+  outline: none
