@@ -11,31 +11,22 @@
 	transition: all 0.3s ease
   -webkit-transition: all 0.3s ease
   -o-transition: all 0.3s ease
-//unique
-.devices
-    position: relative
-    
-.tablet
-    width: rem(380)
-.mobile
-    position: absolute
-    bottom: rem(-60)
-    left: 50%
-    margin-left: rem(110)
-    width: rem(170)
+
+  
 //amazing fa fa-icons
 .media-1
     color: $box-shadow-img-section2
     font-size: rem(30)
     margin-left: rem(-20)
     margin-bottom: rem(-37)
+
+
 // story about
 .about-us-single-img img
     padding: rem(10)
     border: rem(1) solid $border-img
     transition: all 0.3s 
     border-radius: rem(2)
-
 .all_overlay
   background: rgba(219, 116, 117, 0.75)
   background: linear-gradient(to bottom, rgba(219, 116, 117, 0.6) 0%, rgba(220, 132, 118, 0.75) 24%, rgba(224, 150, 121, 0.75) 42%, rgba(222, 151, 119, 0.75) 42%, rgba(221, 155, 120, 0.75) 45%, rgba(225, 167, 121, 0.75) 55%, rgba(222, 168, 121, 0.75) 57%, rgba(225, 171, 124, 0.75) 61%, rgba(224, 173, 120, 0.75) 62%, rgba(225, 180, 125, 0.75) 68%, rgba(226, 181, 122, 0.75) 70%, rgba(224, 189, 125, 0.75) 77%, rgba(227, 189, 124, 0.75) 79%, rgba(225, 195, 123, 0.75) 84%, rgba(228, 205, 125, 0.75) 100%)
@@ -78,12 +69,16 @@
       i
         font-size: rem(25)
 
+
+//acardeon img
 .skill-img img
   max-width: 100%
   padding: rem(15)
   border: rem(1) solid $border-img
   margin: rem(0) rem(0) rem(20) rem(0)
 
+
+//TEAM+[hover]
 .team-content .team
   margin-bottom: rem(30)
   .team-img
@@ -127,8 +122,8 @@
     transition: all 0.3s 
     border-radius: rem(2)
 
-//portfolio magnific-popup
 
+//magnific-popup
 .mfp-fade
   &.mfp-bg
     opacity: 0
@@ -168,14 +163,15 @@ a:focus
     outline-style: none
     outline-width: none
 
-//картинки
+
+//картинки+[hover]
 .library
   width: 100%
   .library-us-single
     position: relative
-    transition: all 0.3s 
-    -webkit-transition: all 0.3s
-    -o-transition: all 0.3s 
+    transition: all 0.5s ease-out
+    -webkit-transition: all 0.5s ease-out
+    -o-transition: all 0.5s ease-out
     .library-us-single-img img
       width: 100%
       height: 100% 
@@ -189,11 +185,19 @@ a:focus
       color: $color-standart-section1
       padding-top: 30%
       opacity: 0
-      transition: all 0.3s
-      -webkit-transition: all 0.3s
-      -o-transition: all 0.3s
+      transition: all 0.5s ease-out
+      -webkit-transition: all 0.5s ease-out
+      -o-transition: all 0.5s ease-out
+      -webkit-transform: scale(0) 
+      -o-transform: scale(0) 
+      -moz-trasform: scale(0) 
+      transform: scale(0) 
     &:hover .library-us-single-img-overlay
       opacity: 1
+      -webkit-transform: scale(1) 
+      -o-transform: scale(1) 
+      -moz-trasform: scale(1) 
+      transform: scale(1) 
     .library-us-single-img-overlay a
       color: $color-standart-section1
       text-decoration: none
@@ -202,7 +206,30 @@ a:focus
           
       i
         font-size: rem(45)
+
+
+//сетка
 .padi
   .pad
-    padding: 0px!important
-   
+    padding: rem(0)!important
+
+
+//unique
+#unique-design
+    background: url(../img/bg2.jpg) no-repeat
+    background-position: center center
+    margin-bottom: rem(30)
+.bg2-overlay
+    width: 100%
+    height: 100%
+    background: rgba(255, 255, 255, 0.8)  
+.devices
+    position: relative
+.tablet
+    width: rem(380)
+.mobile
+    position: absolute
+    bottom: rem(-60)
+    left: 50%
+    margin-left: rem(110)
+    width: rem(170)

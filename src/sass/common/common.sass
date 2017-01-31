@@ -1,5 +1,13 @@
 @import "common/colors"
 @import "bootstrap_c/type"
+
+
+p
+	font-family: 'Roboto', sans-serif
+	color: $color-p-standart
+	font-size: rem(14)
+
+
 //welcome
 .logo
 	font-family: 'Montserrat', sans-serif
@@ -22,20 +30,19 @@
     left: 0
     right: 0
     z-index: 15
-    text-align: center 
-//about
-.about-p-name 
-	font-family: 'Montserrat', sans-serif
-	text-transform: uppercase
-.about-header p
- 	margin: rem(10) auto
- 	max-width: 90%
+    text-align: center
+
+
 //padding 
-#about-us, #services, #what-we-do, #our-partner, #works, .unique-header
+#about-us, #services, #what-we-do, #our-partner, #works, .unique-header, #our-team
     padding: rem(50) rem(0)
+
+
 //text-align: center
 .services-header, .what-do-header, .unique-header
     text-align: center
+
+
 //name-standart
 .name-section-style-h2
 	font-family: 'Kaushan Script', cursive
@@ -46,9 +53,24 @@
 	font-family: 'Montserrat', sans-serif
 	font-weight: bold
 	text-align: center
-.counter-item
+
+
+//Montserrat
+.counter-item p, .single_team_content h5, .library-p-name, .about-p-name 
 	font-family: 'Montserrat', sans-serif
 	font-weight: normal
+
+
+//max-width:90%	
+.head-title p, .portfolio-header p, .what-do-header p, .about-header p 
+	max-width: 90%
+
+
+//margin: rem(10)
+.what-do-header p, .head-title p, .about-header p, .portfolio-header p
+ 	margin: rem(10) auto
+
+
 //Amazing service
 .media-body h4
 	font-family: 'Montserrat', sans-serif
@@ -58,39 +80,9 @@
 .media-body p
 	margin: rem(25) rem(25)
 	text-align: justify
-//unique
-#unique-design
-  	background: url(../img/bg2.jpg) no-repeat
-  	background-position: center center
-  	margin-bottom: rem(30)
-.bg2-overlay
-  	width: 100%
-  	height: 100%
-  	background: rgba(255, 255, 255, 0.8)	
 
-//what-we-do
-.what-do-header p
- 	margin: rem(10) auto
- 	max-width: 90%	
-p
-	color: $color-p-standart
-	font-size: rem(14)
 
-//who we are
-.single_team_content h5
-    font-family: 'Montserrat', sans-serif
-    font-weight: normal
-.head-title p	
-	max-width: 90%
-	margin: rem(10) auto
+//team
 .team-content p
-	font-style: italic
-#our-team
-	padding: rem(50) rem(0)
-   
-//portfolio
-.library-p-name
-	font-family: 'Montserrat', sans-serif
-.portfolio-header p
-	margin: rem(20) rem(20) rem(50) rem(20) 
-	max-width: 90%
+	font-style: italic   
+	

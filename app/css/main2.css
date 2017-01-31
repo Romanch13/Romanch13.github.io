@@ -586,19 +586,6 @@ dl.row > dd + dt {
     transition--webkit-transition: all 0.3s ease;
     transition--o-transition: all 0.3s ease; }
 
-.devices {
-  position: relative; }
-
-.tablet {
-  width: 23.75rem; }
-
-.mobile {
-  position: absolute;
-  bottom: -3.75rem;
-  left: 50%;
-  margin-left: 6.875rem;
-  width: 10.625rem; }
-
 .media-1 {
   color: #95e1d3;
   font-size: 1.875rem;
@@ -758,9 +745,9 @@ a:focus {
   width: 100%; }
   .library .library-us-single {
     position: relative;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s; }
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out; }
     .library .library-us-single .library-us-single-img img {
       width: 100%;
       height: 100%; }
@@ -774,11 +761,21 @@ a:focus {
       color: #fff;
       padding-top: 30%;
       opacity: 0;
-      transition: all 0.3s;
-      -webkit-transition: all 0.3s;
-      -o-transition: all 0.3s; }
+      transition: all 0.5s ease-out;
+      -webkit-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      -webkit-transform: scale(0);
+      -o-transform: scale(0);
+      -moz-trasform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0); }
     .library .library-us-single:hover .library-us-single-img-overlay {
-      opacity: 1; }
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -o-transform: scale(1);
+      -moz-trasform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); }
     .library .library-us-single .library-us-single-img-overlay a {
       color: #fff;
       text-decoration: none; }
@@ -788,7 +785,30 @@ a:focus {
         font-size: 2.8125rem; }
 
 .padi .pad {
-  padding: 0px !important; }
+  padding: 0rem !important; }
+
+#unique-design {
+  background: url(../img/bg2.jpg) no-repeat;
+  background-position: center center;
+  margin-bottom: 1.875rem; }
+
+.bg2-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8); }
+
+.devices {
+  position: relative; }
+
+.tablet {
+  width: 23.75rem; }
+
+.mobile {
+  position: absolute;
+  bottom: -3.75rem;
+  left: 50%;
+  margin-left: 6.875rem;
+  width: 10.625rem; }
 
 code,
 kbd,
@@ -4170,7 +4190,7 @@ base::-moz-progress-bar,
     top: 70%; } }
 
 @media only screen and (max-width: 768px) {
-  .about-header p, .what-do-header p, .head-title p {
+  .about-header p, .what-do-header p, .head-title p, .portfolio-header p {
     text-align: justify; }
   .media-body p {
     margin: 0.625rem auto !important; } }
@@ -5517,6 +5537,11 @@ a.text-danger:focus, a.text-danger:hover {
   .hidden-print {
     display: none !important; } }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #999999;
+  font-size: 0.875rem; }
+
 .logo {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.875rem;
@@ -5543,15 +5568,7 @@ a.text-danger:focus, a.text-danger:hover {
   z-index: 15;
   text-align: center; }
 
-.about-p-name {
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase; }
-
-.about-header p {
-  margin: 0.625rem auto;
-  max-width: 90%; }
-
-#about-us, #services, #what-we-do, #our-partner, #works, .unique-header {
+#about-us, #services, #what-we-do, #our-partner, #works, .unique-header, #our-team {
   padding: 3.125rem 0rem; }
 
 .services-header, .what-do-header, .unique-header {
@@ -5568,9 +5585,15 @@ a.text-danger:focus, a.text-danger:hover {
   font-weight: bold;
   text-align: center; }
 
-.counter-item {
+.counter-item p, .single_team_content h5, .library-p-name, .about-p-name {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal; }
+
+.head-title p, .portfolio-header p, .what-do-header p, .about-header p {
+  max-width: 90%; }
+
+.what-do-header p, .head-title p, .about-header p, .portfolio-header p {
+  margin: 0.625rem auto; }
 
 .media-body h4 {
   font-family: 'Montserrat', sans-serif;
@@ -5582,44 +5605,8 @@ a.text-danger:focus, a.text-danger:hover {
   margin: 1.5625rem 1.5625rem;
   text-align: justify; }
 
-#unique-design {
-  background: url(../img/bg2.jpg) no-repeat;
-  background-position: center center;
-  margin-bottom: 1.875rem; }
-
-.bg2-overlay {
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.8); }
-
-.what-do-header p {
-  margin: 0.625rem auto;
-  max-width: 90%; }
-
-p {
-  color: #999999;
-  font-size: 0.875rem; }
-
-.single_team_content h5 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: normal; }
-
-.head-title p {
-  max-width: 90%;
-  margin: 0.625rem auto; }
-
 .team-content p {
   font-style: italic; }
-
-#our-team {
-  padding: 3.125rem 0rem; }
-
-.library-p-name {
-  font-family: 'Montserrat', sans-serif; }
-
-.portfolio-header p {
-  margin: 1.25rem 1.25rem 3.125rem 1.25rem;
-  max-width: 90%; }
 
 .hr-1 {
   border: 0.125rem solid #fff;
