@@ -787,8 +787,8 @@ a:focus {
       .library .library-us-single .library-us-single-img-overlay a i {
         font-size: 2.8125rem; }
 
-.pad {
-  padding: 0rem !important; }
+.padi .pad {
+  padding: 0px !important; }
 
 code,
 kbd,
@@ -5551,13 +5551,6 @@ a.text-danger:focus, a.text-danger:hover {
   margin: 0.625rem auto;
   max-width: 90%; }
 
-.library-p-name {
-  font-family: 'Montserrat', sans-serif; }
-
-.portfolio-header p {
-  margin: 1.25rem auto;
-  max-width: 90%; }
-
 #about-us, #services, #what-we-do, #our-partner, #works, .unique-header {
   padding: 3.125rem 0rem; }
 
@@ -5613,13 +5606,20 @@ p {
 
 .head-title p {
   max-width: 90%;
-  margin: -0.625rem auto; }
+  margin: 0.625rem auto; }
 
 .team-content p {
   font-style: italic; }
 
 #our-team {
   padding: 3.125rem 0rem; }
+
+.library-p-name {
+  font-family: 'Montserrat', sans-serif; }
+
+.portfolio-header p {
+  margin: 1.25rem 1.25rem 3.125rem 1.25rem;
+  max-width: 90%; }
 
 .hr-1 {
   border: 0.125rem solid #fff;
