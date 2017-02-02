@@ -91,29 +91,38 @@
     float: left
     margin: auto rem(15)
     border: rem(2) solid $box-shadow-img-section2
-#slider2-list
-  width: rem(900)
-  max-width: 100%
+    
 //карусель 3
 #slider3
   padding: rem(50) rem(0)  
   background: $color-bg-section-slider-and-brand
-.single-slide1 p
+.single1-slide p
     max-width: 100%
     margin: rem(0) rem(-50) rem(0) rem(0)
     font-size: rem(15)
     font-style: italic
-.single-slide-img1
+.single-slide-img1 
     max-width: 100%
     float: left
     margin: auto rem(15)
-#slider3-list
-  width: rem(900)
-  max-width: 100%
+.single-slide-img1 img
+    border-radius: 50%
+    width: 150px
+    height: 150px
+.single1-slide h3
+  font-family: 'Kaushan Script', cursive
+  margin-top: rem(25)
+  text-align: left
+  margin-left: rem(240)
+  &:before
+    content: ""
+    background: $hr-color-standart
+    width: rem(50)
+    height: rem(3)
+    position: absolute
+    margin-top: rem(12)
+    margin-left: rem(-55)
 // кароусель 2 3
-.carousel-fade1  
-  position: relative
-  left: rem(120)
 // стрелки
 a.tc-control
   color: $hr-color-standart 
@@ -121,13 +130,24 @@ a.tc-control
 .left i
   font-size: rem(40)
   float: left
-  margin-left: rem(-57)
+  margin-left: rem(-30)
   margin-top: rem(-69)
 .right i
   font-size: rem(40)
   float: right
-  margin-right: rem(-57)
+  margin-right: rem(-30)
   margin-top: rem(-69)
+.left1 i
+  font-size: rem(40)
+  float: left
+  margin-left: rem(-30)
+  margin-top: rem(-89)
+.right1 i
+  font-size: rem(40)
+  float: right
+  margin-right: rem(-30)
+  margin-top: rem(-89)
+
 //индикаторы
 .carousel-indicators li
   position: relative
