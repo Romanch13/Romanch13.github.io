@@ -785,7 +785,8 @@ a:focus {
         font-size: 2.8125rem; }
 
 .padi .pad {
-  padding: 0rem !important; }
+  padding-right: 0rem !important;
+  padding-left: 0rem !important; }
 
 #unique-design {
   background: url(../img/bg2.jpg) no-repeat;
@@ -4187,7 +4188,17 @@ base::-moz-progress-bar,
         font-size: 1.75rem;
         line-height: 1.875rem; }
   .carousel-fade .left-control, .carousel-fade .right-control {
-    top: 70%; } }
+    top: 70%; }
+  .carousel-fade1 {
+    left: 0 !important; }
+  .tc-control i {
+    position: absolute;
+    top: 28%;
+    left: 55%; }
+  .left i {
+    margin-left: -58% !important; }
+  .right i {
+    margin-left: 46%; } }
 
 @media only screen and (max-width: 768px) {
   .about-header p, .what-do-header p, .head-title p, .portfolio-header p {
@@ -4240,6 +4251,10 @@ base::-moz-progress-bar,
     top: 9.375rem; }
   #slider2 {
     height: 18.75rem; } }
+
+@media only screen and (max-width: 544px) {
+  .tc-control {
+    display: none; } }
 
 .list-group {
   padding-left: 0;
@@ -5028,6 +5043,48 @@ button.close {
   margin: auto 0.9375rem;
   border: 0.125rem solid #95e1d3; }
 
+#slider2-list {
+  width: 56.25rem;
+  max-width: 100%; }
+
+#slider3 {
+  padding: 3.125rem 0rem;
+  background: #f8f8f8; }
+
+.single-slide1 p {
+  max-width: 100%;
+  margin: 0rem -3.125rem 0rem 0rem;
+  font-size: 0.9375rem;
+  font-style: italic; }
+
+.single-slide-img1 {
+  max-width: 100%;
+  float: left;
+  margin: auto 0.9375rem; }
+
+#slider3-list {
+  width: 56.25rem;
+  max-width: 100%; }
+
+.carousel-fade1 {
+  position: relative;
+  left: 7.5rem; }
+
+a.tc-control {
+  color: #f38181; }
+
+.left i {
+  font-size: 2.5rem;
+  float: left;
+  margin-left: -3.5625rem;
+  margin-top: -4.3125rem; }
+
+.right i {
+  font-size: 2.5rem;
+  float: right;
+  margin-right: -3.5625rem;
+  margin-top: -4.3125rem; }
+
 .carousel-indicators li {
   position: relative;
   top: 3.75rem;
@@ -5589,11 +5646,12 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal; }
 
-.head-title p, .portfolio-header p, .what-do-header p, .about-header p {
-  max-width: 90%; }
-
-.what-do-header p, .head-title p, .about-header p, .portfolio-header p {
+.head-title p, .what-do-header p, .about-header p {
+  max-width: 90%;
   margin: 0.625rem auto; }
+
+.portfolio-header p {
+  margin: 0rem auto 3.125rem auto; }
 
 .media-body h4 {
   font-family: 'Montserrat', sans-serif;

@@ -26,8 +26,6 @@ $(function() {
 
 //Меню jquery
 $(document).ready(function(){
-
-
 //menu
 			var touch = $('#touch-menu');
 		    var menu = $('.nav');
