@@ -34,7 +34,7 @@ p
 
 
 //padding 
-#about-us, #services, #what-we-do, #our-partner, #works, .unique-header, #our-team
+#about-us, #services, #what-we-do, #our-partner, #works, .unique-header, #our-team, .happy-header,.people-header 
     padding: rem(50) rem(0)
 
 
@@ -56,9 +56,10 @@ p
 
 
 //Montserrat
-.counter-item p, .single_team_content h5, .library-p-name, .about-p-name 
+.counter-item p, .single_team_content h5, .library-p-name, .about-p-name, .name
 	font-family: 'Montserrat', sans-serif
 	font-weight: normal
+
 
 
 //max-width:90%, margin: rem(10)
@@ -77,8 +78,23 @@ p
 .media-body p
 	margin: rem(25) rem(25)
 	text-align: justify
-
-
+//happy
+.media-body1 h6
+  font-family: 'Montserrat', sans-serif
+  font-weight: bold
+  font-size: rem(14)
+.people-content .p-content
+    font-size: rem(14)
+    font-style: italic
+    &:before
+      content: ""
+      background: $hr-color-standart
+      width: rem(65)
+      height: rem(3)
+      margin-top: rem(25)
+      position: absolute
+.media-body1  p
+	 text-align: justify
 //team
 .team-content p
 	font-style: italic   
