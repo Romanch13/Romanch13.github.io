@@ -811,36 +811,27 @@ a:focus {
   margin-left: 6.875rem;
   width: 10.625rem; }
 
-#people-say {
+#happy-say {
   background: url(../img/bg-section-3.jpg) no-repeat;
   background-position: center center; }
 
-.people-overlay {
+.happy-overlay {
   position: relative;
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.8); }
 
-.people-content img {
+.happy-content img {
   width: 6.25rem;
   height: 6.25rem;
   margin-right: 1.875rem; }
 
-.media-body1 h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 0.875rem; }
+.happy-list {
+  padding-left: 0;
+  list-style: none; }
 
-.people-content .p-content {
-  font-size: 0.875rem;
-  font-style: italic; }
-  .people-content .p-content:before {
-    content: "";
-    background: #f38181;
-    width: 4.0625rem;
-    height: 0.1875rem;
-    margin-top: 1.5625rem;
-    position: absolute; }
+.happy:first-child {
+  margin-top: 0; }
 
 code,
 kbd,
@@ -4222,7 +4213,7 @@ base::-moz-progress-bar,
     top: 70%; }
   .carousel-fade1 {
     left: 0 !important; }
-  .tc-control i {
+  .tc-control i, .tc-control1 i {
     position: absolute;
     top: 28%;
     left: 50%; }
@@ -4235,7 +4226,7 @@ base::-moz-progress-bar,
     margin-top: -3.75rem !important; }
   .right1 i {
     margin-left: 50.5%;
-    margin-top: -3.75rem !important; } }
+      margin-left-margin-top: -3.75rem !important; } }
 
 @media only screen and (max-width: 768px) {
   .about-header p, .what-do-header p, .head-title p, .portfolio-header p {
@@ -4286,7 +4277,7 @@ base::-moz-progress-bar,
     font-size: 1.25rem; }
   .carousel-indicators {
     top: 9.375rem; }
-  #slider2 {
+  #slider2, #slider3 {
     height: 18.75rem; } }
 
 @media only screen and (max-width: 544px) {
@@ -4298,13 +4289,13 @@ base::-moz-progress-bar,
     padding-top: 15%;
     font-size: 0.9375rem; }
   .library .library-us-single .library-us-single-img-overlay a i {
-    font-size: 1.6875rem; } }
+    font-size: 1.6875rem; }
+  .media-body1 .text-p {
+    font-size: 0.6875rem; } }
 
-@media only screen and (min-width: 600px) {
-  .tc-control {
-    display: block; }
-  .tc-control1 {
-    display: block; } }
+@media (min-width: 544px) {
+  .carousel-indicators {
+    display: none; } }
 
 .list-group {
   padding-left: 0;
@@ -5161,7 +5152,6 @@ a.tc-control1 {
 .carousel-indicators li {
   position: relative;
   top: 3.75rem;
-  display: inline-block;
   width: 3.125rem;
   height: 0.625rem;
   border: 0.125rem solid black;
@@ -5741,10 +5731,10 @@ p {
   font-weight: bold;
   font-size: 0.875rem; }
 
-.people-content .p-content {
+.happy-content .p-content {
   font-size: 0.875rem;
   font-style: italic; }
-  .people-content .p-content:before {
+  .happy-content .p-content:before {
     content: "";
     background: #f38181;
     width: 4.0625rem;
