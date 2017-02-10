@@ -17,12 +17,10 @@
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/prettyPhoto.css">
 	<script type="text/javascript" src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/script.js"></script>
-	<script src="js/jquery.prettyPhoto.js"></script>
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
@@ -36,6 +34,7 @@
 	<noscript>
 		<link rel="stylesheet" type="text/css" href="css/fonts.min.css">
 		<link rel="stylesheet" type="text/css" href="css/main2.css"></noscript>
+
 </head>
 <body>
 	<section class="section-1">
@@ -46,8 +45,8 @@
 				</div>
 				<a href="#" id="touch-menu" class="navbar-to" role="button"> <i class="fa fa-bars" aria-hidden="true"></i>
 				</a>
-				<nav>
-					<ul class="nav clearfix text-uppercase" role="navigation">
+				<nav id="menu">
+					<ul class="nav text-uppercase">
 						<li>
 							<a href="#home">Home</a>
 						</li>
@@ -64,15 +63,16 @@
 							<a href="#works">Portfolio</a>
 						</li>
 						<li>
-							<a href="#footer">Contact</a>
+							<a href="#blog">Contact</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 	</section>
-	<section id="home" name="home">
+	<section id="home" name="home" class="text-md-center text-xs-center">
 		<div id="home-slider" class="carousel clearfix  slide carousel-fade" data-ride="carousel">
+		<a href="#home"></a>
 			<div class="carousel-inner"  role="listbox" >
 				<div class="carousel-item active" style="background-image: url(img/slider/slider3.jpg)">
 					<div class="slider-gradient"></div>
@@ -189,29 +189,29 @@
 		<div class="container clearfix">
 			<div class="counter-item ">
 				<div data-num="42" class="number">0</div>
-				<p class="text">Web Design Projects</p>
+				<span  class="text">Web Design Projects</span>
 			</div>
 			<div class="counter-item">
 				<div data-num="123" class="number">0</div>
-				<p class="text">happy client</p>
+				<span  class="text">happy client</span>
 			</div>
 			<div class="counter-item">
 				<div data-num="15" class="number">0</div>
-				<p class="text">award winner</p>
+				<span  class="text">award winner</span>
 			</div>
 			<div class="counter-item">
 				<div data-num="99" class="number">0</div>
-				<p class="text">cup of coffee</p>
+				<span  class="text">cup of coffee</span>
 			</div>
 			<div class="counter-item">
 				<div data-num="24" class="number">0</div>
-				<p class="text">members </p>
+				<span class="text">members </span>
 			</div>
 	</div>
 </section>
 	<section id="services" name="service">
 		<div class="container">
-			<div class="services-header text-md-center wow zoomIn" data-wow-delay="0.4s">
+			<div class="services-header text-md-center text-xs-center wow zoomIn" data-wow-delay="0.4s">
 				<h3 class="name-section-style-h2">We work with</h3>
 				<h3 class="name-section-style-h1 text-uppercase">Amazing Services</h3>
 				<hr class="hr-standart">
@@ -313,7 +313,7 @@
 	<section id="unique-design" name="unique-design" class="text-md-center text-xs-center">
 		<div class="bg2-overlay">
 			<div class="container">
-				<div class="unique-header wow zoomIn" data-wow-duration="s" data-wow-delay="0.3s">
+				<div class="unique-header  wow zoomIn" data-wow-duration="s" data-wow-delay="0.3s">
 					<h3 class="name-section-style-h2">For all devices</h3>
 					<h2 class="name-section-style-h1">Unique design</h2>
 					<hr class="hr-standart story"></div>
@@ -325,7 +325,7 @@
 	</section>
 	<section id="what-we-do" name="what-we-do">
 		<div class="container">
-			<div class="what-do-header text-md-center wow zoomIn" data-wow-delay="0.4s">
+			<div class="what-do-header wow zoomIn text-md-center text-xs-center" data-wow-delay="0.4s">
 				<h3 class="name-section-style-h2">Service</h3>
 				<h2 class="name-section-style-h1 text-uppercase">what we do</h2>
 				<hr class="hr-standart">	
@@ -434,7 +434,7 @@
  		</div>
  	</div>
  </section>
-<section id="our-team" class="team text-md-center">
+<section id="our-team" class="team text-md-center text-xs-center">
 	<div class="container clearfix">
 		<div class="head-title wow zoomIn ">
 			<h3 class="name-section-style-h2">Who we are</h3>
@@ -552,7 +552,7 @@
 </section>
 <section id="works" class="text-md-center text-xs-center">
 	<div class="container clearfix">
-		<div class="portfolio-header wow zoomIn ">
+		<div class="portfolio-header wow zoomIn">
 			<h3 class="name-section-style-h2">What we do</h3>
 			<h2 class="name-section-style-h1 text-uppercase">some of our work</h2>
 			<hr class="hr-standart story">
@@ -739,7 +739,7 @@
 	<section id="happy-say" name="happy">
 		<div class="happy-overlay">
 			<div class="container">
-				<div class="happy-header wow zoomIn" data-wow-duration="s" data-wow-delay="0.3s">
+				<div class="happy-header wow zoomIn text-md-center text-xs-center" data-wow-duration="s" data-wow-delay="0.3s">
 					<h3 class="name-section-style-h2">Happy Clients</h3>
 					<h2 class="name-section-style-h1">What People Say</h2>
 					<hr class="hr-standart story"></div>
@@ -822,7 +822,100 @@
 			</div>
 		</div>
 </section>
-
+<section id="blog" name="blog">
+	<div class="container">
+		<div class="blog-header wow zoomIn text-md-center text-xs-center" data-wow-duration="s" data-wow-delay="0.3s">
+			<h3 class="name-section-style-h2">Our stories</h3>
+			<h2 class="name-section-style-h1">Latest blog</h2>
+			<hr class="hr-standart story"></div>
+		<div class="blog-content">
+			<div class="row m-x-auto">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<article>
+						<div class="article-img">
+							<a href="#">
+								<img src="img/blog/blog1.jpg" alt=""></a>
+							<div class="date">
+								<span class="number">15</span>
+								<span class="text">Jan</span>
+							</div>
+						</div>
+						<h3 class="articleTitle text-uppercase">
+							<a href="#">Lorem ipsum dolor sit amet</a>
+						</h3>
+						<p class="article-p">
+							Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+						<div class="article-prosmot">
+							<a href="#"> <i class="fa fa-eye fa-icon"></i>
+								543
+							</a>
+							<a href="#"> <i class="fa fa-comment fa-icon"></i>
+								15
+							</a>
+						</div>
+					</article>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<article>
+						<div class="article-img">
+							<a href="#">
+								<img src="img/blog/blog2.jpg" alt=""></a>
+							<div class="date">
+								<span class="number">14</span>
+								<span class="text">Jan</span>
+							</div>
+						</div>
+						<h3 class="articleTitle text-uppercase">
+							<a href="#">sed do eiusmod tempor</a>
+						</h3>
+						<p class="article-p">
+							Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+						<div class="article-prosmot">
+							<a href="#">
+								<i class="fa fa-eye fa-icon"></i>
+								995
+							</a>
+							<a href="#">
+								<i class="fa fa-comment fa-icon"></i>
+								42
+							</a>
+						</div>
+					</article>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<article>
+						<div class="article-img">
+							<a href="#">
+								<img src="img/blog/blog3.jpg" alt=""></a>
+							<div class="date">
+								<span class="number">12</span>
+								<span class="text">Jan</span>
+							</div>
+						</div>
+						<h3 class="articleTitle text-uppercase">
+							<a href="#">incididunt ut labore et dolore</a>
+						</h3>
+						<p class="article-p">
+							Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+						<div class="article-prosmot">
+							<a href="#">
+								<i class="fa fa-eye fa-icon"></i>
+								1264
+							</a>
+							<a href="#">
+								<i class="fa fa-comment fa-icon"></i>
+								69
+							</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 
 	<script src="libs/html5shiv/es5-shim.min.js"></script>

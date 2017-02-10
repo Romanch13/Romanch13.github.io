@@ -2,10 +2,10 @@
 /** Bootstrap **/
 /** Bootstrap **/
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,vietnamese");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,vietnamese");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin-ext");
 html {
@@ -1982,7 +1982,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   -webkit-transition: 1s;
   transition: 1s; }
 
-.counter-item p {
+.counter-item span {
   font-size: 0.875rem;
   color: #fff;
   margin-top: 0.625rem; }
@@ -3435,7 +3435,6 @@ header {
   float: left; }
 
 .nav li a, #touch-menu {
-  font-family: 'Montserrat', sans-serif;
   display: block;
   padding: 0.625rem 0.9375rem;
   font-weight: normal;
@@ -3444,6 +3443,10 @@ header {
   text-decoration: none;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease; }
+
+.nav li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; }
 
 .nav li a:hover {
   border-bottom: 0.1875rem solid #fce38a;
@@ -5685,29 +5688,26 @@ p {
   top: 20%;
   left: 0;
   right: 0;
-  z-index: 15;
-  text-align: center; }
+  z-index: 15; }
 
-#about-us, #services, #what-we-do, #our-partner, #works, .unique-header, #our-team, .happy-header, .people-header {
+#about-us, #services, #what-we-do, #our-partner, #works, #our-team {
   padding: 3.125rem 0rem; }
 
-.services-header, .what-do-header, .unique-header {
-  text-align: center; }
+.unique-header, .happy-header, .people-header, .blog-header {
+  padding: 3.125rem 0rem; }
 
 .name-section-style-h2 {
   font-family: 'Kaushan Script', cursive;
   font-weight: normal;
-  color: #333333;
-  text-align: center; }
+  color: #333333; }
 
 .name-section-style-h1 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  text-align: center; }
+  font-weight: bold; }
 
-.counter-item p, .single_team_content h5, .library-p-name, .about-p-name, .name {
+.counter-item span, .team-content h5, .library-p-name, .about-p-name {
   font-family: 'Montserrat', sans-serif;
-  font-weight: normal; }
+  font-weight: 500; }
 
 .head-title p, .what-do-header p, .about-header p {
   max-width: 90%;
@@ -5761,6 +5761,61 @@ p {
 .hr-section {
   border: 0.0625rem solid #dddddd;
   margin: 0rem 0rem 2.1875rem 0rem; }
+
+#blog article .article-img {
+  position: relative;
+  margin-bottom: 1.25rem; }
+
+#blog article .date {
+  position: absolute;
+  background: #95e1d3;
+  left: -0.625rem;
+  bottom: 0.625rem;
+  padding: 0.3125rem 0.9375rem;
+  color: #fff; }
+  #blog article .date .number {
+    display: block;
+    font-size: 1.75rem;
+    line-height: 100%;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; }
+  #blog article .date .text {
+    display: block;
+    font-weight: normal;
+    font-style: italic; }
+
+#blog article .articleTitle {
+  font-size: 0.875rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; }
+  #blog article .articleTitle a {
+    text-decoration: none;
+    color: #333333; }
+
+#blog article .article-prosmot {
+  border-top: 0.0625rem solid #dddddd;
+  margin-top: 0.9375rem;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem; }
+  #blog article .article-prosmot a {
+    text-decoration: none;
+    color: #999999;
+    display: inline-block;
+    margin-right: 1.25rem;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.75rem;
+    pointer-events: none; }
+  #blog article .article-prosmot .fa-icon {
+    color: #95e1d3;
+    font-size: 0.9375rem; }
+
+.article-img img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.article-img a {
+  pointer-events: none; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
