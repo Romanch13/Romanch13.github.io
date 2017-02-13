@@ -4262,21 +4262,13 @@ base::-moz-progress-bar,
       font-size: 1.5625rem; }
     .counter-item .text {
       font-size: 0.625rem; }
-    .counter-item #toTop {
-      right: 0.4375rem;
-      width: 2.5rem;
-      height: 2.5rem; }
-      .counter-item #toTop i {
-        font-size: 1.25rem;
-        line-height: 0rem;
-        position: relative;
-        top: -0.0625rem;
-        right: 0.4375rem; }
   .wrapper .stc {
     float: right; } }
 
 @media only screen and (max-width: 768px) {
   .single-slide h3 {
+    font-size: 1.25rem; }
+  .single1-slide h3 {
     font-size: 1.25rem; }
   .carousel-indicators {
     top: 9.375rem; }
@@ -4289,8 +4281,8 @@ base::-moz-progress-bar,
   .tc-control1 {
     display: none; }
   .library .library-us-single .library-us-single-img-overlay {
-    padding-top: 15%;
-    font-size: 0.9375rem; }
+    padding-top: 25%;
+    font-size: 0.75rem; }
   .library .library-us-single .library-us-single-img-overlay a i {
     font-size: 1.6875rem; }
   .media-body1 .text-p {
@@ -4299,6 +4291,18 @@ base::-moz-progress-bar,
 @media (min-width: 544px) {
   .carousel-indicators {
     display: none; } }
+
+@media only screen and (max-width: 768px) {
+  #toTop {
+    right: 0.3125rem;
+    width: 2.5rem;
+    height: 2.5rem; }
+    #toTop i {
+      font-size: 1.25rem;
+      line-height: 0rem;
+      position: relative;
+      top: -0.0625rem;
+      right: 0rem; } }
 
 .list-group {
   padding-left: 0;
@@ -5762,42 +5766,45 @@ p {
   border: 0.0625rem solid #dddddd;
   margin: 0rem 0rem 2.1875rem 0rem; }
 
-#blog article .article-img {
+body {
+  overflow: visible; }
+
+#blog .blog-col-content .blog-img {
   position: relative;
   margin-bottom: 1.25rem; }
 
-#blog article .date {
+#blog .blog-col-content .date {
   position: absolute;
   background: #95e1d3;
   left: -0.625rem;
   bottom: 0.625rem;
   padding: 0.3125rem 0.9375rem;
   color: #fff; }
-  #blog article .date .number {
+  #blog .blog-col-content .date .number {
     display: block;
     font-size: 1.75rem;
     line-height: 100%;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif; }
-  #blog article .date .text {
+  #blog .blog-col-content .date .text {
     display: block;
     font-weight: normal;
     font-style: italic; }
 
-#blog article .articleTitle {
+#blog .blog-col-content .blog-Title {
   font-size: 0.875rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500; }
-  #blog article .articleTitle a {
+  #blog .blog-col-content .blog-Title a {
     text-decoration: none;
     color: #333333; }
 
-#blog article .article-prosmot {
+#blog .blog-col-content .blog-prosmot {
   border-top: 0.0625rem solid #dddddd;
   margin-top: 0.9375rem;
   padding-top: 0.9375rem;
   padding-bottom: 0.9375rem; }
-  #blog article .article-prosmot a {
+  #blog .blog-col-content .blog-prosmot a {
     text-decoration: none;
     color: #999999;
     display: inline-block;
@@ -5806,16 +5813,64 @@ p {
     font-weight: normal;
     font-size: 0.75rem;
     pointer-events: none; }
-  #blog article .article-prosmot .fa-icon {
+  #blog .blog-col-content .blog-prosmot .fa-icon {
     color: #95e1d3;
     font-size: 0.9375rem; }
 
-.article-img img {
+.blog-img img {
   max-width: 100%;
   max-height: 100%; }
 
-.article-img a {
+.blog-img a {
   pointer-events: none; }
+
+#google-map {
+  background: url(../img/map.png) no-repeat center/cover;
+  background-position: center;
+  padding: 3.125rem 0rem;
+  margin-top: 3.125rem; }
+  #google-map .map-heading {
+    color: #f38181;
+    margin: 0;
+    cursor: pointer; }
+    #google-map .map-heading .fa-icon-map {
+      display: block;
+      margin-bottom: 1.25rem;
+      font-size: 2.5rem; }
+  #google-map .gmap {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    margin-top: 1.25rem; }
+    #google-map .gmap iframe {
+      width: 100%;
+      height: 12.5rem; }
+  #google-map.showMap .gmap {
+    visibility: visible;
+    opacity: 1;
+    height: auto !important;
+    border: 0.125rem solid #f38181; }
+
+.map-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.875rem;
+  line-height: 1;
+  position: relative;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.875rem; }
+
+.map-heading:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100px;
+  height: 3px;
+  background: #f38181;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
