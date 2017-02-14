@@ -4304,6 +4304,10 @@ base::-moz-progress-bar,
       top: -0.0625rem;
       right: 0.4375rem; } }
 
+@media only screen and (max-width: 768px) {
+  .footer-blog-content {
+    margin-right: 30px !important; } }
+
 .list-group {
   padding-left: 0;
   margin-bottom: 0; }
@@ -5903,11 +5907,11 @@ footer {
 
 .btn-default {
   width: 8.75rem;
-  color: #FFF;
+  color: #fff;
   background-color: #95e1d3;
   border: 0.0625rem solid #6ed5c2; }
   .btn-default:hover {
-    color: #FFF;
+    color: #fff;
     background-color: #f38181;
     border: 0.0625rem solid #ec7676; }
 
@@ -5933,27 +5937,36 @@ footer {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: #282828;
+  overflow: hidden;
   margin-bottom: 40px; }
 
-.footer-blog img {
+.footer-blog {
+  margin-bottom: 30px; }
+
+.footer-blog-s {
+  overflow: hidden;
+  margin-bottom: 20px; }
+
+.fotter-img {
   max-width: 100%;
-  height: 4.6875rem;
-  margin-right: 20px; }
+  float: left; }
 
-.footer-blog h4 {
-  font-size: 12px;
-  line-height: 1;
+.footer-blog-content {
+  width: 70%;
+  float: right;
+  margin-right: -30px;
+  margin-top: 10px; }
+  .footer-blog-content a {
+    text-decoration: none; }
+
+h4.footer-heading {
+  font-size: 0.75rem;
   color: #282828;
-  margin-top: 20px; }
+  cursor: pointer; }
 
-.footer-blog p {
-  font-style: italic; }
-
-.footer-instagram img {
-  width: 26%;
-  height: auto;
-  float: left;
-  border: 1px solid #fff; }
+.footer-blog-content p {
+  font-style: italic;
+  pointer-events: none; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

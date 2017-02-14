@@ -124,11 +124,11 @@ footer
   border-radius: 10%
 .btn-default
   width: rem(140)
-  color: #FFF
+  color: $white
   background-color: $btn-color-footer
   border: rem(1) solid $btn-color-footer-border
   &:hover
-    color: #FFF
+    color: $white
     background-color: $pink
     border: rem(1) solid $pink-border
 
@@ -149,27 +149,32 @@ footer
     outline: none
     border-color: $border-mail
 
-
+//Футкер блог
 .fotter-title-blog
     font-family: 'Roboto', sans-serif
     font-weight: bold
     color: $light-black
-    margin-bottom: 40px
+    overflow: hidden
+    margin-bottom: 40px  
 .footer-blog
-  img
+    margin-bottom: 30px
+.footer-blog-s
+    overflow: hidden
+    margin-bottom: 20px
+.fotter-img
     max-width: 100%
-    height: rem(75)
-    margin-right: 20px
-  h4
-    font-size: 12px
-    line-height: 1
+    float: left
+.footer-blog-content
+    width: 70%
+    float: right
+    margin-right: -30px
+    margin-top: 10px
+    a
+      text-decoration: none
+h4.footer-heading
+    font-size: rem(12)
     color: $light-black 
-    margin-top: 20px
-    
-  p
+    cursor: pointer
+.footer-blog-content p
     font-style: italic
-.footer-instagram img
-  width: 26%
-  height: auto
-  float: left
-  border: 1px solid #fff
+    pointer-events: none
