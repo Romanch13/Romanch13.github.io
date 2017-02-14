@@ -14,14 +14,14 @@
       font-size: rem(28)
       line-height: 100%
       font-weight: bold
-      font-family: 'Montserrat', sans-serif
+      font-family: 'Roboto', sans-serif
     .text// Місяць
       display: block
       font-weight: normal
       font-style: italic
   .blog-Title//Заголовок
     font-size: rem(14)
-    font-family: 'Montserrat', sans-serif
+    font-family: 'Roboto', sans-serif
     font-weight: 500
     a
     	text-decoration: none
@@ -52,15 +52,14 @@
 // Google-map
 
 #google-map
-  background: url(../img/map.png) no-repeat center/cover
-  background-position: center 
+  background: url(../img/map.png) no-repeat center/cover 
   padding: rem(50) rem(0)
   margin-top: rem(50) 
-  .map-heading
+  .map-heading//Назва
     color: $pink
     margin: 0
     cursor: pointer
-    .fa-icon-map
+    .fa-icon-map// Иконка
       display: block
       margin-bottom: rem(20)
       font-size: rem(40)
@@ -79,7 +78,7 @@
     border: rem(2) solid $pink
 
 .map-heading
-    font-family: 'Montserrat', sans-serif
+    font-family: 'Roboto', sans-serif
     font-weight: bold
     font-size: rem(30)
     line-height: 1
@@ -91,9 +90,86 @@
     position: absolute
     left: 50%
     bottom: 0
-    width: 100px
-    height: 3px
+    width: rem(100)
+    height: rem(4)
     background: $pink
     transform: translateX(-50%)
   
+//footer-img Design
+.footer-logo
+  font-family: 'Roboto', sans-serif
+  font-size: rem(30)
+  font-weight: bold
+  color: $pink
+  margin-bottom: rem(20)
+footer
+  color: $footer
+  background: $footer-bg
+
+.footer-social i
+  color: $fa-icon-color
+  margin-right: rem(8)
+  &:hover
+    color: $pink
+    cursor: pointer
+  &:first-child
+    margin-left: rem(5)
+// Mail
+.mail
+  margin-top: rem(35)
+  margin-bottom: rem(20)
+.input-group
+  max-width: 100%
+  border: rem(1) solid $border-mail
+  border-radius: 10%
+.btn-default
+  width: rem(140)
+  color: #FFF
+  background-color: $btn-color-footer
+  border: rem(1) solid $btn-color-footer-border
+  &:hover
+    color: #FFF
+    background-color: $pink
+    border: rem(1) solid $pink-border
+
+//заголовок
+.footer-content b
+    font-family: 'Roboto', sans-serif
+    font-weight: bold
+    color: $black
+.footer-content h5
+     color: $black
+     font-family: 'Roboto', sans-serif
+     font-weight: normal
+     margin-top: rem(30)
+
+.footer-content p
+    text-align: justify
+.form-control:focus
+    outline: none
+    border-color: $border-mail
+
+
+.fotter-title-blog
+    font-family: 'Roboto', sans-serif
+    font-weight: bold
+    color: $light-black
+    margin-bottom: 40px
+.footer-blog
+  img
+    max-width: 100%
+    height: rem(75)
+    margin-right: 20px
+  h4
+    font-size: 12px
+    line-height: 1
+    color: $light-black 
+    margin-top: 20px
     
+  p
+    font-style: italic
+.footer-instagram img
+  width: 26%
+  height: auto
+  float: left
+  border: 1px solid #fff

@@ -2449,7 +2449,7 @@ input[type="button"].btn-block {
   width: 100%; }
 
 .caption .btn-section1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   background-color: transparent;
   border: 0.1875rem solid;
@@ -3445,7 +3445,7 @@ header {
   transition: all 0.15s ease; }
 
 .nav li a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500; }
 
 .nav li a:hover {
@@ -4302,7 +4302,7 @@ base::-moz-progress-bar,
       line-height: 0rem;
       position: relative;
       top: -0.0625rem;
-      right: 0rem; } }
+      right: 0.4375rem; } }
 
 .list-group {
   padding-left: 0;
@@ -5670,7 +5670,7 @@ p {
   font-size: 0.875rem; }
 
 .logo {
-  font-family: 'Montserrat', sans-serif;
+  ffont-family: 'Roboto', sans-serif;
   font-size: 1.875rem;
   font-weight: bold; }
 
@@ -5681,7 +5681,7 @@ p {
   font-size: 3.125rem; }
 
 .Welcome-to-MoGo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #fff;
   font-weight: bold;
   line-height: 1em;
@@ -5694,7 +5694,7 @@ p {
   right: 0;
   z-index: 15; }
 
-#about-us, #services, #what-we-do, #our-partner, #works, #our-team {
+#about-us, #services, #what-we-do, #our-partner, #works, #our-team, #footer {
   padding: 3.125rem 0rem; }
 
 .unique-header, .happy-header, .people-header, .blog-header {
@@ -5706,11 +5706,11 @@ p {
   color: #333333; }
 
 .name-section-style-h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold; }
 
 .counter-item span, .team-content h5, .library-p-name, .about-p-name {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500; }
 
 .head-title p, .what-do-header p, .about-header p {
@@ -5721,7 +5721,7 @@ p {
   margin: 0rem auto 3.125rem auto; }
 
 .media-body h4 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0rem 1.5625rem; }
@@ -5731,7 +5731,7 @@ p {
   text-align: justify; }
 
 .media-body1 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 0.875rem; }
 
@@ -5785,7 +5785,7 @@ body {
     font-size: 1.75rem;
     line-height: 100%;
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif; }
+    font-family: 'Roboto', sans-serif; }
   #blog .blog-col-content .date .text {
     display: block;
     font-weight: normal;
@@ -5793,7 +5793,7 @@ body {
 
 #blog .blog-col-content .blog-Title {
   font-size: 0.875rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500; }
   #blog .blog-col-content .blog-Title a {
     text-decoration: none;
@@ -5826,7 +5826,6 @@ body {
 
 #google-map {
   background: url(../img/map.png) no-repeat center/cover;
-  background-position: center;
   padding: 3.125rem 0rem;
   margin-top: 3.125rem; }
   #google-map .map-heading {
@@ -5852,7 +5851,7 @@ body {
     border: 0.125rem solid #f38181; }
 
 .map-heading {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 1.875rem;
   line-height: 1;
@@ -5865,12 +5864,96 @@ body {
   position: absolute;
   left: 50%;
   bottom: 0;
-  width: 100px;
-  height: 3px;
+  width: 6.25rem;
+  height: 0.25rem;
   background: #f38181;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
+
+.footer-logo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #f38181;
+  margin-bottom: 1.25rem; }
+
+footer {
+  color: #999999;
+  background: #f8f8f8; }
+
+.footer-social i {
+  color: #95e1d3;
+  margin-right: 0.5rem; }
+  .footer-social i:hover {
+    color: #f38181;
+    cursor: pointer; }
+  .footer-social i:first-child {
+    margin-left: 0.3125rem; }
+
+.mail {
+  margin-top: 2.1875rem;
+  margin-bottom: 1.25rem; }
+
+.input-group {
+  max-width: 100%;
+  border: 0.0625rem solid #dddddd;
+  -webkit-border-radius: 10%;
+  border-radius: 10%; }
+
+.btn-default {
+  width: 8.75rem;
+  color: #FFF;
+  background-color: #95e1d3;
+  border: 0.0625rem solid #6ed5c2; }
+  .btn-default:hover {
+    color: #FFF;
+    background-color: #f38181;
+    border: 0.0625rem solid #ec7676; }
+
+.footer-content b {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #000; }
+
+.footer-content h5 {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  margin-top: 1.875rem; }
+
+.footer-content p {
+  text-align: justify; }
+
+.form-control:focus {
+  outline: none;
+  border-color: #dddddd; }
+
+.fotter-title-blog {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #282828;
+  margin-bottom: 40px; }
+
+.footer-blog img {
+  max-width: 100%;
+  height: 4.6875rem;
+  margin-right: 20px; }
+
+.footer-blog h4 {
+  font-size: 12px;
+  line-height: 1;
+  color: #282828;
+  margin-top: 20px; }
+
+.footer-blog p {
+  font-style: italic; }
+
+.footer-instagram img {
+  width: 26%;
+  height: auto;
+  float: left;
+  border: 1px solid #fff; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
