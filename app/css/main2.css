@@ -4304,9 +4304,37 @@ base::-moz-progress-bar,
       top: -0.0625rem;
       right: 0.4375rem; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .footer-blog-content {
-    margin-right: 30px !important; } }
+    margin-right: -1.25rem !important; } }
+
+@media only screen and (min-width: 768px) {
+  .footer-blog-content {
+    margin-right: -2.5rem; } }
+
+@media only screen and (min-width: 768px) {
+  h4.footer-heading, .footer-blog-content p {
+    font-size: 0.5625rem !important; }
+  #blog .blog-col-content .blog-Title {
+    font-size: 0.75rem !important; }
+  .blog-p {
+    font-size: 0.75rem; } }
+
+@media only screen and (max-width: 740px) {
+  .footer-blog-content {
+    margin-right: 5rem; } }
+
+@media only screen and (max-width: 414px) {
+  .footer-blog-content {
+    margin-right: 1.25rem !important; } }
+
+@media only screen and (max-width: 375px) {
+  .footer-blog-content {
+    margin-right: 0rem !important; } }
+
+@media only screen and (max-width: 320px) {
+  .footer-blog-content {
+    margin-right: -1.25rem !important; } }
 
 .list-group {
   padding-left: 0;
@@ -5938,24 +5966,23 @@ footer {
   font-weight: bold;
   color: #282828;
   overflow: hidden;
-  margin-bottom: 40px; }
+  margin-bottom: 2.5rem; }
 
 .footer-blog {
-  margin-bottom: 30px; }
+  margin-bottom: 1.875rem; }
 
 .footer-blog-s {
   overflow: hidden;
-  margin-bottom: 20px; }
+  margin-bottom: 1.25rem; }
 
 .fotter-img {
   max-width: 100%;
   float: left; }
 
 .footer-blog-content {
-  width: 70%;
+  width: 60%;
   float: right;
-  margin-right: -30px;
-  margin-top: 10px; }
+  margin-top: 0.5rem; }
   .footer-blog-content a {
     text-decoration: none; }
 
@@ -5967,6 +5994,19 @@ h4.footer-heading {
 .footer-blog-content p {
   font-style: italic;
   pointer-events: none; }
+
+.footer-title-ins {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #282828;
+  overflow: hidden;
+  margin-bottom: 2.5rem; }
+
+.footer-ins img {
+  width: 26%;
+  height: auto;
+  float: left;
+  border: 0.125rem solid #fff; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
