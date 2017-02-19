@@ -4,10 +4,10 @@
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,vietnamese");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
-@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,vietnamese");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
-@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -4168,11 +4168,9 @@ base::-moz-progress-bar,
     font-size: 0.8125rem;
     margin-top: 0.3125rem; }
   p {
-    font-size: 0.75rem !important; }
+    font-size: 0.8125rem !important; }
   .media-heading {
     font-size: 1.25rem; }
-  span.text1 {
-    font-size: 0.75rem; }
   .blog-Title {
     font-size: 0.75rem !important; } }
 
@@ -4219,31 +4217,15 @@ base::-moz-progress-bar,
   .carousel-inner {
     height: 25rem; }
     .carousel-inner .carousel-item .caption {
-      top: 15%; }
-      .carousel-inner .carousel-item .caption .Welcome-to-MoGo {
-        font-size: 2.5rem;
-        line-height: 2.5rem; }
-      .carousel-inner .carousel-item .caption .Creative-Template {
-        font-size: 1.75rem;
-        line-height: 1.875rem; }
+      top: 20%;
+      left: 2%; }
+      .carousel-inner .carousel-item .caption .Welcome {
+        font-size: 2.1875rem;
+        line-height: 3.125rem; }
   .carousel-fade .left-control, .carousel-fade .right-control {
-    top: 70%; }
+    top: 63%; }
   .carousel-fade1 {
-    left: 0 !important; }
-  .tc-control i, .tc-control1 i {
-    position: absolute;
-    top: 28%;
-    left: 50%; }
-  .left i {
-    margin-left: -53% !important; }
-  .right i {
-    margin-left: 50.5%; }
-  .left1 i {
-    margin-left: -53% !important;
-    margin-top: -3.75rem !important; }
-  .right1 i {
-    margin-left: 50.5%;
-      margin-left-margin-top: -3.75rem !important; } }
+    left: 0 !important; } }
 
 @media only screen and (max-width: 768px) {
   .about-header p, .what-do-header p, .head-title p, .portfolio-header p {
@@ -4267,7 +4249,7 @@ base::-moz-progress-bar,
     margin-left: 3.4375rem;
     width: 6.875rem; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 544px) {
   .counter-item {
     border: 0; }
     .counter-item:first-child {
@@ -4299,6 +4281,8 @@ base::-moz-progress-bar,
     font-size: 0.75rem; }
   .library .library-us-single .library-us-single-img-overlay a i {
     font-size: 1.6875rem; }
+  span.text1 {
+    font-size: 0.625rem; }
   p {
     font-size: 0.75rem !important; } }
 
@@ -4369,6 +4353,44 @@ base::-moz-progress-bar,
 @media only screen and (max-width: 320px) {
   .footer-blog-content {
     margin-right: -1.25rem !important; } }
+
+@media only screen and (max-width: 740px) and (min-width: 640px) {
+  .tc-control1 i {
+    position: absolute;
+    top: 28%;
+    left: 50%; }
+  .tc-control2 i {
+    position: absolute;
+    top: 31%;
+    left: 50%; }
+  .left i {
+    margin-left: -53% !important; }
+  .right i {
+    margin-left: 50%; }
+  .left1 i {
+    margin-left: -53% !important; }
+  .right1 i {
+    margin-left: 50%; } }
+
+@media only screen and (max-width: 568px) {
+  .tc-control1 i {
+    position: absolute;
+    top: 28%;
+    left: 50%; }
+  .tc-control2 i {
+    position: absolute;
+    top: 31%;
+    left: 50%; }
+  .left i {
+    margin-left: -52% !important; }
+  .right i {
+    margin-left: 49%; }
+  .left1 i {
+    margin-left: -48% !important;
+    font-size: 30px !important; }
+  .right1 i {
+    margin-left: 45%;
+    font-size: 30px !important; } }
 
 .list-group {
   padding-left: 0;
@@ -5132,7 +5154,8 @@ button.close {
   background: #f8f8f8; }
 
 .single-slide h3 {
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
   margin-top: 0.9375rem;
   text-align: left;
   margin-left: 12.5rem; }
@@ -5175,11 +5198,14 @@ button.close {
 .single-slide-img1 img {
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  width: 150px;
-  height: 150px; }
+  width: 7.5rem;
+  height: 7.5rem;
+  position: relative;
+  left: 0.75rem; }
 
 .single1-slide h3 {
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
   margin-top: 1.5625rem;
   text-align: left;
   margin-left: 15rem; }
@@ -5192,7 +5218,7 @@ button.close {
     margin-top: 0.75rem;
     margin-left: -3.4375rem; }
 
-a.tc-control {
+a.tc-control2 {
   color: #f38181; }
 
 a.tc-control1 {
@@ -5214,13 +5240,13 @@ a.tc-control1 {
   font-size: 2.5rem;
   float: left;
   margin-left: -1.875rem;
-  margin-top: -5.5625rem; }
+  margin-top: -5rem; }
 
 .right1 i {
   font-size: 2.5rem;
   float: right;
   margin-right: -1.875rem;
-  margin-top: -5.5625rem; }
+  margin-top: -5rem; }
 
 .carousel-indicators li {
   position: relative;
@@ -5736,27 +5762,21 @@ p {
   font-size: 0.875rem; }
 
 .logo {
-  ffont-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.875rem;
   font-weight: bold; }
 
-.Creative-Template {
-  font-family: 'Kaushan Script', cursive;
-  font-weight: normal;
-  color: #fff;
-  font-size: 3.125rem; }
-
-.Welcome-to-MoGo {
+.Welcome {
   font-family: 'Roboto', sans-serif;
   color: #fff;
   font-weight: bold;
-  line-height: 1em;
+  line-height: 6.875rem;
   font-size: 5.3125rem; }
 
 .caption {
   position: absolute;
-  top: 20%;
-  left: 0;
+  top: 30%;
+  left: 1.5%;
   right: 0;
   z-index: 15; }
 
@@ -5767,8 +5787,8 @@ p {
   padding: 3.125rem 0rem; }
 
 .name-section-style-h2 {
-  font-family: 'Kaushan Script', cursive;
-  font-weight: normal;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
   color: #333333; }
 
 .name-section-style-h1 {

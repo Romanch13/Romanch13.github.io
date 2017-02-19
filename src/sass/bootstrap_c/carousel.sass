@@ -4,7 +4,7 @@
   background: -webkit-gradient(linear, left top, right bottom, color-stop(-0.2, rgba(232, 132, 130, 0.9)), color-stop(1, rgba(239, 215, 137, 0.9)))
   background: -moz-linear-gradient(left top, rgba(232, 132, 130, 0.9) 0.2%, rgba(239, 215, 137, 0.9) 100%)
 .carousel-item
-    background-position: center center center
+    background-position: center center center 
 #home-slider
   overflow: hidden
   position: relative
@@ -69,7 +69,8 @@
   padding: rem(50) rem(0)  
   background: $color-bg-section-slider-and-brand
 .single-slide h3
-  font-family: 'Kaushan Script', cursive
+  font-family: 'Roboto', sans-serif
+  font-style: italic
   margin-top: rem(15)
   text-align: left
   margin-left: rem(200)
@@ -107,24 +108,27 @@
     margin: auto rem(15)
 .single-slide-img1 img
     border-radius: 50%
-    width: 150px
-    height: 150px
+    width: rem(120)
+    height: rem(120)
+    position: relative
+    left: rem(12)
 .single1-slide h3
-  font-family: 'Kaushan Script', cursive
-  margin-top: rem(25)
-  text-align: left
-  margin-left: rem(240)
-  &:before
-    content: ""
-    background: $hr-color-standart
-    width: rem(50)
-    height: rem(3)
-    position: absolute
-    margin-top: rem(12)
-    margin-left: rem(-55)
+    font-family: 'Roboto', sans-serif
+    font-style: italic
+    margin-top: rem(25)
+    text-align: left
+    margin-left: rem(240)
+    &:before
+      content: ""
+      background: $hr-color-standart
+      width: rem(50)
+      height: rem(3)
+      position: absolute
+      margin-top: rem(12)
+      margin-left: rem(-55)
 // кароусель 2 
 // стрелки
-a.tc-control
+a.tc-control2
   color: $hr-color-standart 
 a.tc-control1
   color: $hr-color-standart 
@@ -143,12 +147,12 @@ a.tc-control1
   font-size: rem(40)
   float: left
   margin-left: rem(-30)
-  margin-top: rem(-89)
+  margin-top: rem(-80)
 .right1 i
   font-size: rem(40)
   float: right
   margin-right: rem(-30)
-  margin-top: rem(-89)
+  margin-top: rem(-80)
 //индикаторы
 .carousel-indicators li
   position: relative
