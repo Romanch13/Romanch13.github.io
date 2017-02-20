@@ -22,6 +22,7 @@
 	<script src="js/wow.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/map.js"></script>
+	<script type="text/javascript" src="libs/pagescroltoid-1.5.7/jquery.malihu.PageScroll2id.min.js"></script>
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
@@ -38,15 +39,15 @@
 
 </head>
 <body>
-	<section class="section-1">
-		<header class="clearfix navbar-fixed-top">
+<section id="section-1">
+	<header class="clearfix navbar-fixed-top"  id="menu">
 			<div class="container">
 				<div class="logo">
 					<a href="#">DesiGn</a>
 				</div>
 				<a href="#" id="touch-menu" class="navbar-to" role="button"> <i class="fa fa-bars" aria-hidden="true"></i>
 				</a>
-				<nav id="menu">
+				<nav>
 					<ul class="nav text-uppercase">
 						<li>
 							<a href="#home">Головна</a>
@@ -70,7 +71,7 @@
 				</nav>
 			</div>
 		</header>
-	</section>
+</section>
 	<section id="home" name="home" class="text-md-center text-xs-center">
 		<div id="home-slider" class="carousel clearfix  slide carousel-fade" data-ride="carousel">
 			<a href="#home"></a>
@@ -87,10 +88,10 @@
 						<br>	
 						<hr class="hr-1 animated fadeInDownBig">	
 						<br>
-						<nav>
-						<a data-scroll class="btn btn-section1 text-uppercase  animated fadeInUpBig"
+						
+						<a class="btn btn-section1 text-uppercase  animated fadeInUpBig"
 						href="#about-us" >Дізнатись більше</a>
-						</nav>
+						
 					</div>
 				</div>
 
@@ -106,8 +107,8 @@
 						<br>	
 						<hr class="hr-1 animated fadeInDownBig">	
 						<br>
-						<nav>
-						<a data-scroll class="btn btn-section1 text-uppercase scrollToDown animated fadeInRightBig" href="#about-us">Дізнатись більше</a></nav>
+						
+						<a class="btn btn-section1 text-uppercase animated fadeInRightBig" href="#about-us">Дізнатись більше</a>
 					</div >
 				</div>
 				<div class="carousel-item" style="background-image:url(img/slider/slider2.jpg)">
@@ -123,7 +124,7 @@
 						<hr class="hr-1 animated fadeInDownBig">	
 						<br>
 						<nav>	
-						<a data-scroll class="btn btn-section1 text-uppercase scrollToDown animated fadeInUpBig " href="#about-us">Дізнатись більше</a></nav>
+						<a class="btn btn-section1 text-uppercase animated fadeInUpBig " href="#about-us">Дізнатись більше</a></nav>
 					</div>
 				</div>
 			</div>
@@ -393,7 +394,7 @@
 								<li data-target="#slider2-list" data-slide-to="1"></li>
 								<li data-target="#slider2-list" data-slide-to="2"></li>
 							</ol>
-							<div class="carousel-inner" role="listbox">
+							<div class="carousel-inner h-car" role="listbox">
 								<div class="carousel-item active">
 									<div class="single-slide">
 										<div class="single-slide-img">
@@ -765,7 +766,7 @@
 						<h2 class="name-section-style-h1 text-uppercase">Що Кажуть Люди</h2>
 						<hr class="hr-standart story"></div>
 					<div class="row">
-						<div class="col-md-6 col-sm-6 col-xs-6">
+						<div class="col-md-6 col-sm-6 col-xs-6 m-x-auto">
 							<div class="happy-content">
 								<ul class="media-list">
 									<li class="media">
@@ -783,7 +784,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-md-6 col-sm-6 col-xs-6">
+						<div class="col-md-6 col-sm-6 col-xs-6 m-x-auto">
 							<div class="happy-content">
 								<ul class="media-list">
 									<li class="media">
@@ -803,7 +804,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6 col-sm-6 col-xs-6">
+						<div class="col-md-6 col-sm-6 col-xs-6 m-x-auto">
 							<div class="happy-content">
 								<ul class="media-list">
 									<li class="media">
@@ -821,11 +822,11 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-md-6 col-sm-6 col-xs-6">
+						<div class="col-md-6 col-sm-6 col-xs-6 m-x-auto">
 							<div class="happy-content">
 								<ul class="media-list">
 									<li class="media">
-										<div class="pull-md-left">
+										<div class="pull-md-left ">
 											<img src="img/happy/happy4.png" alt="" class="img-circle"/>	
 										</div>
 										<div class="media-body1">
@@ -1045,6 +1046,8 @@
 		</div>
 	</div>
 </footer>
+
+<a href="#top" class="top"> <i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
@@ -1065,14 +1068,14 @@
         boxClass:     'wow',      // default
         animateClass: 'animated', // default
         offset:       0,          // default
-        mobile:       true,       // default
+        mobile:       false,       // default
         live:         true        // default
     })
     wow.init();
 </script>
 
+<script type="text/javascript" src="libs/pagescroltoid-1.5.7/jquery.malihu.PageScroll2id.min.js"></script>
 <script src="js/numcount.js"></script>
-<div id = "toTop"> <i class="fa fa-arrow-up m-x-auto" aria-hidden="true"></i></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha256-AkXNkCuVl4vPqPnlkWUmRGA7fHZFhbqtLgdFlDmJgcw=" crossorigin="anonymous"></script>
 
 </body>

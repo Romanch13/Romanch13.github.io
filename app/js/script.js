@@ -1,24 +1,24 @@
-//ScrollSectionPageId
-$(document).ready(function(){
-		$('nav a[href^="#"]').click(function () { 
- 				elementClick = $(this).attr("href");
-				destination = $(elementClick).offset().top - 50;
-				{
-				$('body,html').animate( { scrollTop: destination }, 1500);
-				} 
-				return false;
-		   });
+//menu2
+	$(document).ready(function() {
+  
+	$(".nav a, .btn-section1").mPageScroll2id({
+		offset : 50,
+		scrollSpeed : 1000
+	});
+		
+  
 });
+
 //scrollToTop
 $(function() {
 		$(window).scroll(function() {
 			if($(this).scrollTop() > 600) {
-			$('#toTop').fadeIn();
+			$('.top').fadeIn();
 				} else {
-			$('#toTop').fadeOut();
+			$('.top').fadeOut();
 				}
 			});
-			$('#toTop').click(function() {
+			$('.top').click(function() {
 			$('body,html').animate({scrollTop:0},1000);
 			return false;
 		});
@@ -40,9 +40,22 @@ $(document).ready(function(){
 		            menu.removeAttr('style');
 		        }
 		    });
+		$('.wrapper>.prokrutka').not(':first-of-type').hide();
+  		$('.wrapper>h1').click(function() {
+    
+    var findArticle = $(this).next();
+    var findWrapper = $(this).closest('.wrapper');
+    
+    if (findArticle.is(':visible')) {
+      findArticle.slideUp('fast');
+    }
+    else {
+      findWrapper.find('>.prokrutka').slideUp('fast');
+      findArticle.slideDown('fast');
+    }
+  });
 		
 		});
-
 
 //картинки  
 $(document).ready(function(){
@@ -79,26 +92,4 @@ $(document).ready(function(){
 		removalDelay: 300,
 		mainClass: 'mfp-fade'
 	});
-});
-
-//accordeon
-	$(document).ready(function() {
-  
- $('.wrapper>.prokrutka').not(':first-of-type').hide();
- 
-  
-  $('.wrapper>h1').click(function() {
-    
-    var findArticle = $(this).next();
-    var findWrapper = $(this).closest('.wrapper');
-    
-    if (findArticle.is(':visible')) {
-      findArticle.slideUp('fast');
-    }
-    else {
-      findWrapper.find('>.prokrutka').slideUp('fast');
-      findArticle.slideDown('fast');
-    }
-  });
-  
 });
