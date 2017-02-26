@@ -3,7 +3,9 @@
   
 	$(".nav a, .btn-section1").mPageScroll2id({
 		offset : 50,
-		scrollSpeed : 1000
+		scrollSpeed: 1500,
+	
+		
 	});
 		
   
