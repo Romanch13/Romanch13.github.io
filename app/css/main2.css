@@ -4172,8 +4172,8 @@ base::-moz-progress-bar,
 
 @media only screen and (max-width: 991px) {
   .nav li a {
-    font-size: 0.8125rem;
-    margin-top: 0.3125rem; }
+    font-size: 0.75rem;
+    margin-top: 0rem; }
   p {
     font-size: 0.8125rem !important; }
   .media-heading {
@@ -4279,10 +4279,10 @@ base::-moz-progress-bar,
   .carousel-indicators {
     top: 9.375rem; }
   #slider2, #slider3 {
-    height: 18.75rem; } }
+    height: 12.5rem; } }
 
 @media only screen and (max-width: 544px) {
-  .tc-control {
+  .tc-control1 {
     display: none; }
   .tc-control2 {
     display: none; }
@@ -4294,7 +4294,9 @@ base::-moz-progress-bar,
   span.text1 {
     font-size: 0.625rem; }
   p {
-    font-size: 0.75rem !important; } }
+    font-size: 0.75rem !important; }
+  #slider2, #slider3 {
+    height: 18.75rem; } }
 
 @media (min-width: 544px) {
   .carousel-indicators {
@@ -4364,13 +4366,15 @@ base::-moz-progress-bar,
   .footer-blog-content {
     margin-right: -1.25rem !important; } }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 568px) {
   .body1, .heading, .body1 p {
     text-align: center !important; } }
 
 @media only screen and (max-width: 740px) and (min-width: 640px) {
   .body1 {
-    margin-top: 7.5rem; } }
+    margin-top: 7.5rem; }
+  .stc {
+    float: right; } }
 
 @media only screen and (max-width: 740px) and (min-width: 640px) {
   .tc-control1 i {
@@ -4382,9 +4386,11 @@ base::-moz-progress-bar,
     top: 31%;
     left: 50%; }
   .left i {
-    margin-left: -53% !important; }
+    margin-left: -53% !important;
+    margin-top: 0 !important; }
   .right i {
-    margin-left: 50%; }
+    margin-left: 50%;
+    margin-top: 0 !important; }
   .left1 i {
     margin-left: -53% !important; }
   .right1 i {
@@ -4400,9 +4406,11 @@ base::-moz-progress-bar,
     top: 31%;
     left: 50%; }
   .left i {
-    margin-left: -52% !important; }
+    margin-left: -52% !important;
+    margin-top: 0 !important; }
   .right i {
-    margin-left: 49%; }
+    margin-left: 49%;
+    margin-top: 0 !important; }
   .left1 i {
     margin-left: -48% !important;
     font-size: 30px !important; }
@@ -4410,7 +4418,7 @@ base::-moz-progress-bar,
     margin-left: 45%;
     font-size: 30px !important; } }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 568px) {
   .client-img {
     width: 100%;
     text-align: center;
@@ -4418,9 +4426,7 @@ base::-moz-progress-bar,
   .happy-content {
     padding-top: 0rem; } }
 
-@media only screen and (max-width: 500px) {
-  #happy-say {
-    height: 1280px; }
+@media only screen and (max-width: 568px) {
   .happy-content .p-content:before {
     width: 80px !important; } }
 
