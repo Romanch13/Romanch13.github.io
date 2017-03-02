@@ -4233,9 +4233,7 @@ base::-moz-progress-bar,
   .carousel-fade .left-control, .carousel-fade .right-control {
     top: 58%; }
   .carousel-fade1 {
-    left: 0 !important; }
-  .h-car {
-    height: 50%; } }
+    left: 0 !important; } }
 
 @media only screen and (max-width: 768px) {
   .about-header p, .what-do-header p, .head-title p, .portfolio-header p {
@@ -4386,11 +4384,9 @@ base::-moz-progress-bar,
     top: 31%;
     left: 50%; }
   .left i {
-    margin-left: -53% !important;
-    margin-top: 0 !important; }
+    margin-left: -53% !important; }
   .right i {
-    margin-left: 50%;
-    margin-top: 0 !important; }
+    margin-left: 50%; }
   .left1 i {
     margin-left: -53% !important; }
   .right1 i {
@@ -4406,11 +4402,9 @@ base::-moz-progress-bar,
     top: 31%;
     left: 50%; }
   .left i {
-    margin-left: -52% !important;
-    margin-top: 0 !important; }
+    margin-left: -52% !important; }
   .right i {
-    margin-left: 49%;
-    margin-top: 0 !important; }
+    margin-left: 49%; }
   .left1 i {
     margin-left: -48% !important;
     font-size: 30px !important; }
