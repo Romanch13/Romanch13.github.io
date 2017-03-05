@@ -4224,12 +4224,12 @@ base::-moz-progress-bar,
 @media only screen and (max-width: 768px) {
   .carousel-inner {
     height: 25rem; }
-    .carousel-inner .carousel-item .caption {
-      top: 17%;
-      left: 2%; }
-      .carousel-inner .carousel-item .caption .Welcome {
-        font-size: 2.1875rem;
-        line-height: 3.125rem; }
+  .carousel-item .caption {
+    top: 17%;
+    left: 2%; }
+    .carousel-item .caption .Welcome {
+      font-size: 2.1875rem;
+      line-height: 3.125rem; }
   .carousel-fade .left-control, .carousel-fade .right-control {
     top: 58%; }
   .carousel-fade1 {
@@ -4276,7 +4276,7 @@ base::-moz-progress-bar,
     font-size: 1.25rem; }
   .carousel-indicators {
     top: 9.375rem; }
-  #slider2, #slider3 {
+  #slider3, #slider2, .h-car {
     height: 12.5rem; } }
 
 @media only screen and (max-width: 544px) {
@@ -4389,9 +4389,11 @@ base::-moz-progress-bar,
     top: 31%;
     left: 50%; }
   .left i {
-    margin-left: -53% !important; }
+    margin-left: -53% !important;
+    margin-top: -5% !important; }
   .right i {
-    margin-left: 50%; }
+    margin-left: 50%;
+    margin-top: -5% !important; }
   .left1 i {
     margin-left: -53% !important; }
   .right1 i {
@@ -4407,9 +4409,11 @@ base::-moz-progress-bar,
     top: 31%;
     left: 50%; }
   .left i {
-    margin-left: -52% !important; }
+    margin-left: -52% !important;
+    margin-top: -5% !important; }
   .right i {
-    margin-left: 49%; }
+    margin-left: 49%;
+    margin-top: -5% !important; }
   .left1 i {
     margin-left: -48% !important;
     font-size: 30px !important; }
