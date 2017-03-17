@@ -1,7 +1,7 @@
 //menu2
 	$(document).ready(function() {
   
-	$(".nav a, .btn-section1").mPageScroll2id({
+	$(".nav a").mPageScroll2id({
 		offset : 50,
 		scrollSpeed: 1500,
 	
@@ -24,6 +24,8 @@ $(function() {
 			$('body,html').animate({scrollTop:0},1000);
 			return false;
 		});
+
+	
 	});
 
 //Меню jquery
