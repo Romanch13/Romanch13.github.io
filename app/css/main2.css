@@ -4207,7 +4207,7 @@ base::-moz-progress-bar,
     background: -webkit-repeating-radial-gradient(#fce38a 0.2%, #f38181 0%);
     background: repeating-radial-gradient(#fce38a 0.2%, #f38181 0%);
     text-align: center;
-    margin-top: 0rem; }
+    font-size: 10px; }
   .nav li:first-child a {
     border-top: none; }
   .nav li a:hover {
@@ -4280,6 +4280,8 @@ base::-moz-progress-bar,
     height: 12.5rem; } }
 
 @media only screen and (max-width: 544px) {
+  .nav li a {
+    font-size: 0.75rem; }
   .tc-control1 {
     display: none; }
   .tc-control2 {
@@ -5133,7 +5135,7 @@ button.close {
   transition-property: opacity;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 39.375rem; }
+  height: 50rem; }
   .carousel-fade .carousel-inner .carousel-item:after {
     content: " ";
     position: absolute;
