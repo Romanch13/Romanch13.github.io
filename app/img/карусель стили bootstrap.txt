@@ -1,0 +1,127 @@
+#home-slider
+  overflow: hidden
+  position: relative
+.carousel-fade
+  .carousel-inner
+    .carousel-item
+      opacity: 0.2
+      transition-property: opacity
+      background-repeat: no-repeat
+      -webkit-background-size: cover
+      background-size: cover
+      height: rem(800)
+      &:after
+        content: " "
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+    .active
+      opacity: 1
+      &.left, &.right
+        left: 0
+        opacity: 0
+        z-index: 1
+    .next.left, .prev.right
+      opacity: 1
+  .carousel-control
+    z-index: 2
+.left-control, .right-control
+    position: absolute
+    top: 52.2%
+    height: rem(50) 
+    width: rem(50) 
+    line-height: rem(48) 
+    border-radius: 50%
+    border: 1px solid $color-standart-section1
+    z-index: 20
+    font-size: rem(24) 
+    color: $color-standart-section1
+    text-align: center
+    transition: all 0.5s ease
+    -webkit-transition: all 0.5s ease
+    -o-transition: all 0.5s ease
+.left-control:focus, .right-control:focus
+    color: $color-standart-section1
+.left-control
+    left: rem(-50) 
+.right-control
+    right: rem(-50) 
+.left-control:hover, .right-control:hover
+  color: $color-standart-section1
+#home-slider:hover
+    .left-control
+      left: rem(50) 
+    .right-control
+      right: rem(50) 
+
+
+HTML
+
+
+<section id="home" name="home" class="text-md-center text-xs-center">
+	<div id="home-slider" class="carousel clearfix  slide carousel-fade " data-ride="carousel">
+		<a href="#home"></a><div class="carousel-inner"  role="listbox" >
+			<div class="carousel-item active" style="background-image: url(img/slider/slider3.jpg)">
+				<div class="slider-gradient"></div>
+				<div class="caption animated lightSpeedIn">
+
+					<h1 class="Welcome text-uppercase animated fadeInRightBig">
+						Ласкаво просимо
+						<br>
+						в світ
+							дизайну
+					</h1>
+					<br>
+					<hr class="hr-1 animated fadeInDownBig">
+					<br>
+
+					<a class="btn btn-section1 text-uppercase animated fadeInUpBig " href="#about-us" >Дізнатись більше</a>
+
+				</div>
+			</div>
+
+			<div class="carousel-item " style="background-image: url(img/slider/slider1.jpg)">
+				<div class="slider-gradient"></div>
+				<div class="caption animated lightSpeedIn">
+
+					<h1 class="Welcome text-uppercase animated fadeInRightBig">
+						Ласкаво просимо
+						<br>
+						в світ
+							дизайну
+					</h1>
+					<br>
+					<hr class="hr-1 animated fadeInDownBig">
+					<br>
+
+					<a class="btn btn-section1 text-uppercase animated fadeInRightBig" href="#about-us">Дізнатись більше</a>
+				</div >
+			</div>
+			<div class="carousel-item" style="background-image:url(img/slider/slider2.jpg)">
+				<div class="slider-gradient"></div>
+				<div class="caption animated lightSpeedIn">
+
+					<h1 class="Welcome text-uppercase animated fadeInRightBig">
+						Ласкаво просимо
+						<br>
+						в світ
+							дизайну
+					</h1>
+					<br>
+					<hr class="hr-1 animated fadeInDownBig">
+					<br>
+					<nav>
+						<a class="btn btn-section1 text-uppercase animated fadeInUpBig " href="#about-us">Дізнатись більше</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<a class="left-control" href="#home-slider" data-slide="prev"> <i class="fa fa-chevron-left"></i>
+		</a>
+		<a class="right-control" href="#home-slider" data-slide="next">
+			<i class="fa fa-chevron-right"></i>
+		</a>
+	</div>
+</section>

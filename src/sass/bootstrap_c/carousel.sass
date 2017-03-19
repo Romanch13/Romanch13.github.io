@@ -5,11 +5,10 @@
   background: -moz-linear-gradient(left top, rgba(232, 132, 130, 0.9) 0.2%, rgba(239, 215, 137, 0.9) 100%)
 .carousel-item
     background-position: center center center 
-  
-#home-slider
+/*#home-slider
   overflow: hidden
-  position: relative
-.carousel-fade
+  position: relative*/
+/*.carousel-fade
   .carousel-inner
     .carousel-item
       opacity: 0.2
@@ -34,8 +33,8 @@
     .next.left, .prev.right
       opacity: 1
   .carousel-control
-    z-index: 2
-.left-control, .right-control
+    z-index: 2*/
+/*.left-control, .right-control
     position: absolute
     top: 52.2%
     height: rem(50) 
@@ -49,7 +48,7 @@
     text-align: center
     transition: all 0.5s ease
     -webkit-transition: all 0.5s ease
-    -o-transition: all 0.5s ease
+    -o-transition: all 0.5s ease/*
 .left-control:focus, .right-control:focus
     color: $color-standart-section1
 .left-control
@@ -58,12 +57,59 @@
     right: rem(-50) 
 .left-control:hover, .right-control:hover
   color: $color-standart-section1
-#home-slider:hover
+/*#home-slider:hover
     .left-control
       left: rem(50) 
     .right-control
+      right: rem(50)*/
+.sl_slide
+  height: rem(800)
+#home
+  position: relative
+  overflow: hidden
+.sl-home .sl_slide img
+    max-width: 100%
+    height: auto
+
+.sl_slide:before
+  position: absolute
+  content: ''
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(-0.2, rgba(232, 132, 130, 0.9)), color-stop(1, rgba(239, 215, 137, 0.9)))
+  background: -moz-linear-gradient(left top, rgba(232, 132, 130, 0.9) 0.2%, rgba(239, 215, 137, 0.9) 100%)
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 1
+  opacity: 1
+.slick-prev, .slick-next
+  z-index: 1001
+  width: rem(50)
+  height: rem(50)
+  transition: all 0.5s ease
+  -webkit-transition: all 0.5s ease
+  -o-transition: all 0.5s ease
+.slick-prev
+  left: rem(-50)
+.slick-prev:before, .slick-next:before
+  font-size: rem(50)
+  text-shadow: rem(1) rem(1) rem(1) rgba(0, 0, 0, 0.6);
+.slick-next
+  right: rem(-50)
+.sl-home:hover
+    .slick-prev
+      left: rem(50) 
+    .slick-next
       right: rem(50) 
 
+.sl_slide
+  position: relative
+.caption
+    position: absolute
+    top: 30%
+    left: 1.5%
+    right: 0
+    z-index: 15 
 
 // карусель 2
 #slider2

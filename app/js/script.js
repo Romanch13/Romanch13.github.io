@@ -97,5 +97,24 @@ $(document).ready(function(){
 		mainClass: 'mfp-fade'
 	});
 });
+//slider slick
+$(document).ready(function(){
+  $('.sl-home').slick({
+  	autoplay: true, 
+  	autoplaySpeed: 2000,
+  	draggable: false,
+  	cssEase: 'ease-out',	
+  	speed: 750,
+  	responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 1
+      }
+    },
+    
+  ]
+  	  });
 
-
+});
