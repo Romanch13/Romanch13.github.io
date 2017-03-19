@@ -23,6 +23,7 @@
 	<script src="js/script.js"></script>
 	<script src="js/map.js"></script>
 	<script type="text/javascript" src="libs/pagescroltoid-1.5.7/jquery.malihu.PageScroll2id.min.js"></script>
+
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
@@ -46,6 +47,7 @@ jQuery(document).ready(function($) {
   });
 });
 </script>
+ 
 <style type="text/css">
 #preloader {
   position: fixed;
@@ -58,6 +60,7 @@ jQuery(document).ready(function($) {
   background: #e78483 url(./img/spinner.gif) no-repeat center center;
 }
 </style>
+
 </head>
 <body>
 <div id="preloader">	
@@ -102,9 +105,8 @@ jQuery(document).ready(function($) {
 	</header>
 </section>
 <section id="home" name="home" class="text-md-center text-xs-center">
-	<div id="home-slider" class="carousel clearfix  slide carousel-fade" data-ride="carousel">
-		<a href="#home"></a>
-		<div class="carousel-inner"  role="listbox" >
+	<div id="home-slider" class="carousel clearfix  slide carousel-fade " data-ride="carousel">
+		<a href="#home"></a><div class="carousel-inner"  role="listbox" >
 			<div class="carousel-item active" style="background-image: url(img/slider/slider3.jpg)">
 				<div class="slider-gradient"></div>
 				<div class="caption animated lightSpeedIn">
@@ -160,7 +162,7 @@ jQuery(document).ready(function($) {
 				</div>
 			</div>
 		</div>
-		<a class="left-control " href="#home-slider" data-slide="prev"> <i class="fa fa-chevron-left"></i>
+		<a class="left-control" href="#home-slider" data-slide="prev"> <i class="fa fa-chevron-left"></i>
 		</a>
 		<a class="right-control" href="#home-slider" data-slide="next">
 			<i class="fa fa-chevron-right"></i>
@@ -1086,6 +1088,14 @@ jQuery(document).ready(function($) {
 		</div>
 	</footer>
 
+
+
+
+
+
+
+
+
 				<a href="#top" class="top">
 					<i class="fa fa-arrow-up" aria-hidden="true"></i>
 				</a>
@@ -1118,6 +1128,5 @@ jQuery(document).ready(function($) {
 				<script type="text/javascript" src="libs/pagescroltoid-1.5.7/jquery.malihu.PageScroll2id.min.js"></script>
 				<script src="js/numcount.js"></script>
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha256-AkXNkCuVl4vPqPnlkWUmRGA7fHZFhbqtLgdFlDmJgcw=" crossorigin="anonymous"></script>
-
 </body>
-			</html>
+</html>

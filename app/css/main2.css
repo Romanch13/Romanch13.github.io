@@ -4424,6 +4424,11 @@ base::-moz-progress-bar,
     font-size: 30px !important; } }
 
 @media only screen and (max-width: 568px) {
+  .carousel-item .caption {
+    top: 13%;
+    left: 2%; }
+    .carousel-item .caption .Welcome {
+      font-size: 1.875rem; }
   .client-img {
     width: 100%;
     text-align: center;
