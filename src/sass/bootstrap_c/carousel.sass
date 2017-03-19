@@ -63,25 +63,16 @@
     .right-control
       right: rem(50)*/
 .sl_slide
-  height: rem(800)
+  background-position: center center
 #home
   position: relative
   overflow: hidden
-.sl-home .sl_slide img
-    max-width: 100%
-    height: auto
 
-.sl_slide:before
-  position: absolute
-  content: ''
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(-0.2, rgba(232, 132, 130, 0.9)), color-stop(1, rgba(239, 215, 137, 0.9)))
-  background: -moz-linear-gradient(left top, rgba(232, 132, 130, 0.9) 0.2%, rgba(239, 215, 137, 0.9) 100%)
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  z-index: 1
-  opacity: 1
+.sl_slide
+  height: rem(800)
+  background-repeat: no-repeat
+  -webkit-background-size: cover
+  background-size: cover
 .slick-prev, .slick-next
   z-index: 1001
   width: rem(50)
